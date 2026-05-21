@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박병준 | AI &amp; IT 컨설턴트 프로필</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Pretendard Korean Font -->
+    <link
+        rel="stylesheet"
+        as="style"
+        crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+
+    <style>
+        :root {
+            --brand-primary: #1d4ed8;
+            --brand-accent: #2563eb;
+            --brand-success: #047857;
+            --brand-danger: #b91c1c;
+            --brand-muted: #64748b;
+            --brand-bg: #f8fafc;
+            --brand-surface: #ffffff;
+            --brand-border: #e2e8f0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+                BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, "Noto Sans KR", sans-serif;
+            background-color: var(--brand-bg);
+            color: #0f172a;
+            line-height: 1.7;
+            letter-spacing: -0.01em;
+        }
+
+        /* ---------- Navigation ---------- */
+        .navbar {
+            backdrop-filter: saturate(180%) blur(10px);
+            background-color: rgba(255, 255, 255, 0.85) !important;
+            border-bottom: 1px solid var(--brand-border);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .navbar .nav-link {
+            font-weight: 500;
+            color: #334155;
+        }
+
+        .navbar .nav-link:hover {
+            color: var(--brand-primary);
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #ecfdf5 100%);
+            padding: 4rem 0 3rem;
+            border-bottom: 1px solid var(--brand-border);
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 320px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #ffffff;
+            box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.25);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .tagline {
+            font-size: 1.125rem;
+            color: var(--brand-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            padding: 0.4rem 0;
+            font-size: 0.975rem;
+            color: #1e293b;
+        }
+
+        .contact-list i {
+            font-size: 1.125rem;
+            color: var(--brand-accent);
+            width: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact-list a {
+            color: #1e293b;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        .contact-list a:hover {
+            color: var(--brand-primary);
+            text-decoration: underline;
+        }
+
+        /* ---------- Section ---------- */
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+
+        .section-eyebrow {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--brand-accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-divider {
+            width: 48px;
+            height: 4px;
+            background-color: var(--brand-primary);
+            border: 0;
+            opacity: 1;
+            margin: 0.75rem 0 2rem;
+            border-radius: 2px;
+        }
+
+        /* ---------- Cards ---------- */
+        .info-card {
+            background: var(--brand-surface);
+            border: 1px solid var(--brand-border);
+            border-radius: 1rem;
+            padding: 1.75rem;
+            height: 100%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -16px rgba(15, 23, 42, 0.18);
+        }
+
+        .info-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #0f172a;
+        }
+
+        .info-card h3 i {
+            color: var(--brand-primary);
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline li {
+            position: relative;
+            padding-left: 1.25rem;
+            padding-bottom: 1rem;
+            border-left: 2px solid var(--brand-border);
+            margin-left: 0.25rem;
+        }
+
+        .timeline li:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 0.45rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--brand-primary);
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 0 2px var(--brand-primary);
+        }
+
+        .timeline .period {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--brand-accent);
+            margin-bottom: 0.15rem;
+        }
+
+        .timeline .title {
+            font-weight: 600;
+            color: #0f172a;
+            display: block;
+        }
+
+        .timeline .desc {
+            color: var(--brand-muted);
+            font-size: 0.9rem;
+        }
+
+        .timeline .badge-issuer {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--brand-primary);
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            margin-left: 0.35rem;
+            font-weight: 500;
+        }
+
+        /* ---------- Highlight section ---------- */
+        .highlights {
+            background-color: #ffffff;
+        }
+
+        .highlight-card {
+            background: #ffffff;
+            border: 1px solid var(--brand-border);
+            border-radius: 1.25rem;
+            padding: 2rem;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .highlight-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(
+                90deg,
+                var(--brand-primary),
+                var(--brand-accent)
+            );
+        }
+
+        .highlight-card.success::before {
+            background: linear-gradient(90deg, #059669, #10b981);
+        }
+
+        .highlight-card.danger::before {
+            background: linear-gradient(90deg, #dc2626, #ef4444);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 40px -20px rgba(15, 23, 42, 0.2);
+        }
+
+        .highlight-card .icon-circle {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            background: #eff6ff;
+            color: var(--brand-primary);
+        }
+
+        .highlight-card.success .icon-circle {
+            background: #ecfdf5;
+            color: var(--brand-success);
+        }
+
+        .highlight-card.danger .icon-circle {
+            background: #fef2f2;
+            color: var(--brand-danger);
+        }
+
+        .highlight-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .highlight-card.success h3 {
+            color: var(--brand-success);
+        }
+
+        .highlight-card.danger h3 {
+            color: var(--brand-danger);
+        }
+
+        .highlight-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .highlight-card ul > li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-card ul > li:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-card ul > li::before {
+            content: "\F270";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            left: 0;
+            top: 0.05rem;
+            color: var(--brand-primary);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .highlight-card.success ul > li::before {
+            color: var(--brand-success);
+        }
+
+        .highlight-card.danger ul > li::before {
+            color: var(--brand-danger);
+        }
+
+        .highlight-card .lead-line {
+            font-weight: 600;
+            color: #0f172a;
+            display: block;
+            margin-bottom: 0.35rem;
+        }
+
+        .highlight-card .sub-line {
+            color: var(--brand-muted);
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        .highlight-card .sub-line strong {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .sub-line-link {
+            text-decoration: none;
+            color: var(--brand-muted);
+            border-bottom: 1px dashed transparent;
+            transition: color 0.15s ease, border-color 0.15s ease;
+            cursor: pointer;
+        }
+
+        .sub-line-link i {
+            font-size: 0.9rem;
+            margin-left: 0.25rem;
+            opacity: 0.6;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+            vertical-align: -0.05em;
+        }
+
+        .highlight-card.danger .sub-line-link:hover {
+            color: var(--brand-danger);
+        }
+
+        .highlight-card.danger .sub-line-link:hover strong {
+            color: var(--brand-danger);
+        }
+
+        .highlight-card .sub-line-link:hover {
+            color: var(--brand-primary);
+            border-bottom-color: currentColor;
+        }
+
+        .sub-line-link:hover i {
+            opacity: 1;
+            transform: translateY(2px);
+        }
+
+        /* Highlight target section briefly when navigated to via anchor */
+        :target.info-card,
+        :target.project-card {
+            animation: targetPulse 1.6s ease-out;
+        }
+
+        @keyframes targetPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45);
+            }
+            70% {
+                box-shadow: 0 0 0 14px rgba(37, 99, 235, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+            }
+        }
+
+        .stack-chip {
+            display: inline-block;
+            background: #f1f5f9;
+            color: #334155;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                monospace;
+            font-size: 0.78rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.375rem;
+            margin: 0.15rem 0.15rem 0.15rem 0;
+            border: 1px solid var(--brand-border);
+        }
+
+        .quote-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--brand-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .quote-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- KDT Graduation Section ---------- */
+        .kdt-section {
+            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+        }
+
+        .stat-card {
+            background: var(--brand-surface);
+            border: 1px solid var(--brand-border);
+            border-radius: 1rem;
+            padding: 1.75rem 1.5rem;
+            text-align: center;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #dc2626, #2563eb);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 32px -16px rgba(15, 23, 42, 0.18);
+        }
+
+        .stat-card .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            color: var(--brand-primary);
+            line-height: 1.1;
+            margin-bottom: 0.35rem;
+        }
+
+        .stat-card .stat-label {
+            display: block;
+            color: var(--brand-muted);
+            font-size: 0.92rem;
+            font-weight: 500;
+        }
+
+        .stat-card .stat-sub {
+            display: block;
+            color: #94a3b8;
+            font-size: 0.78rem;
+            margin-top: 0.5rem;
+        }
+
+        .cohort-card {
+            background: var(--brand-surface);
+            border: 1px solid var(--brand-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px -6px rgba(15, 23, 42, 0.08);
+        }
+
+        .cohort-header {
+            padding: 1.5rem 2rem 1.25rem;
+            border-bottom: 1px solid var(--brand-border);
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .cohort-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        .cohort-header .cohort-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        .cohort-header .badge {
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 0.45rem 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .cohort-body {
+            padding: 1.5rem 2rem 2rem;
+        }
+
+        details.evidence-details {
+            border: 1px solid var(--brand-border);
+            border-radius: 0.75rem;
+            background: #f8fafc;
+            overflow: hidden;
+            transition: border-color 0.2s ease;
+            height: 100%;
+        }
+
+        details.evidence-details[open] {
+            border-color: var(--brand-accent);
+            background: #ffffff;
+        }
+
+        details.evidence-details > summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 0.85rem 1.1rem;
+            font-weight: 600;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            user-select: none;
+            border-bottom: 1px solid transparent;
+            transition: background 0.15s ease;
+        }
+
+        details.evidence-details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.evidence-details > summary::before {
+            content: "\F285";
+            font-family: "bootstrap-icons";
+            color: var(--brand-accent);
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+        }
+
+        details.evidence-details[open] > summary::before {
+            transform: rotate(90deg);
+        }
+
+        details.evidence-details[open] > summary {
+            border-bottom-color: var(--brand-border);
+            background: #eff6ff;
+        }
+
+        details.evidence-details > summary:hover {
+            background: #eff6ff;
+        }
+
+        details.evidence-details .evidence-body {
+            padding: 1rem;
+        }
+
+        .evidence-image-btn {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 0;
+            background: transparent;
+            border: 0;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            cursor: zoom-in;
+        }
+
+        .evidence-image-btn img {
+            width: 100%;
+            height: auto;
+            max-height: 260px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 0.5rem;
+            border: 1px solid var(--brand-border);
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .evidence-image-btn:hover img,
+        .evidence-image-btn:focus-visible img {
+            transform: scale(1.02);
+        }
+
+        .evidence-image-btn:focus-visible {
+            outline: 3px solid rgba(37, 99, 235, 0.35);
+            outline-offset: 2px;
+        }
+
+        .evidence-zoom-hint {
+            position: absolute;
+            right: 0.6rem;
+            bottom: 0.6rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.65rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #ffffff;
+            background: rgba(15, 23, 42, 0.72);
+            border-radius: 999px;
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            transform: translateY(4px);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            pointer-events: none;
+        }
+
+        .evidence-image-btn:hover .evidence-zoom-hint,
+        .evidence-image-btn:focus-visible .evidence-zoom-hint {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 575.98px) {
+            .evidence-image-btn img {
+                max-height: 220px;
+            }
+        }
+
+        /* Evidence modal (shared) */
+        #evidenceModal .modal-content {
+            background: transparent;
+            border: 0;
+            box-shadow: none;
+        }
+
+        #evidenceModal .modal-body {
+            position: relative;
+            padding: 0;
+            text-align: center;
+        }
+
+        #evidenceModal[data-evidence-mode="cards"] .modal-body {
+            text-align: left;
+            background: #0f172a;
+            border-radius: 1rem;
+            overflow-y: auto;
+            max-height: 88vh;
+            box-shadow: 0 40px 80px -30px rgba(15, 23, 42, 0.7);
+        }
+
+        #evidenceModal .btn-close {
+            position: absolute;
+            top: -2.5rem;
+            right: 0;
+            filter: invert(1) brightness(1.5);
+            opacity: 0.9;
+            z-index: 10;
+        }
+
+        #evidenceModal .btn-close:hover {
+            opacity: 1;
+        }
+
+        /* ----- Image lightbox mode ----- */
+        #evidenceModal .evidence-image-view img {
+            max-width: 100%;
+            max-height: 86vh;
+            border-radius: 0.75rem;
+            box-shadow: 0 30px 60px -20px rgba(15, 23, 42, 0.6);
+            background: #ffffff;
+        }
+
+        #evidenceModal .modal-caption {
+            margin: 0.75rem 0 0;
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+        }
+
+        /* ----- Testimonial cards stack mode ----- */
+        #evidenceModal .evidence-cards {
+            color: rgba(255, 255, 255, 0.92);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #evidenceModal .evidence-cards-header {
+            padding: 1.5rem 1.75rem 1rem;
+            text-align: center;
+            background: linear-gradient(
+                to bottom,
+                rgba(15, 23, 42, 1) 0%,
+                rgba(15, 23, 42, 0.85) 70%,
+                rgba(15, 23, 42, 0) 100%
+            );
+        }
+
+        #evidenceModal .evidence-cards-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin: 0 0 0.35rem;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+
+        #evidenceModal .evidence-cards-subtitle {
+            margin: 0 0 0.65rem;
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        #evidenceModal .evidence-cards-hint {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin: 0;
+            padding: 0.3rem 0.85rem;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.78);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 999px;
+            transition: opacity 0.3s ease;
+        }
+
+        #evidenceModal .evidence-cards-hint .bi-chevron-double-down {
+            animation: evidenceHintBounce 1.6s ease-in-out infinite;
+        }
+
+        #evidenceModal[data-evidence-scrolled="true"] .evidence-cards-hint {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @keyframes evidenceHintBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(3px); }
+        }
+
+        #evidenceModal .evidence-cards-track {
+            --card-count: 5;
+            position: relative;
+            height: calc(640px + (var(--card-count) - 1) * 130px);
+            padding: 0 1rem;
+        }
+
+        #evidenceModal .evidence-cards-sticky {
+            position: sticky;
+            top: 0;
+            height: 88vh;
+            max-height: 720px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            perspective: 1200px;
+        }
+
+        #evidenceModal .evidence-cards-stage {
+            position: relative;
+            width: min(380px, 88vw);
+            height: min(500px, 64vh);
+            transform-style: preserve-3d;
+        }
+
+        #evidenceModal .evidence-card {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            padding: 1.5rem 1.5rem 1.25rem;
+            border-radius: 1.1rem;
+            background: rgba(255, 255, 255, 0.97);
+            color: #1e293b;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-sizing: border-box;
+            overflow: hidden;
+            will-change: transform, filter;
+            backface-visibility: hidden;
+            box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.25);
+        }
+
+        #evidenceModal .evidence-card.featured {
+            background: linear-gradient(
+                135deg,
+                #1d4ed8 0%,
+                #2563eb 55%,
+                #3b82f6 100%
+            );
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        #evidenceModal .evidence-card-quote {
+            font-size: 1.6rem;
+            line-height: 1;
+            color: var(--brand-accent);
+            opacity: 0.85;
+        }
+
+        #evidenceModal .evidence-card.featured .evidence-card-quote {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        #evidenceModal .evidence-card-body {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+            font-size: 0.94rem;
+            line-height: 1.6;
+            color: #1e293b;
+            letter-spacing: -0.005em;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(15, 23, 42, 0.2) transparent;
+        }
+
+        #evidenceModal .evidence-card-body::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        #evidenceModal .evidence-card-body::-webkit-scrollbar-thumb {
+            background: rgba(15, 23, 42, 0.2);
+            border-radius: 4px;
+        }
+
+        #evidenceModal .evidence-card.featured .evidence-card-body {
+            color: rgba(255, 255, 255, 0.96);
+            scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+        }
+
+        #evidenceModal .evidence-card.featured .evidence-card-body::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        #evidenceModal .evidence-card-body strong {
+            display: inline-block;
+            margin-bottom: 0.45rem;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.01em;
+        }
+
+        #evidenceModal .evidence-card.featured .evidence-card-body strong {
+            color: #ffffff;
+        }
+
+        #evidenceModal .evidence-card-body p {
+            margin: 0 0 0.65rem;
+        }
+
+        #evidenceModal .evidence-card-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        #evidenceModal .evidence-card-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.74rem;
+            color: var(--brand-muted);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            padding-top: 0.5rem;
+            border-top: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        #evidenceModal .evidence-card.featured .evidence-card-meta {
+            color: rgba(255, 255, 255, 0.78);
+            border-top-color: rgba(255, 255, 255, 0.18);
+        }
+
+        #evidenceModal .evidence-card-meta .featured-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--brand-primary);
+            font-weight: 700;
+        }
+
+        #evidenceModal .evidence-card.featured .evidence-card-meta .featured-badge {
+            color: #fde68a;
+        }
+
+        #evidenceModal .evidence-cards-progress {
+            position: absolute;
+            left: 50%;
+            bottom: 2rem;
+            transform: translateX(-50%);
+            width: min(280px, 70vw);
+            height: 3px;
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        #evidenceModal .evidence-cards-progress-bar {
+            display: block;
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, var(--brand-accent), #60a5fa);
+            border-radius: inherit;
+            transition: width 0.08s linear;
+        }
+
+        #evidenceModal .evidence-cards-footer {
+            padding: 1rem 1.75rem 1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 575.98px) {
+            #evidenceModal .evidence-cards-sticky {
+                height: 82vh;
+            }
+
+            #evidenceModal .evidence-cards-stage {
+                width: min(320px, 86vw);
+                height: min(470px, 62vh);
+            }
+
+            #evidenceModal .evidence-card {
+                padding: 1.25rem 1.25rem 1rem;
+            }
+
+            #evidenceModal .evidence-card-body {
+                font-size: 0.88rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            #evidenceModal .evidence-card {
+                transition: none !important;
+            }
+
+            #evidenceModal .evidence-cards-hint .bi-chevron-double-down {
+                animation: none;
+            }
+        }
+
+        /* ---------- Tables ---------- */
+        .table-section {
+            background: var(--brand-bg);
+        }
+
+        .table-wrap {
+            background: var(--brand-surface);
+            border: 1px solid var(--brand-border);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .table-wrap table {
+            margin-bottom: 0;
+        }
+
+        .table-wrap thead {
+            background-color: #f1f5f9;
+        }
+
+        .table-wrap thead th {
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 1px solid var(--brand-border);
+            padding: 0.95rem 1.1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .table-wrap tbody td {
+            padding: 0.95rem 1.1rem;
+            vertical-align: middle;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .table-wrap tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .table-wrap tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .row-highlight {
+            background-color: #eff6ff !important;
+        }
+
+        .row-highlight td {
+            font-weight: 600;
+            color: var(--brand-primary);
+        }
+
+        /* ---------- Projects ---------- */
+        .project-card {
+            background: var(--brand-surface);
+            border: 1px solid var(--brand-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px -6px rgba(15, 23, 42, 0.08);
+        }
+
+        .project-card .project-header {
+            padding: 1.75rem 2rem 1rem;
+            border-bottom: 1px solid var(--brand-border);
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .project-card .project-header h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .org-tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #f8fafc;
+            font-family: "SFMono-Regular", Consolas, monospace;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+        }
+
+        .project-body {
+            padding: 1.5rem 2rem 2rem;
+        }
+
+        .project-body ul {
+            padding-left: 1.25rem;
+            margin-bottom: 0;
+        }
+
+        .project-body ul li {
+            margin-bottom: 0.65rem;
+        }
+
+        .project-body ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-body ul ul {
+            margin-top: 0.5rem;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 0.75rem;
+            border: 1px solid var(--brand-border);
+            margin: 1rem 0 1.25rem;
+            object-fit: cover;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 1px solid var(--brand-border);
+            aspect-ratio: 4 / 3;
+            transition: transform 0.2s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        .table-mini {
+            width: 100%;
+            margin-top: 1rem;
+            font-size: 0.92rem;
+        }
+
+        .table-mini thead {
+            background: #f1f5f9;
+        }
+
+        .table-mini th,
+        .table-mini td {
+            padding: 0.6rem 0.85rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        /* ---------- Callout ---------- */
+        .callout {
+            border-left: 4px solid var(--brand-primary);
+            background: #eff6ff;
+            padding: 1rem 1.25rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin: 1rem 0;
+            color: #1e3a8a;
+            font-weight: 500;
+        }
+
+        .callout.red {
+            border-left-color: var(--brand-danger);
+            background: #fef2f2;
+            color: #7f1d1d;
+        }
+
+        .callout.green {
+            border-left-color: var(--brand-success);
+            background: #ecfdf5;
+            color: #064e3b;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Responsive tweaks ---------- */
+        @media (max-width: 767.98px) {
+            .hero {
+                padding: 2.5rem 0 2rem;
+                text-align: center;
+            }
+
+            .hero .contact-list li {
+                justify-content: center;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .project-body,
+            .project-card .project-header {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+        }
+
+        /* ---------- Print ---------- */
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .navbar,
+            footer {
+                display: none !important;
+            }
+
+            section {
+                page-break-inside: avoid;
+                padding: 1.5rem 0;
+            }
+
+            .hero {
+                background: #ffffff;
+                border-bottom: 2px solid #0f172a;
+            }
+
+            .info-card,
+            .highlight-card,
+            .project-card {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#top">박병준 · AI & IT 컨설턴트</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navContent"
+                aria-controls="navContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#strengths">핵심 역량</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kdt-graduation">KDT 수료 실적</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teaching">강의 경력</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">현업 경력</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">주요 프로젝트</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="top" class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-4 text-center">
+                    <img
+                        src="assets/profile-byungjun-park.png"
+                        alt="박병준 프로필 사진"
+                        class="profile-photo"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <span class="section-eyebrow">AI &amp; IT Consultant</span>
+                    <h1>박병준 <span class="text-muted fw-normal fs-4 d-block d-md-inline">Park Byungjun</span></h1>
+                    <p class="tagline">
+                        AI · 빅데이터 · 클라우드 생태계를 <strong>뉴스 속도로</strong>
+                        교육과 엔지니어링에 적용하는 컨설턴트
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="bi bi-linkedin"></i>
+                            <a
+                                href="https://www.linkedin.com/in/pbjworking/"
+                                target="_blank"
+                                rel="noopener"
+                                >linkedin.com/in/pbjworking</a
+                            >
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:prfsr.limitless@gmail.com"
+                                >prfsr.limitless@gmail.com</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About: Education & Certificates -->
+    <section id="about">
+        <div class="container">
+            <span class="section-eyebrow">About</span>
+            <h2 class="section-title">교육 사항 &amp; 자격</h2>
+            <hr class="section-divider" />
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <h3>
+                            <i class="bi bi-mortarboard-fill"></i>교육 사항
+                        </h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="period">2025.08</span>
+                                <span class="title">AI 빅데이터 MS &amp; MBA</span>
+                                <span class="desc"
+                                    >aSSIST · SDG MS (Switzerland, Geneva)</span
+                                >
+                            </li>
+                            <li>
+                                <span class="period">2023.08</span>
+                                <span class="title">컴퓨터과학 BA</span>
+                                <span class="desc">한국방송통신대학교</span>
+                            </li>
+                            <li>
+                                <span class="period">2016.02</span>
+                                <span class="title"
+                                    >정치외교학 · 신문방송학 BA</span
+                                >
+                                <span class="desc">서강대학교</span>
+                            </li>
+                            <li>
+                                <span class="period">2008.02</span>
+                                <span class="title">중국어 전공</span>
+                                <span class="desc">서울외국어고등학교</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <h3>
+                            <i class="bi bi-patch-check-fill"></i>자격 사항
+                        </h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="period">2024.06</span>
+                                <span class="title"
+                                    >AWS Certified Solutions Architect Associate</span
+                                >
+                                <span class="badge-issuer">Amazon Web Services</span>
+                            </li>
+                            <li>
+                                <span class="period">2023.06</span>
+                                <span class="title"
+                                    >AWS Certified Cloud Practitioner</span
+                                >
+                                <span class="badge-issuer">Amazon Web Services</span>
+                            </li>
+                            <li>
+                                <span class="period">2021.06</span>
+                                <span class="title">정보처리기사</span>
+                                <span class="badge-issuer">한국산업인력공단</span>
+                            </li>
+                            <li>
+                                <span class="period">2017.07</span>
+                                <span class="title">국가공인 SQL 개발자</span>
+                                <span class="badge-issuer">한국데이터진흥원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths -->
+    <section id="strengths" class="highlights">
+        <div class="container">
+            <span class="section-eyebrow">Core Strengths</span>
+            <h2 class="section-title">차별화된 3가지 핵심 역량</h2>
+            <hr class="section-divider" />
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4">
+                    <div class="highlight-card">
+                        <div class="icon-circle">
+                            <i class="bi bi-newspaper"></i>
+                        </div>
+                        <h3>급변하는 기술 생태계를 뉴스 속도로 업데이트하는 교육</h3>
+                        <ul>
+                            <li>
+                                <span class="lead-line"
+                                    >AI · 빅데이터 · 클라우드 최신 도구의 즉시 도입</span
+                                >
+                                <span class="sub-line"
+                                    >진행 중인 교육과정에 트렌드를 곧바로 반영하는
+                                    <strong>뉴스 레벨의 최신 교육</strong></span
+                                >
+                                <div class="mt-2">
+                                    <span class="stack-chip">Cursor</span>
+                                    <span class="stack-chip">Claude Code</span>
+                                    <span class="stack-chip">Antigravity</span>
+                                    <span class="stack-chip">Agent Skills</span>
+                                    <span class="stack-chip">Multi Agent Orchestration</span>
+                                    <span class="stack-chip">OpenCode</span>
+                                    <span class="stack-chip">OMO</span>
+                                    <span class="stack-chip">OpenClaw</span>
+                                    <span class="stack-chip">Knowledge Base</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lead-line"
+                                    >교육 현장 ↔ 기술 실무의 가교 역할</span
+                                >
+                                <span class="sub-line"
+                                    >현업 엔지니어링 솔루션을 그대로 다루는 실무형
+                                    교육자료와 현장 니즈를 실시간 반영</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4">
+                    <div class="highlight-card danger">
+                        <div class="icon-circle">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3>수료율 100%의 학습자 맞춤, 미래기술 + 실전기술 융합 교육</h3>
+                        <ul>
+                            <li>
+                                <span class="lead-line"
+                                    >복잡한 개념의 명확한 전달, 맞춤형 성장 경로 설계</span
+                                >
+                                <a
+                                    href="#kdt-graduation"
+                                    class="sub-line sub-line-link"
+                                >
+                                    🏆 2024 &amp; 2025년 KDT 장기과정 <strong>2기수 연속 100% 수료</strong>
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="lead-line"
+                                    >실습 중심 기획 · AI · 클라우드 · 백엔드 교육 직접 설계</span
+                                >
+                                <a
+                                    href="#satisfaction-evidence"
+                                    class="sub-line sub-line-link"
+                                >
+                                    기업 IT 실무자 교육의 현장 중심 니즈를 완벽히
+                                    반영한 특강으로
+                                    <strong>최고 수준의 만족도 달성</strong>
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="lead-line"
+                                    >K-12 ~ 대학생 ~ 현직 기술 전문가까지 전 수준 멘토링</span
+                                >
+                                <a
+                                    href="#project-overseas"
+                                    class="sub-line sub-line-link"
+                                >
+                                    미국 인디애나주 초중고 · 퍼듀대학교, 입직자
+                                    취업준비 · 진로 멘토링, 현직자 기술교육 전 영역
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4">
+                    <div class="highlight-card success">
+                        <div class="icon-circle">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3>확장성과 안정성 설계 기술력으로 장애율 0%의 엔지니어링</h3>
+                        <ul>
+                            <li>
+                                <span class="lead-line"
+                                    >확장 가능한 시스템 설계 · 구현 실무 경험</span
+                                >
+                                <span class="sub-line"
+                                    ><strong>DAU 300만+</strong> 코인거래소 실시간
+                                    알림 시스템 &amp; 광고 시스템에서 대량 트래픽 제어</span
+                                >
+                            </li>
+                            <li>
+                                <span class="lead-line"
+                                    >클라우드 배포 · 운영 주도, 안정성과 효율성 극대화</span
+                                >
+                                <span class="sub-line"
+                                    >(주)키즈노트 광고시스템 리뉴얼 런칭 후
+                                    <strong
+                                        >2년간 개발 장애율 0%</strong
+                                    ></span
+                                >
+                            </li>
+                            <li>
+                                <span class="lead-line"
+                                    >데이터 파이프라인 최적화 · 분산 아키텍처 설계</span
+                                >
+                                <span class="sub-line"
+                                    >MSA 시스템 설계 · 구축, Kafka 기반 이벤트 스트리밍
+                                    및 재직자 직무 교육</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reference image -->
+            <div class="row mt-5 g-4 align-items-stretch">
+                <div class="col-md-6">
+                    <div id="satisfaction-evidence" class="info-card h-100">
+                        <h3>
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                            기업 IT 실무자 교육 만족도
+                        </h3>
+                        <img
+                            src="assets/enterprise-it-training-satisfaction.png"
+                            alt="기업 IT 실무자 교육 만족도 그래프"
+                            class="img-fluid rounded mt-2"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-card h-100">
+                        <h3>
+                            <i class="bi bi-chat-square-quote-fill"></i>
+                            LinkedIn Colleague Feedback (2024)
+                        </h3>
+                        <p class="text-muted small mb-2">
+                            From Kakao Kidsnote Team
+                        </p>
+                        <img
+                            src="assets/linkedin-recommendation-kakao-kidsnote.png"
+                            alt="카카오 키즈노트 동료 LinkedIn 추천사"
+                            class="img-fluid rounded mt-2"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KDT Graduation Track Record -->
+    <section id="kdt-graduation" class="kdt-section">
+        <div class="container">
+            <span class="section-eyebrow">Track Record</span>
+            <h2 class="section-title">
+                2024 &amp; 2025년 KDT 장기과정 2기수 연속 100% 수료
+            </h2>
+            <hr class="section-divider" />
+
+            <!-- Stats banner -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">2기수 연속 수료율</span>
+                        <span class="stat-sub">2024년 · 2025년 삼육대학교 KDT</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <span class="stat-number">48 / 48</span>
+                        <span class="stat-label">총 수료생 (29명 + 19명)</span>
+                        <span class="stat-sub">전원 1,000시간 장기과정 수료</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">교육과정 만족도 추천</span>
+                        <span class="stat-sub">만족도 조사 제출 인원 전원 추천</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2024 cohort -->
+            <article class="cohort-card">
+                <div class="cohort-header">
+                    <h3>
+                        <i class="bi bi-mortarboard-fill text-primary me-1"></i>
+                        2024년 삼육대학교 KDT 1,000시간 장기과정
+                    </h3>
+                    <div class="cohort-meta">
+                        <span class="badge bg-primary">
+                            <i class="bi bi-people-fill me-1"></i>
+                            29명 중 29명 수료 100%
+                        </span>
+                        <span class="badge bg-success">
+                            <i class="bi bi-hand-thumbs-up-fill me-1"></i>
+                            만족도 조사 제출 인원 전원 추천 100%
+                        </span>
+                    </div>
+                </div>
+                <div class="row g-3 cohort-body">
+                    <div class="col-md-6">
+                        <details open class="evidence-details">
+                            <summary>
+                                <i class="bi bi-bar-chart-fill"></i>만족도 조사
+                            </summary>
+                            <div class="evidence-body">
+                                <button
+                                    type="button"
+                                    class="evidence-image-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#evidenceModal"
+                                    data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-satisfaction-survey.png"
+                                    data-bs-caption="2024년 KDT 만족도 조사 결과"
+                                    aria-label="2024년 KDT 만족도 조사 결과 이미지 확대 보기"
+                                >
+                                    <img
+                                        src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-satisfaction-survey.png"
+                                        alt="2024년 KDT 만족도 조사 결과"
+                                        loading="lazy"
+                                    />
+                                    <span class="evidence-zoom-hint">
+                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                    </span>
+                                </button>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="col-md-6">
+                        <details open class="evidence-details">
+                            <summary>
+                                <i class="bi bi-chat-square-quote-fill"></i>수강 후기
+                            </summary>
+                            <div class="evidence-body">
+                                <button
+                                    type="button"
+                                    class="evidence-image-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#evidenceModal"
+                                    data-bs-evidence-type="testimonials"
+                                    data-bs-evidence-key="2024-kdt-10th"
+                                    data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-student-reviews.png"
+                                    data-bs-caption="2024년 KDT 수강생 후기"
+                                    aria-label="2024년 KDT 수강생 후기 카드로 자세히 보기"
+                                >
+                                    <img
+                                        src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-student-reviews.png"
+                                        alt="2024년 KDT 수강생 후기"
+                                        loading="lazy"
+                                    />
+                                    <span class="evidence-zoom-hint">
+                                        <i class="bi bi-card-text"></i>카드로 보기
+                                    </span>
+                                </button>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2025 cohort -->
+            <article class="cohort-card">
+                <div class="cohort-header">
+                    <h3>
+                        <i class="bi bi-mortarboard-fill text-primary me-1"></i>
+                        2025년 삼육대학교 KDT 1,000시간 장기과정
+                    </h3>
+                    <div class="cohort-meta">
+                        <span class="badge bg-primary">
+                            <i class="bi bi-people-fill me-1"></i>
+                            19명 중 19명 수료 100%
+                        </span>
+                        <span class="badge bg-success">
+                            <i class="bi bi-hand-thumbs-up-fill me-1"></i>
+                            만족도 조사 제출 인원 전원 추천 100%
+                        </span>
+                    </div>
+                </div>
+                <div class="row g-3 cohort-body">
+                    <div class="col-md-6">
+                        <details open class="evidence-details">
+                            <summary>
+                                <i class="bi bi-bar-chart-fill"></i>만족도 조사
+                            </summary>
+                            <div class="evidence-body">
+                                <button
+                                    type="button"
+                                    class="evidence-image-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#evidenceModal"
+                                    data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-satisfaction-survey.png"
+                                    data-bs-caption="2025년 KDT 만족도 조사 결과"
+                                    aria-label="2025년 KDT 만족도 조사 결과 이미지 확대 보기"
+                                >
+                                    <img
+                                        src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-satisfaction-survey.png"
+                                        alt="2025년 KDT 만족도 조사 결과"
+                                        loading="lazy"
+                                    />
+                                    <span class="evidence-zoom-hint">
+                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                    </span>
+                                </button>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="col-md-6">
+                        <details open class="evidence-details">
+                            <summary>
+                                <i class="bi bi-chat-square-quote-fill"></i>수강 후기
+                            </summary>
+                            <div class="evidence-body">
+                                <button
+                                    type="button"
+                                    class="evidence-image-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#evidenceModal"
+                                    data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-student-reviews.png"
+                                    data-bs-caption="2025년 KDT 수강생 후기"
+                                    aria-label="2025년 KDT 수강생 후기 이미지 확대 보기"
+                                >
+                                    <img
+                                        src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-student-reviews.png"
+                                        alt="2025년 KDT 수강생 후기"
+                                        loading="lazy"
+                                    />
+                                    <span class="evidence-zoom-hint">
+                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                    </span>
+                                </button>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Teaching career -->
+    <section id="teaching" class="table-section">
+        <div class="container">
+            <span class="section-eyebrow">Teaching</span>
+            <h2 class="section-title">강의 및 교육 경력</h2>
+            <hr class="section-divider" />
+
+            <div class="table-wrap">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col">강의 및 교육 활동</th>
+                                <th scope="col" style="width: 180px">기간</th>
+                                <th scope="col" style="width: 160px">운영기관</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    모두의연구소 AI 활용 서비스 기획/개발 전문가 과정
+                                    (직장인 바이브코딩 실전 프로젝트 과정) - 5기
+                                </td>
+                                <td>2026.03 ~ 2026.06</td>
+                                <td>모두의연구소</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    모두의연구소 AI 활용 서비스 기획/개발 전문가 과정
+                                    (직장인 바이브코딩 실전 프로젝트 과정) - 2기
+                                </td>
+                                <td>2025.10 ~ 2026.01</td>
+                                <td>모두의연구소</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    삼육대학교 KDT 산학협력 학점 연계과정 (AI 활용
+                                    클라우드 네이티브 풀스택 엔지니어 양성과정)
+                                </td>
+                                <td>2025.01 ~ 2025.09</td>
+                                <td>한국정보교육원</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    구름 프로펙트 클라우드과정 특강 (체계적 프로젝트
+                                    문서화 &amp; Kafka 핵심 개념 실무 적용)
+                                </td>
+                                <td>2025.06</td>
+                                <td>구름EDU</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    스리랑카 커리어 플랫폼 IT 운영자 국내 초청교육
+                                    (웹 개발 최신 트렌드 &amp; 생성형 AI 특강)
+                                </td>
+                                <td>2025.06</td>
+                                <td>KOICA</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    하나금융그룹 현직자 교육 (리눅스 중급 심화 및
+                                    MSA 웹 서버 구축 및 운영 실무 특강)
+                                </td>
+                                <td>2025.05</td>
+                                <td>하나금융그룹</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    하나금융그룹 현직자 교육 (클라우드 기반 MSA
+                                    서비스 설계 &amp; Kubernetes (EKS) 활용 운영
+                                    자동화)
+                                </td>
+                                <td>2024.12</td>
+                                <td>하나금융그룹</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    삼육대학교 KDT (클라우드 기반 풀스택 Java Spring
+                                    Boot &amp; React Web 엔지니어 양성과정)
+                                </td>
+                                <td>2024.01 ~ 2024.09</td>
+                                <td>한국정보교육원</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    LG헬로비전 DX DATA SCHOOL 엔지니어 양성과정
+                                    프로젝트 멘토링
+                                </td>
+                                <td>2024.05 ~ 2024.06</td>
+                                <td>한국전파진흥협회</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    KT 재직자 교육 (AWS 기반 Kafka 데이터 스트리밍
+                                    &amp; Redis Cache 클러스터 구축 연동 과정)
+                                </td>
+                                <td>2024.05</td>
+                                <td>삼성 멀티캠퍼스</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    메이커교육 분야 글로벌 서비스 기획 및 해외 진출기업
+                                    컨설팅
+                                </td>
+                                <td>2022.11 ~ 2023.12</td>
+                                <td>메이커스월드</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    동국대, 건국대, 대학연합 백엔드 개발자 진로 특강
+                                </td>
+                                <td>2022.08 ~ 2022.11</td>
+                                <td>엘리트코리아</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    내일배움캠프 클라우드 웹 개발자 양성과정 프로젝트
+                                    및 진로 멘토링
+                                </td>
+                                <td>2021.12 ~ 2022.03</td>
+                                <td>스파르타 코딩</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    기아자동차 노사공동교육 (4차산업혁명 트렌드와
+                                    SW/HW 융합기술 특강)
+                                </td>
+                                <td>2020.06 ~ 2021.12</td>
+                                <td>기아자동차</td>
+                            </tr>
+                            <tr>
+                                <td>모듈형 로봇프로그래밍 교육 (미국, 중동)</td>
+                                <td>2018.09 ~ 2019.12</td>
+                                <td>럭스로보</td>
+                            </tr>
+                            <tr>
+                                <td>임베디드SW 엔지니어 양성과정 (아두이노)</td>
+                                <td>2018.07 ~ 2018.09</td>
+                                <td>광운대학교</td>
+                            </tr>
+                            <tr>
+                                <td>파이썬 웹 프로그래밍 과정 (Django)</td>
+                                <td>2018.04 ~ 2018.05</td>
+                                <td>KG IT뱅크</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career -->
+    <section id="career">
+        <div class="container">
+            <span class="section-eyebrow">Career</span>
+            <h2 class="section-title">현업 경력</h2>
+            <hr class="section-divider" />
+
+            <div class="table-wrap">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col">회사명</th>
+                                <th scope="col">기간</th>
+                                <th scope="col">직위/직책</th>
+                                <th scope="col">직무</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>한국정보교육원</strong></td>
+                                <td>2024.01 ~ 현재</td>
+                                <td>기술 교육 컨설턴트 및 강사</td>
+                                <td>교육과정 설계 컨설팅 및 기술교육</td>
+                            </tr>
+                            <tr>
+                                <td><strong>데이터스토리 허브</strong></td>
+                                <td>2024.02 ~ 2025.12</td>
+                                <td>(사외) 기술 컨설턴트 및 강사</td>
+                                <td>기업 IT 컨설팅 및 기술교육</td>
+                            </tr>
+                            <tr>
+                                <td><strong>키즈노트</strong></td>
+                                <td>2021.09 ~ 2024.01</td>
+                                <td>연구원</td>
+                                <td>광고 시스템 백엔드 엔지니어</td>
+                            </tr>
+                            <tr>
+                                <td><strong>엑시아소프트</strong></td>
+                                <td>2021.03 ~ 2021.09</td>
+                                <td>연구원</td>
+                                <td>코인 거래소 백엔드 엔지니어</td>
+                            </tr>
+                            <tr>
+                                <td><strong>메이커스월드</strong></td>
+                                <td>2020.09 ~ 2021.03</td>
+                                <td>컨설턴트 및 강사</td>
+                                <td>메이커교육 해외시장개척 지원</td>
+                            </tr>
+                            <tr>
+                                <td><strong>한국생산성본부</strong></td>
+                                <td>2020.02 ~ 2020.09</td>
+                                <td>연구원</td>
+                                <td>SW기업 해외시장개척 지원</td>
+                            </tr>
+                            <tr>
+                                <td><strong>럭스로보</strong></td>
+                                <td>2018.06 ~ 2019.12</td>
+                                <td>팀장</td>
+                                <td>모듈형 로봇 글로벌 사업 개발</td>
+                            </tr>
+                            <tr>
+                                <td><strong>한국소프트웨어산업협회</strong></td>
+                                <td>2016.11 ~ 2018.06</td>
+                                <td>선임연구원</td>
+                                <td>SW 전문가 자격평가시험 개발</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="table-section">
+        <div class="container">
+            <span class="section-eyebrow">Projects</span>
+            <h2 class="section-title">주요 프로젝트 이력</h2>
+            <hr class="section-divider" />
+
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">Koica &amp; Ubion</span>
+                        스리랑카 방문단 국내 연수 AI Workshop
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <img
+                        src="assets/band-photo-koica-srilanka-workshop.jpeg"
+                        alt="스리랑카 방문단 국내 연수 AI Workshop"
+                        class="project-image"
+                    />
+
+                    <div class="table-wrap">
+                        <div class="table-responsive">
+                            <table class="table table-mini mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 100px">일차</th>
+                                        <th>주제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1일차</td>
+                                        <td>
+                                            IT 플랫폼 기술 트렌드 (MSA, 컨테이너
+                                            가상화, 클라우드 네이티브)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2일차</td>
+                                        <td>AWS 클라우드 서비스 실습</td>
+                                    </tr>
+                                    <tr class="row-highlight">
+                                        <td><strong>3~5일차</strong></td>
+                                        <td>
+                                            <strong
+                                                >AI 산업 및 기술 트렌드 및 생성형
+                                                AI 활용 워크샵</strong
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6일차</td>
+                                        <td>
+                                            ITSQF 소개 및 IT 역량 기반 교육 플랫폼
+                                            설계
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7~8일차</td>
+                                        <td>
+                                            플랫폼 운영을 위한 인프라 관리 자동화
+                                            (AWS - EKS)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <ul class="mt-3">
+                        <li>머신러닝에서 LLM까지 핵심 개념에 대한 시각적 &amp; 심층적 이해</li>
+                        <li>LLM 관련 기술 소개를 통한 패러다임 학습 및 직관적인 핸즈온 실습</li>
+                        <li>AI 활용 역량 종합 활용을 통한 본격적인 Application 개발 워크샵</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">하나은행 DT</span>
+                        하나금융그룹 재직자 대상 클라우드 네이티브 DevOps + 리눅스 심화 특강
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <img
+                        src="assets/band-photo-hana-linux-training.jpeg"
+                        alt="하나금융그룹 리눅스 심화 교육"
+                        class="project-image"
+                    />
+                    <ul>
+                        <li>
+                            <strong>EKS 인프라 활용 MSA 기반 솔루션 배포 및 인프라 자동화</strong>
+                            <ul>
+                                <li>AWS 서비스 기초 및 심화 이해와 실전 프로젝트</li>
+                                <li>MSA 시스템 기본 이해와 온프레미스, 클라우드 네이티브 실습</li>
+                                <li>AWS K8s 관리형 서비스 EKS 활용 기초</li>
+                                <li>EKS 기반 MSA 아키텍처 솔루션 배포</li>
+                                <li>EKS에 GitOps 및 무중단 배포 전략을 적용한 CI/CD 운영 자동화</li>
+                                <li>AWS 관리형 서비스와 Prometheus &amp; Grafana 모니터링, 알림 결합</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>리눅스 심화과정 — Rocky 리눅스 기반의 네트워크와 보안, 웹 서비스 배포</strong>
+                            <ul>
+                                <li>구체적인 물리적 컴퓨터 장비 레벨에서 발생하는 인프라 관리 기법과 웹 서비스 운영</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>금융 엔지니어링에 대한 미래 기술 인사이트 질문 답변 세션</strong>
+                            <ul>
+                                <li>DevOps와 Enterprise Architecture 기술의 AI 결합 고도화 트렌드 토론</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">카카오 키즈노트</span>
+                        클라우드 네이티브 MSA 광고 서비스 책임 개발
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            광고집행 백엔드 서버 리뉴얼 런칭 및 유지보수,
+                            <span class="text-primary fw-bold"
+                                >광고 매출 증대를 위한 ML 적용 송출 로직 고도화 개발</span
+                            >
+                            <img
+                                src="assets/kakao-kidsnote-ad-revenue-chart-source.png"
+                                alt="키즈노트 광고 서비스 개발 자료"
+                                class="project-image"
+                            />
+                            <div class="callout red">
+                                재직 중 2년간 MSA 광고 서비스 백엔드 단독 책임개발,
+                                해당 기간 중 <strong>광고 매출 2배 이상 성장</strong>
+                            </div>
+                        </li>
+                        <li>
+                            카카오 클라우드 인프라 활용 서비스 개발, 배포 및 모니터링,
+                            분석계 구축 참여 등 전체 프로세스 수행
+                            <span class="d-block text-muted small mt-1">
+                                * 데이터 파이프라인 구축과 광고 서비스 성과 분석 및
+                                타게팅 구조 수립을 위한 기반 분석 프로젝트 참여
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">엑시아소프트</span>
+                        AWS 기반 초고속 유저 알림 서비스 개발 &amp; 백오피스 대시보드 / 대용량 데이터 추출 개발
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            암호화폐 거래소 "코인빗" 초고속 거래 체결 서버 유지관리
+                            및 푸시 알림 시스템 개발
+                            <div class="callout red">
+                                유저별 관심 자산 가격 모니터링 알림 시스템
+                                <strong>분당 300만 건 발송</strong> 가능한 초고속
+                                처리 시스템 구축
+                            </div>
+                        </li>
+                        <li>
+                            AWS 클라우드 서비스를 활용한 백엔드 API 개발 및 데이터
+                            관리 프로세스 개발
+                            <span class="d-block text-muted small mt-1">
+                                * 가상자산 거래소 대상의 강화된 정보보호 및
+                                개인정보보호 관리체계(ISMS-P) 백엔드 인증 개발 참여
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">한국직업능력연구원</span>
+                        중국 AI 교육 고도화 사례 벤치마킹 연구
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            "중국의 대학 인공지능 교육과 메이커(創客) 창업 정책 연구
+                            (2021)" 참여
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">한국생산성본부</span>
+                        국내 SW 고성장 기업 글로벌 시장 개척 컨설팅
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            "SW 고성장클럽 200" 소프트웨어기업 글로벌 진출 지원사업
+                            주관 (Purdue 대학교, Plug&amp;Play 협력 지원 등)
+                            <img
+                                src="assets/band-photo-kpc-sw-global.jpg"
+                                alt="SW 고성장클럽 200 글로벌 진출 지원사업"
+                                class="project-image"
+                            />
+                        </li>
+                        <li>
+                            "글로벌 에듀테크센터 구축" 신남방 교육사업 개발 (말레이시아,
+                            캄보디아 등)
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">한밭대학교</span>
+                        산학협력단 SW &amp; HW 융합 메이커 교육 방법론 연구
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            "대학주도형 창의융합 미래인재 양성 교육과정 혁신 연구"
+                            수행
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article id="project-overseas" class="project-card">
+                <div class="project-header">
+                    <h3>
+                        <span class="org-tag">럭스로보</span>
+                        미국 · 중동 · 중국 시장 진출 및 파트너십 · 기술교류 수행
+                    </h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            <strong
+                                >미국 파트너사 교육사업 개발 협력 (USRA 연구재단,
+                                SDI Innovation 등)</strong
+                            >
+                            <ul>
+                                <li>
+                                    보도자료:
+                                    <a
+                                        href="https://www.sciencetimes.co.kr/nscvrg/view/menu/255?searchCategory=226&nscvrgSn=188400"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >사이언스타임스 — 로봇키즈의 열정으로 혁신 일궈내</a
+                                    >,
+                                    <a
+                                        href="https://www.koreadaily.com/article/7769750"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >미주중앙일보 — "로봇은 시작, 미래인재 양성이 목표"</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="gallery">
+                                <img
+                                    src="assets/luxrobo-us-partnership-01.jpg"
+                                    alt="미국 파트너사 교육사업 협력 1"
+                                />
+                                <img
+                                    src="assets/luxrobo-us-partnership-02.jpg"
+                                    alt="미국 파트너사 교육사업 협력 2"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <strong
+                                >중동 지역 교육사업 개발 (아랍에미리트, 오만, 바레인,
+                                말레이시아 등)</strong
+                            >
+                            <div class="gallery">
+                                <img
+                                    src="assets/luxrobo-middle-east-edu-01.png"
+                                    alt="중동 교육사업 1"
+                                />
+                                <img
+                                    src="assets/luxrobo-middle-east-edu-02.png"
+                                    alt="중동 교육사업 2"
+                                />
+                                <img
+                                    src="assets/luxrobo-middle-east-edu-03.png"
+                                    alt="중동 교육사업 3"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <strong
+                                >아두이노 제품 및 교육전략 고도화 기술협력 수행</strong
+                            >
+                            (엔지니어 간 교류, 로마 Maker Fair, 상호 방문미팅 등)
+                            <div class="gallery">
+                                <img
+                                    src="assets/luxrobo-arduino-techexchange-01.png"
+                                    alt="아두이노 기술협력 1"
+                                />
+                                <img
+                                    src="assets/luxrobo-arduino-techexchange-02.png"
+                                    alt="아두이노 기술협력 2"
+                                />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-1 fw-bold">박병준 · AI &amp; IT Consultant</p>
+            <p class="mb-2 small">
+                <a href="mailto:prfsr.limitless@gmail.com">prfsr.limitless@gmail.com</a>
+                ·
+                <a
+                    href="https://www.linkedin.com/in/pbjworking/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                >
+            </p>
+            <p class="mb-0 small text-muted">
+                © <span id="year"></span> Park Byeongjun. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Evidence lightbox modal (supports image or animated testimonial card stack) -->
+    <div
+        class="modal fade"
+        id="evidenceModal"
+        tabindex="-1"
+        aria-labelledby="evidenceModalCaption"
+        aria-hidden="true"
+        data-evidence-mode="image"
+    >
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="닫기"
+                ></button>
+                <div class="modal-body" id="evidenceModalBody">
+                    <!-- Image mode -->
+                    <div class="evidence-image-view" id="evidenceModalImageView">
+                        <img id="evidenceModalImage" src="" alt="" />
+                        <p class="modal-caption" id="evidenceModalCaption"></p>
+                    </div>
+
+                    <!-- Testimonial card stack mode -->
+                    <section
+                        class="evidence-cards"
+                        id="evidenceModalCards"
+                        aria-labelledby="evidenceModalCardsTitle"
+                        hidden
+                    >
+                        <header class="evidence-cards-header">
+                            <h2 class="evidence-cards-title" id="evidenceModalCardsTitle"></h2>
+                            <p
+                                class="evidence-cards-subtitle"
+                                id="evidenceModalCardsSubtitle"
+                            ></p>
+                            <p class="evidence-cards-hint" aria-hidden="true">
+                                <i class="bi bi-mouse2"></i>
+                                <span>스크롤로 카드를 넘겨보세요</span>
+                                <i class="bi bi-chevron-double-down"></i>
+                            </p>
+                        </header>
+                        <div class="evidence-cards-track" id="evidenceModalCardsTrack">
+                            <div class="evidence-cards-sticky">
+                                <div
+                                    class="evidence-cards-stage"
+                                    id="evidenceModalCardsStage"
+                                    role="list"
+                                ></div>
+                                <div
+                                    class="evidence-cards-progress"
+                                    aria-hidden="true"
+                                >
+                                    <span
+                                        class="evidence-cards-progress-bar"
+                                        id="evidenceModalCardsProgress"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="evidence-cards-footer">
+                            <span id="evidenceModalCardsCount"></span>
+                        </footer>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        (function () {
+            const modalEl = document.getElementById("evidenceModal");
+            if (!modalEl) return;
+
+            // ----- Image-mode refs -----
+            const imageViewEl = document.getElementById("evidenceModalImageView");
+            const imageEl = document.getElementById("evidenceModalImage");
+            const captionEl = document.getElementById("evidenceModalCaption");
+
+            // ----- Cards-mode refs -----
+            const cardsViewEl = document.getElementById("evidenceModalCards");
+            const cardsTitleEl = document.getElementById("evidenceModalCardsTitle");
+            const cardsSubtitleEl = document.getElementById("evidenceModalCardsSubtitle");
+            const cardsTrackEl = document.getElementById("evidenceModalCardsTrack");
+            const cardsStageEl = document.getElementById("evidenceModalCardsStage");
+            const cardsProgressEl = document.getElementById("evidenceModalCardsProgress");
+            const cardsCountEl = document.getElementById("evidenceModalCardsCount");
+            const modalBodyEl = document.getElementById("evidenceModalBody");
+
+            // ----- Testimonial data -----
+            const TESTIMONIAL_GROUPS = {
+                "2024-kdt-10th": {
+                    title: "2024년 KDT 10회차 수강 후기",
+                    subtitle:
+                        "19명 중 19명 수료 100% · 만족도 조사 제출 인원 전원 추천 100%",
+                    meta: "2024년 KDT · 10회차",
+                    items: [
+                        {
+                            text:
+                                "강사님의 강의 퀄리티가 매우 좋았으며, 프로젝트 위주 진행이 좋았다.",
+                        },
+                        { text: "추천한다" },
+                        {
+                            text:
+                                "강사님의 커리큘럼이 정말 잘 짜여져 있어서 도움이 많이 되었고, 개발 능력을 향상 시킬 수 있는 좋은 경험이 되었습니다.",
+                        },
+                        {
+                            text:
+                                "해당 훈련과정이 아니었다면, 방학을 날리고 허송세월을 보냈을텐데 덕분에 의미 있던 시간을 보낸 것 같습니다. 가르침 감사합니다",
+                        },
+                        {
+                            text:
+                                "이 과정을 배우면서 많은 걸 배울 수 있었고 강사님이 너무 잘가르쳐주셨습니다",
+                        },
+                        {
+                            text:
+                                "저에게 꼭 필요한 시간들이었고 많은 도움이 됐습니다",
+                        },
+                        {
+                            text:
+                                "백엔드 지망생으로서, 이번 과정에서 기초적인 기능 구현부터 AWS 배포, 인프라 설계, 모니터링 및 로깅, 유지보수, 클린 코드 작성, TDD, 성능 개선, 대용량 트래픽 처리까지 정말 많은 것을 배웠습니다.\n\n짧다고 생각 될 만큼 125일 동안의 시간이 매우 알차게 느껴졌고, 그 모든 것은 훌륭하신 강사님의 탁월한 가르침 덕분이었습니다.\n\n강사님께서는 실무 중심의 깊이 있는 지식뿐 아니라, 백엔드 개발자로서 가져야 할 문제 해결 능력과 직업적인 태도까지 세심하게 가르쳐 주셨습니다.\n\n강사님의 열정적인 지도 덕분에, 이제 한 걸음 더 나아가 취업시장에 도전할 준비가 되었습니다.",
+                        },
+                        { text: "너무 좋아요 강사님께서 열정적이셨습니다." },
+                        {
+                            text:
+                                "훈련과정 수료 전에는 코딩 실력이 많이 부족했고, 다른 사람들과 협업해서 프로젝트를 진행해본 경험이 적었습니다.\n\n훈련과정 수료 후에는 코딩 실력과 협업 능력이 눈에 띄게 발전했습니다. 제 자신이 많이 성장한 것이 느껴져서 뿌듯합니다.\n\n강사님께서 항상 열의있게 수업을 진행하시고 수강생들을 많이 챙겨주셔서 너무 좋았습니다.",
+                        },
+                        {
+                            text:
+                                "너무 역량이 뛰어난 강사님과 친절한 학원 관계자들 덕분에 9개월동안 많은 성장을 느꼈습니다. 다들 너무 감사드립니다",
+                        },
+                        {
+                            text:
+                                "강사님 덕분에 개발자 시장에서 살아남을 수 있는 역량을 얻고, 인사이트를 배웠습니다.\n\n9개월 동안 함께하면서 2년동안 배운 것 같은 기분이 들 정도로, 컴팩트한 훈련과정이었습니다. 이 수업은 죽을 때까지 기억에 남을 것 같습니다",
+                        },
+                        {
+                            text:
+                                "매우 전문성 있는 강사님의 수업으로 인해 기존의 가지고 있던 지식의 폭에서 더 넓은 세계의 지식은 잘 알게 되었습니다",
+                        },
+                        {
+                            featured: true,
+                            text:
+                                "**[매 시간이 귀중하게 느껴지는 깊고 훌륭한 강의]**\n\n사소한 것 하나 하나를 가르칠 때도 해당 내용이 현업을 기준으로 어떻게 적용이 되는지, 왜 이 내용이 중요한지 등을 매우 타당한 이유와 근거로 알기 쉬운 방식으로 설명을 해주어 교육의 퀄리티가 매우 높았다고 생각이 듭니다.\n\n또한 교육 외의 부분인 이력서, 포트폴리오 작성 같은 부분을 맨투맨으로 피드백하여 집중적인 개선을 가능하게 했습니다.\n\n그 외 프로젝트 진행이나 교육 과정에서 발생하는 트러블 슈팅 및 에러 피드백 등을 요청 즉시 열정적으로 해결해 주셨습니다.\n\n위 과정을 거치며 저는 저의 취업을 위한 핵심역량을 과정 수강 전에 비해 비교할 수 없을 정도로 끌어 올렸다고 단언할 수 있을 만큼 성장한 것 같습니다.\n\n좋은 기회 주신 강사님 등에게 감사말씀 올립니다.",
+                        },
+                    ],
+                },
+            };
+
+            // ----- Math helpers (port of motion/react useTransform clamp+lerp) -----
+            function clamp(v, lo, hi) {
+                return Math.max(lo, Math.min(hi, v));
+            }
+
+            function lerp(a, b, t) {
+                return a + (b - a) * t;
+            }
+
+            function rangeProgress(p, start, end) {
+                if (end === start) return p >= end ? 1 : 0;
+                return clamp((p - start) / (end - start), 0, 1);
+            }
+
+            // ----- Text formatting: escape, then render **bold** + paragraphs -----
+            function escapeHtml(s) {
+                return s
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;")
+                    .replace(/'/g, "&#39;");
+            }
+
+            function renderTestimonialText(raw) {
+                const paragraphs = raw.split(/\n{2,}/);
+                return paragraphs
+                    .map((para) => {
+                        const escaped = escapeHtml(para).replace(/\n/g, "<br>");
+                        const withBold = escaped.replace(
+                            /\*\*(.+?)\*\*/g,
+                            "<strong>$1</strong>"
+                        );
+                        return "<p>" + withBold + "</p>";
+                    })
+                    .join("");
+            }
+
+            // ----- Build a single card -----
+            //
+            // Mirrors `CardTransformed` from the testimonial-card skill:
+            //   - The card's `index` prop is `i + 2` (matches demo.tsx offset)
+            //   - start = index / (arrayLength + 1)
+            //   - end   = (index + 1) / (arrayLength + 1)
+            //   - rotateRange = [start - 1.5, end / 1.5]
+            //   - incrementRotation = -index + 90
+            //   - transform = translateZ(index*incrementZ) translateY(y) rotate(rotate)
+            //   - drop-shadow filter on the light variant
+            function buildCard(item, i, items, meta) {
+                const arrayLength = items.length;
+                const indexProp = i + 2;
+                const incrementY = 10;
+                const incrementZ = 10;
+                const incrementRotation = -indexProp + 90;
+
+                const card = document.createElement("article");
+                card.className =
+                    "evidence-card" + (item.featured ? " featured" : "");
+                card.setAttribute("role", "listitem");
+                card.setAttribute(
+                    "aria-label",
+                    "후기 " + (i + 1) + " / " + arrayLength
+                );
+
+                const featuredBadge = item.featured
+                    ? '<span class="featured-badge"><i class="bi bi-star-fill"></i>대표 후기</span>'
+                    : '<span>' + escapeHtml(meta || "") + "</span>";
+
+                card.innerHTML =
+                    '<div class="evidence-card-quote" aria-hidden="true"><i class="bi bi-quote"></i></div>' +
+                    '<div class="evidence-card-body">' +
+                    renderTestimonialText(item.text) +
+                    "</div>" +
+                    '<div class="evidence-card-meta">' +
+                    featuredBadge +
+                    "<span>" +
+                    (i + 1) +
+                    " / " +
+                    arrayLength +
+                    "</span>" +
+                    "</div>";
+
+                card.dataset.index = String(indexProp);
+                card.dataset.arrayLength = String(arrayLength);
+                card.dataset.incrementY = String(incrementY);
+                card.dataset.incrementZ = String(incrementZ);
+                card.dataset.incrementRotation = String(incrementRotation);
+                card.dataset.variant = item.featured ? "dark" : "light";
+
+                card.style.top = indexProp * incrementY + "px";
+                card.style.zIndex = String((arrayLength - indexProp) * incrementZ);
+
+                return card;
+            }
+
+            // ----- Apply scroll-driven transforms to every card -----
+            function applyCardTransforms(p) {
+                const cards = cardsStageEl.querySelectorAll(".evidence-card");
+                cards.forEach((card) => {
+                    const idx = Number(card.dataset.index);
+                    const arrayLength = Number(card.dataset.arrayLength);
+                    const incrementZ = Number(card.dataset.incrementZ);
+                    const incrementRotation = Number(card.dataset.incrementRotation);
+                    const variant = card.dataset.variant;
+
+                    const start = idx / (arrayLength + 1);
+                    const end = (idx + 1) / (arrayLength + 1);
+                    const rotStart = start - 1.5;
+                    const rotEnd = end / 1.5;
+
+                    const yT = rangeProgress(p, start, end);
+                    const yPct = lerp(0, -180, yT);
+
+                    const rT = rangeProgress(p, rotStart, rotEnd);
+                    const rotDeg = lerp(incrementRotation, 0, rT);
+
+                    const translateZ = idx * incrementZ;
+
+                    card.style.transform =
+                        "translateZ(" +
+                        translateZ +
+                        "px) translateY(" +
+                        yPct +
+                        "%) rotate(" +
+                        rotDeg +
+                        "deg)";
+
+                    if (variant === "light") {
+                        const dx = lerp(4, 0, rT);
+                        const dy = lerp(4, 12, rT);
+                        const blur = lerp(2, 24, rT);
+                        const alpha = lerp(0.15, 0.2, rT);
+                        card.style.filter =
+                            "drop-shadow(" +
+                            dx.toFixed(2) +
+                            "px " +
+                            dy.toFixed(2) +
+                            "px " +
+                            blur.toFixed(2) +
+                            "px rgba(0,0,0," +
+                            alpha.toFixed(3) +
+                            "))";
+                    } else {
+                        card.style.filter = "none";
+                    }
+                });
+
+                if (cardsProgressEl) {
+                    cardsProgressEl.style.width = (p * 100).toFixed(2) + "%";
+                }
+            }
+
+            // ----- Mode switching -----
+            function showImageMode(src, caption) {
+                modalEl.setAttribute("data-evidence-mode", "image");
+                imageViewEl.hidden = false;
+                cardsViewEl.hidden = true;
+                imageEl.src = src;
+                imageEl.alt = caption;
+                captionEl.textContent = caption;
+            }
+
+            function showCardsMode(key) {
+                const data = TESTIMONIAL_GROUPS[key];
+                if (!data) return false;
+
+                modalEl.setAttribute("data-evidence-mode", "cards");
+                modalEl.removeAttribute("data-evidence-scrolled");
+                imageViewEl.hidden = true;
+                cardsViewEl.hidden = false;
+
+                cardsTitleEl.textContent = data.title;
+                cardsSubtitleEl.textContent = data.subtitle;
+                cardsCountEl.textContent =
+                    "총 " + data.items.length + "개의 수강생 코멘트";
+
+                cardsStageEl.innerHTML = "";
+                data.items.forEach((item, i) => {
+                    cardsStageEl.appendChild(
+                        buildCard(item, i, data.items, data.meta)
+                    );
+                });
+                cardsTrackEl.style.setProperty(
+                    "--card-count",
+                    String(data.items.length)
+                );
+
+                requestAnimationFrame(() => {
+                    modalBodyEl.scrollTop = 0;
+                    applyCardTransforms(0);
+                });
+
+                return true;
+            }
+
+            // ----- Scroll listener (throttled via rAF) -----
+            let rafPending = false;
+            function onModalScroll() {
+                if (modalEl.getAttribute("data-evidence-mode") !== "cards") return;
+                if (modalBodyEl.scrollTop > 16) {
+                    modalEl.setAttribute("data-evidence-scrolled", "true");
+                }
+                if (rafPending) return;
+                rafPending = true;
+                requestAnimationFrame(() => {
+                    rafPending = false;
+                    const max =
+                        modalBodyEl.scrollHeight - modalBodyEl.clientHeight;
+                    const p = max > 0 ? modalBodyEl.scrollTop / max : 0;
+                    applyCardTransforms(p);
+                });
+            }
+
+            modalBodyEl.addEventListener("scroll", onModalScroll, {
+                passive: true,
+            });
+
+            // ----- Bootstrap modal events -----
+            modalEl.addEventListener("show.bs.modal", function (event) {
+                const trigger = event.relatedTarget;
+                if (!trigger) return;
+
+                const type = trigger.getAttribute("data-bs-evidence-type");
+                const key = trigger.getAttribute("data-bs-evidence-key");
+
+                if (type === "testimonials" && key && TESTIMONIAL_GROUPS[key]) {
+                    if (showCardsMode(key)) return;
+                }
+
+                const innerImg = trigger.querySelector("img");
+                const src =
+                    trigger.getAttribute("data-bs-image") ||
+                    (innerImg ? innerImg.getAttribute("src") : "");
+                const caption =
+                    trigger.getAttribute("data-bs-caption") ||
+                    (innerImg ? innerImg.getAttribute("alt") : "") ||
+                    "";
+                showImageMode(src, caption);
+            });
+
+            modalEl.addEventListener("hidden.bs.modal", function () {
+                imageEl.removeAttribute("src");
+                imageEl.alt = "";
+                captionEl.textContent = "";
+                cardsStageEl.innerHTML = "";
+                modalEl.setAttribute("data-evidence-mode", "image");
+                modalEl.removeAttribute("data-evidence-scrolled");
+                imageViewEl.hidden = false;
+                cardsViewEl.hidden = true;
+            });
+        })();
+    </script>
+</body>
+</html>

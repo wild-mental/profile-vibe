@@ -1,0 +1,2820 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박병준 | AI &amp; IT 컨설턴트 프로필</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Inter (Notion Sans surrogate) + Pretendard fallback for Korean -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        as="style"
+        crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+
+    <style>
+        /* ========================================
+           Notion Design System Tokens
+           ======================================== */
+        :root {
+            /* Brand & Primary */
+            --primary: #5046E5;
+            --primary-pressed: #3F36C7;
+            --primary-deep: #2D258F;
+            --on-primary: #FFFFFF;
+
+            --brand-navy: #0F1933;
+            --brand-navy-deep: #080F22;
+            --brand-navy-mid: #1B274B;
+
+            --link-blue: #1A6DCC;
+            --link-blue-pressed: #14559F;
+
+            /* Brand Spectrum */
+            --brand-pink: #E255A1;
+            --brand-pink-deep: #B83E83;
+            --brand-orange: #E16E3D;
+            --brand-orange-deep: #B85426;
+            --brand-purple: #7B6BF1;
+            --brand-purple-300: #B5AEFA;
+            --brand-purple-800: #3D34A6;
+            --brand-teal: #2EA5A0;
+            --brand-green: #2E8C5A;
+            --brand-yellow: #E6C04A;
+            --brand-brown: #8E6B3F;
+
+            /* Card Tints (pastel feature cards) */
+            --tint-peach: #FCE7D6;
+            --tint-rose: #FCDCE3;
+            --tint-mint: #D7F0E0;
+            --tint-lavender: #E6E0FA;
+            --tint-sky: #D8E8F7;
+            --tint-yellow: #FCF2CF;
+            --tint-yellow-bold: #F4D451;
+            --tint-cream: #F8F1E3;
+            --tint-gray: #F1F1EF;
+
+            /* Surface */
+            --canvas: #FFFFFF;
+            --surface: #F7F6F3;
+            --surface-soft: #FBFAF7;
+            --hairline: #EAEAE6;
+            --hairline-soft: #F0F0EC;
+            --hairline-strong: #D8D7D2;
+
+            /* Text */
+            --ink-deep: #0B0B0A;
+            --ink: #191918;
+            --charcoal: #2F2F2C;
+            --slate: #5D5C57;
+            --steel: #787774;
+            --stone: #9B9A95;
+            --muted: #B7B6B0;
+            --on-dark: #FFFFFF;
+            --on-dark-muted: rgba(255, 255, 255, 0.72);
+
+            /* Semantic */
+            --semantic-success: #2E8C5A;
+            --semantic-warning: #E1932B;
+            --semantic-error: #C5391D;
+
+            /* Spacing */
+            --space-xxs: 4px;
+            --space-xs: 8px;
+            --space-sm: 12px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --space-xxl: 48px;
+            --space-section-sm: 56px;
+            --space-section: 64px;
+            --space-section-lg: 96px;
+            --space-hero: 120px;
+
+            /* Radius */
+            --rounded-xs: 4px;
+            --rounded-sm: 6px;
+            --rounded-md: 8px;
+            --rounded-lg: 12px;
+            --rounded-xl: 16px;
+            --rounded-xxl: 20px;
+            --rounded-xxxl: 24px;
+            --rounded-full: 9999px;
+
+            /* Elevation */
+            --elev-1: rgba(15, 15, 15, 0.04) 0px 1px 2px 0px;
+            --elev-2: rgba(15, 15, 15, 0.08) 0px 4px 12px 0px;
+            --elev-3: rgba(15, 15, 15, 0.20) 0px 24px 48px -8px;
+            --elev-4: rgba(15, 15, 15, 0.16) 0px 16px 48px -8px;
+        }
+
+        /* ========================================
+           Base
+           ======================================== */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", "Pretendard Variable", Pretendard,
+                -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                "Segoe UI", Helvetica, Arial, "Noto Sans KR", sans-serif;
+            background-color: var(--canvas);
+            color: var(--ink);
+            line-height: 1.55;
+            font-feature-settings: "ss01", "cv11";
+            -webkit-font-smoothing: antialiased;
+            font-size: 16px;
+        }
+
+        ::selection {
+            background-color: rgba(80, 70, 229, 0.18);
+        }
+
+        a {
+            color: var(--link-blue);
+        }
+
+        a:hover {
+            color: var(--link-blue-pressed);
+        }
+
+        /* ========================================
+           Typography Tokens
+           ======================================== */
+        .t-hero-display {
+            font-size: clamp(40px, 6vw, 80px);
+            font-weight: 600;
+            line-height: 1.05;
+            letter-spacing: -2px;
+        }
+        .t-display-lg {
+            font-size: clamp(34px, 4vw, 56px);
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+        .t-h1 {
+            font-size: clamp(30px, 3.2vw, 48px);
+            font-weight: 600;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+        }
+        .t-h2 {
+            font-size: clamp(26px, 2.6vw, 36px);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+        .t-h3 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+        .t-h4 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        .t-h5 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .t-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .t-body {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.55;
+        }
+        .t-body-medium {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.55;
+        }
+        .t-body-sm {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .t-body-sm-medium {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        .t-caption {
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+        }
+        .t-button {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        /* ========================================
+           Layout
+           ======================================== */
+        .container-notion {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        @media (max-width: 767.98px) {
+            .container-notion {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        section.section {
+            padding: 96px 0;
+        }
+
+        @media (max-width: 767.98px) {
+            section.section {
+                padding: 56px 0;
+            }
+        }
+
+        /* ========================================
+           Promo Banner
+           ======================================== */
+        .promo-banner {
+            background-color: var(--surface);
+            color: var(--ink);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            padding: 10px 16px;
+            text-align: center;
+            border-bottom: 1px solid var(--hairline);
+        }
+
+        .promo-banner .promo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--ink-deep);
+            color: var(--on-dark);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            padding: 3px 8px;
+            border-radius: var(--rounded-full);
+            margin-right: 8px;
+            text-transform: uppercase;
+        }
+
+        .promo-banner a {
+            color: var(--ink);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-weight: 600;
+        }
+
+        /* ========================================
+           Top Navigation
+           ======================================== */
+        .top-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--canvas);
+            border-bottom: 1px solid var(--hairline);
+            height: 64px;
+        }
+
+        .top-nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .nav-brand-mark {
+            width: 28px;
+            height: 28px;
+            border-radius: var(--rounded-sm);
+            background: var(--ink-deep);
+            color: var(--on-dark);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: -0.04em;
+            font-family: "Inter", sans-serif;
+        }
+
+        .nav-brand-text {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-link-item {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: var(--rounded-sm);
+        }
+
+        .nav-link-item:hover {
+            background: var(--surface);
+            color: var(--ink);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-mobile-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--hairline-strong);
+            border-radius: var(--rounded-md);
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            color: var(--ink);
+        }
+
+        @media (max-width: 991.98px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-mobile-toggle {
+                display: inline-flex;
+            }
+            .nav-actions .btn-secondary-notion {
+                display: none;
+            }
+        }
+
+        /* ========================================
+           Buttons
+           ======================================== */
+        .btn-primary-notion {
+            background: var(--primary);
+            color: var(--on-primary);
+            border: none;
+            padding: 10px 18px;
+            border-radius: var(--rounded-md);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: background 150ms ease;
+        }
+        .btn-primary-notion:hover {
+            background: var(--primary-pressed);
+            color: var(--on-primary);
+        }
+
+        .btn-dark-notion {
+            background: var(--ink-deep);
+            color: var(--on-dark);
+            border: none;
+            padding: 10px 18px;
+            border-radius: var(--rounded-md);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-dark-notion:hover {
+            background: #000;
+            color: var(--on-dark);
+        }
+
+        .btn-secondary-notion {
+            background: transparent;
+            color: var(--ink);
+            border: 1px solid var(--hairline-strong);
+            padding: 10px 18px;
+            border-radius: var(--rounded-md);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-secondary-notion:hover {
+            background: var(--surface);
+            color: var(--ink);
+        }
+
+        .btn-on-dark {
+            background: var(--on-dark);
+            color: var(--ink);
+            border: none;
+            padding: 10px 18px;
+            border-radius: var(--rounded-md);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-secondary-on-dark {
+            background: transparent;
+            color: var(--on-dark);
+            border: 1px solid var(--on-dark-muted);
+            padding: 10px 18px;
+            border-radius: var(--rounded-md);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-secondary-on-dark:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--on-dark);
+        }
+
+        .btn-ghost-notion {
+            background: transparent;
+            color: var(--ink);
+            border: none;
+            padding: 8px 12px;
+            border-radius: var(--rounded-sm);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-ghost-notion:hover {
+            background: var(--surface);
+            color: var(--ink);
+        }
+
+        /* ========================================
+           Hero Band (Deep Navy)
+           ======================================== */
+        .hero-band {
+            background: var(--brand-navy);
+            color: var(--on-dark);
+            padding: 96px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-band {
+                padding: 56px 0 0;
+            }
+        }
+
+        /* Scattered sticky-note dots */
+        .hero-dots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .hero-dot {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+            transform: rotate(45deg);
+            opacity: 0.9;
+        }
+
+        .hero-dot.lg { width: 22px; height: 22px; }
+        .hero-dot.sm { width: 10px; height: 10px; }
+
+        .hero-dot.peach { background: var(--brand-orange); }
+        .hero-dot.pink { background: var(--brand-pink); }
+        .hero-dot.purple { background: var(--brand-purple-300); }
+        .hero-dot.yellow { background: var(--brand-yellow); }
+        .hero-dot.teal { background: var(--brand-teal); }
+        .hero-dot.green { background: var(--brand-green); }
+
+        /* Mesh wires (decorative thin lines) */
+        .hero-wire {
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: var(--on-dark);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            padding: 6px 14px;
+            border-radius: var(--rounded-full);
+            margin-bottom: 28px;
+        }
+
+        .hero-eyebrow .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--brand-green);
+            border-radius: 50%;
+        }
+
+        .hero-title {
+            color: var(--on-dark);
+            margin-bottom: 24px;
+        }
+
+        .hero-subtitle {
+            color: var(--on-dark-muted);
+            font-size: clamp(16px, 1.6vw, 20px);
+            line-height: 1.55;
+            margin-bottom: 36px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 64px;
+        }
+
+        /* Workspace Mockup Card */
+        .workspace-mockup {
+            background: var(--canvas);
+            border-radius: var(--rounded-lg);
+            border: 1px solid var(--hairline);
+            box-shadow: var(--elev-3);
+            max-width: 980px;
+            margin: 0 auto;
+            transform: translateY(64px);
+            overflow: hidden;
+        }
+
+        .mockup-titlebar {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--hairline);
+            background: var(--surface-soft);
+        }
+        .mockup-titlebar .dot-os {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .mockup-titlebar .dot-os.red { background: #FF6259; }
+        .mockup-titlebar .dot-os.yellow { background: #FFBC2E; }
+        .mockup-titlebar .dot-os.green { background: #28C940; }
+        .mockup-titlebar .breadcrumb-mock {
+            margin-left: 12px;
+            color: var(--stone);
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .mockup-body {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            min-height: 360px;
+        }
+
+        @media (max-width: 767.98px) {
+            .mockup-body {
+                grid-template-columns: 1fr;
+            }
+            .mockup-sidebar {
+                display: none;
+            }
+        }
+
+        .mockup-sidebar {
+            background: var(--surface);
+            border-right: 1px solid var(--hairline);
+            padding: 16px 12px;
+            font-size: 13px;
+        }
+
+        .mockup-sidebar .side-section {
+            color: var(--steel);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 12px 8px 6px;
+        }
+
+        .mockup-sidebar .side-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 8px;
+            border-radius: var(--rounded-sm);
+            color: var(--charcoal);
+            font-weight: 500;
+        }
+
+        .mockup-sidebar .side-item.active {
+            background: rgba(80, 70, 229, 0.08);
+            color: var(--primary);
+        }
+
+        .mockup-sidebar .side-item i {
+            width: 14px;
+            color: var(--steel);
+        }
+
+        .mockup-main {
+            padding: 28px 32px;
+        }
+
+        .mockup-main-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .mockup-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--canvas);
+            box-shadow: 0 0 0 1px var(--hairline);
+        }
+
+        .mockup-main-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--ink-deep);
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .mockup-main-sub {
+            font-size: 13px;
+            color: var(--steel);
+            margin: 0;
+        }
+
+        .mockup-props {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 14px;
+        }
+
+        .prop-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: var(--rounded-xs);
+        }
+        .prop-chip.peach { background: var(--tint-peach); color: var(--brand-orange-deep); }
+        .prop-chip.mint { background: var(--tint-mint); color: var(--brand-green); }
+        .prop-chip.lavender { background: var(--tint-lavender); color: var(--brand-purple-800); }
+        .prop-chip.sky { background: var(--tint-sky); color: var(--link-blue); }
+        .prop-chip.yellow { background: var(--tint-yellow); color: #7A5A0A; }
+        .prop-chip.rose { background: var(--tint-rose); color: var(--brand-pink-deep); }
+
+        .mockup-props-meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 24px;
+            margin-top: 20px;
+            border-top: 1px solid var(--hairline);
+            padding-top: 16px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 575.98px) {
+            .mockup-props-meta {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .mockup-props-meta .prop-row {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 4px 0;
+        }
+        .mockup-props-meta .prop-key {
+            color: var(--steel);
+            width: 110px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .mockup-props-meta .prop-val {
+            color: var(--ink);
+            font-weight: 500;
+        }
+        .mockup-props-meta .prop-val a {
+            color: var(--link-blue);
+            text-decoration: none;
+        }
+
+        /* ========================================
+           Section header
+           ======================================== */
+        .section-eyebrow-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--tint-lavender);
+            color: var(--brand-purple-800);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            padding: 4px 10px;
+            border-radius: var(--rounded-sm);
+            margin-bottom: 16px;
+        }
+
+        .section-eyebrow-tag.peach { background: var(--tint-peach); color: var(--brand-orange-deep); }
+        .section-eyebrow-tag.mint { background: var(--tint-mint); color: var(--brand-green); }
+        .section-eyebrow-tag.sky { background: var(--tint-sky); color: var(--link-blue); }
+        .section-eyebrow-tag.rose { background: var(--tint-rose); color: var(--brand-pink-deep); }
+        .section-eyebrow-tag.yellow { background: var(--tint-yellow); color: #7A5A0A; }
+
+        .section-header {
+            margin-bottom: 56px;
+            max-width: 760px;
+        }
+
+        .section-header.center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--slate);
+            margin: 16px 0 0;
+        }
+
+        /* ========================================
+           Card families
+           ======================================== */
+        .card-base {
+            background: var(--canvas);
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-lg);
+            padding: 32px;
+            height: 100%;
+        }
+
+        .card-feature {
+            background: var(--canvas);
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-lg);
+            padding: 40px;
+            height: 100%;
+        }
+
+        .card-feature.peach { background: var(--tint-peach); border-color: transparent; color: var(--charcoal); }
+        .card-feature.rose { background: var(--tint-rose); border-color: transparent; color: var(--charcoal); }
+        .card-feature.mint { background: var(--tint-mint); border-color: transparent; color: var(--charcoal); }
+        .card-feature.lavender { background: var(--tint-lavender); border-color: transparent; color: var(--charcoal); }
+        .card-feature.sky { background: var(--tint-sky); border-color: transparent; color: var(--charcoal); }
+        .card-feature.yellow { background: var(--tint-yellow); border-color: transparent; color: var(--charcoal); }
+        .card-feature.cream { background: var(--tint-cream); border-color: transparent; color: var(--charcoal); }
+        .card-feature.yellow-bold {
+            background: var(--tint-yellow-bold);
+            border-color: transparent;
+            color: var(--charcoal);
+        }
+
+        .card-icon-mark {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--rounded-md);
+            background: var(--canvas);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+            box-shadow: var(--elev-1);
+        }
+
+        .card-feature.peach .card-icon-mark { color: var(--brand-orange-deep); }
+        .card-feature.rose .card-icon-mark { color: var(--brand-pink-deep); }
+        .card-feature.mint .card-icon-mark { color: var(--brand-green); }
+        .card-feature.lavender .card-icon-mark { color: var(--brand-purple-800); }
+        .card-feature.sky .card-icon-mark { color: var(--link-blue); }
+        .card-feature.yellow .card-icon-mark { color: #7A5A0A; }
+        .card-feature.yellow-bold .card-icon-mark { background: #FFFFFF; color: var(--ink-deep); }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            color: var(--ink-deep);
+            margin: 0 0 16px;
+        }
+
+        .card-feature.yellow-bold .card-title {
+            font-size: 28px;
+            letter-spacing: -0.02em;
+        }
+
+        .card-body-text {
+            color: var(--charcoal);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .card-body-text strong {
+            color: var(--ink-deep);
+            font-weight: 700;
+        }
+
+        /* List in strength card */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list > li {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(15, 15, 15, 0.06);
+        }
+
+        .feature-list > li:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .feature-list > li:first-child {
+            padding-top: 0;
+        }
+
+        .feature-list .lead {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .feature-list .sub {
+            font-size: 14px;
+            color: var(--slate);
+            line-height: 1.55;
+        }
+
+        .feature-list .sub strong {
+            color: var(--ink-deep);
+        }
+
+        .feature-list .sub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--slate);
+            text-decoration: none;
+            border-bottom: 1px dashed transparent;
+        }
+        .feature-list .sub-link:hover {
+            color: var(--ink-deep);
+            border-bottom-color: currentColor;
+        }
+
+        /* ========================================
+           Stack chips (code-style chips)
+           ======================================== */
+        .stack-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .stack-chip {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.7);
+            color: var(--charcoal);
+            font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: var(--rounded-xs);
+            border: 1px solid rgba(15, 15, 15, 0.06);
+        }
+
+        .card-feature.peach .stack-chip,
+        .card-feature.rose .stack-chip,
+        .card-feature.mint .stack-chip,
+        .card-feature.lavender .stack-chip,
+        .card-feature.sky .stack-chip,
+        .card-feature.yellow .stack-chip,
+        .card-feature.cream .stack-chip,
+        .card-feature.yellow-bold .stack-chip {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .card-base .stack-chip {
+            background: var(--surface);
+        }
+
+        /* ========================================
+           Education / Certificate Card
+           ======================================== */
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline li {
+            position: relative;
+            padding: 0 0 20px 24px;
+            border-left: 1px solid var(--hairline);
+            margin-left: 4px;
+        }
+
+        .timeline li:last-child {
+            padding-bottom: 0;
+            border-left-color: transparent;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: 6px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--canvas);
+            border: 2px solid var(--primary);
+        }
+
+        .timeline .period {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .timeline .title {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            margin-bottom: 2px;
+        }
+
+        .timeline .desc {
+            color: var(--slate);
+            font-size: 14px;
+        }
+
+        .badge-issuer {
+            display: inline-block;
+            background: var(--tint-lavender);
+            color: var(--brand-purple-800);
+            padding: 2px 8px;
+            border-radius: var(--rounded-sm);
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+
+        .card-base h3.card-h {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-base h3.card-h .icon-wrap {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--rounded-sm);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .card-base h3.card-h .icon-wrap.lavender { background: var(--tint-lavender); color: var(--brand-purple-800); }
+        .card-base h3.card-h .icon-wrap.peach { background: var(--tint-peach); color: var(--brand-orange-deep); }
+        .card-base h3.card-h .icon-wrap.mint { background: var(--tint-mint); color: var(--brand-green); }
+        .card-base h3.card-h .icon-wrap.sky { background: var(--tint-sky); color: var(--link-blue); }
+        .card-base h3.card-h .icon-wrap.rose { background: var(--tint-rose); color: var(--brand-pink-deep); }
+        .card-base h3.card-h .icon-wrap.yellow { background: var(--tint-yellow); color: #7A5A0A; }
+
+        /* ========================================
+           KDT Stats Strip
+           ======================================== */
+        .stat-strip {
+            background: var(--surface);
+            border-radius: var(--rounded-lg);
+            padding: 56px 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 767.98px) {
+            .stat-strip {
+                grid-template-columns: 1fr;
+                padding: 32px 24px;
+                gap: 24px;
+            }
+        }
+
+        .stat-item {
+            text-align: center;
+            border-right: 1px solid var(--hairline);
+            padding: 0 16px;
+        }
+
+        .stat-item:last-child {
+            border-right: 0;
+        }
+
+        @media (max-width: 767.98px) {
+            .stat-item {
+                border-right: 0;
+                border-bottom: 1px solid var(--hairline);
+                padding: 0 0 24px;
+            }
+            .stat-item:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin-bottom: 6px;
+            background: linear-gradient(135deg, var(--primary), var(--brand-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            margin-bottom: 4px;
+        }
+
+        .stat-sub {
+            font-size: 13px;
+            color: var(--steel);
+        }
+
+        /* KDT cohort cards */
+        .cohort-card {
+            background: var(--canvas);
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-lg);
+            overflow: hidden;
+            margin-bottom: 32px;
+        }
+
+        .cohort-header {
+            padding: 24px 32px;
+            border-bottom: 1px solid var(--hairline);
+            background: var(--surface-soft);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .cohort-header h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            letter-spacing: -0.01em;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cohort-header h3 i {
+            color: var(--primary);
+        }
+
+        .cohort-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .badge-notion {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: var(--rounded-full);
+            font-size: 13px;
+            font-weight: 600;
+            background: var(--primary);
+            color: var(--on-primary);
+        }
+        .badge-notion.green {
+            background: var(--brand-green);
+            color: var(--on-primary);
+        }
+        .badge-notion.tag-purple {
+            background: var(--tint-lavender);
+            color: var(--brand-purple-800);
+            border-radius: var(--rounded-sm);
+        }
+        .badge-notion.tag-orange {
+            background: var(--tint-peach);
+            color: var(--brand-orange-deep);
+            border-radius: var(--rounded-sm);
+        }
+        .badge-notion.tag-green {
+            background: var(--tint-mint);
+            color: var(--brand-green);
+            border-radius: var(--rounded-sm);
+        }
+
+        .cohort-body {
+            padding: 24px 32px 32px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 767.98px) {
+            .cohort-body {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            .cohort-header {
+                padding: 20px;
+            }
+        }
+
+        details.evidence-details {
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-md);
+            background: var(--surface-soft);
+            overflow: hidden;
+            transition: border-color 0.2s ease, background 0.2s ease;
+        }
+
+        details.evidence-details[open] {
+            border-color: var(--primary);
+            background: var(--canvas);
+        }
+
+        details.evidence-details > summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 14px 18px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--ink-deep);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            user-select: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        details.evidence-details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.evidence-details > summary::before {
+            content: "\F285";
+            font-family: "bootstrap-icons";
+            color: var(--primary);
+            font-size: 14px;
+            transition: transform 0.2s ease;
+        }
+
+        details.evidence-details[open] > summary::before {
+            transform: rotate(90deg);
+        }
+
+        details.evidence-details[open] > summary {
+            border-bottom-color: var(--hairline);
+            background: var(--tint-lavender);
+        }
+
+        details.evidence-details > summary i.icon-summary {
+            color: var(--primary);
+            margin-left: auto;
+        }
+
+        details.evidence-details .evidence-body {
+            padding: 16px;
+        }
+
+        details.evidence-details img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--rounded-sm);
+            border: 1px solid var(--hairline);
+            display: block;
+        }
+
+        /* ========================================
+           Comparison Table (Teaching / Career)
+           ======================================== */
+        .comparison-table {
+            background: var(--canvas);
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-md);
+            overflow: hidden;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        .comparison-table thead th {
+            background: var(--surface);
+            text-align: left;
+            padding: 16px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--ink-deep);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            border-bottom: 1px solid var(--hairline);
+        }
+
+        .comparison-table tbody td {
+            padding: 16px 20px;
+            font-size: 14px;
+            color: var(--ink);
+            border-bottom: 1px solid var(--hairline-soft);
+            vertical-align: middle;
+        }
+
+        .comparison-table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: var(--surface-soft);
+        }
+
+        .comparison-table td strong {
+            color: var(--ink-deep);
+            font-weight: 600;
+        }
+
+        .org-tag-notion {
+            display: inline-block;
+            background: var(--ink-deep);
+            color: var(--on-dark);
+            font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: var(--rounded-xs);
+            font-weight: 500;
+        }
+
+        /* ========================================
+           Project Cards (alternating pastel)
+           ======================================== */
+        .project-card {
+            background: var(--canvas);
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-lg);
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .project-card .project-header {
+            padding: 28px 32px 16px;
+            border-bottom: 1px solid var(--hairline);
+            background: var(--surface-soft);
+        }
+
+        .project-card .project-header h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 8px 0 0;
+            letter-spacing: -0.01em;
+            color: var(--ink-deep);
+            line-height: 1.3;
+        }
+
+        .project-body {
+            padding: 28px 32px;
+        }
+
+        @media (max-width: 767.98px) {
+            .project-card .project-header,
+            .project-body {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .project-body ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .project-body ul li {
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        .project-body ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-body ul ul {
+            margin-top: 8px;
+        }
+
+        .project-body ul li strong {
+            color: var(--ink-deep);
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: var(--rounded-md);
+            border: 1px solid var(--hairline);
+            margin: 16px 0;
+            display: block;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 8px;
+            margin: 12px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--rounded-sm);
+            border: 1px solid var(--hairline);
+            aspect-ratio: 4 / 3;
+        }
+
+        .table-mini {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+            border: 1px solid var(--hairline);
+            border-radius: var(--rounded-md);
+            overflow: hidden;
+        }
+
+        .table-mini thead th {
+            background: var(--surface);
+            color: var(--ink-deep);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--hairline);
+        }
+
+        .table-mini tbody td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--hairline-soft);
+        }
+
+        .table-mini tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .row-highlight {
+            background: var(--tint-lavender);
+        }
+
+        .row-highlight td {
+            color: var(--brand-purple-800);
+            font-weight: 600;
+        }
+
+        /* ========================================
+           Callout
+           ======================================== */
+        .callout {
+            background: var(--tint-lavender);
+            border-radius: var(--rounded-md);
+            padding: 14px 18px;
+            margin: 12px 0;
+            color: var(--brand-purple-800);
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.55;
+        }
+        .callout::before {
+            content: "\F431";
+            font-family: "bootstrap-icons";
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .callout strong {
+            font-weight: 700;
+            color: var(--brand-purple-800);
+        }
+        .callout.rose {
+            background: var(--tint-rose);
+            color: var(--brand-pink-deep);
+        }
+        .callout.rose strong { color: var(--brand-pink-deep); }
+        .callout.rose::before { content: "\F32C"; }
+
+        .callout.mint {
+            background: var(--tint-mint);
+            color: var(--brand-green);
+        }
+        .callout.mint strong { color: var(--brand-green); }
+        .callout.mint::before { content: "\F26B"; }
+
+        .callout.peach {
+            background: var(--tint-peach);
+            color: var(--brand-orange-deep);
+        }
+        .callout.peach strong { color: var(--brand-orange-deep); }
+        .callout.peach::before { content: "\F49B"; }
+
+        /* ========================================
+           Footer
+           ======================================== */
+        .footer-region {
+            background: var(--canvas);
+            border-top: 1px solid var(--hairline);
+            padding: 64px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 991.98px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-tagline {
+            color: var(--steel);
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 280px;
+        }
+
+        .footer-col-title {
+            color: var(--ink-deep);
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+        }
+
+        .footer-link {
+            display: block;
+            color: var(--steel);
+            font-size: 14px;
+            text-decoration: none;
+            padding: 4px 0;
+        }
+
+        .footer-link:hover {
+            color: var(--ink-deep);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--hairline);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-bottom .copyright {
+            color: var(--steel);
+            font-size: 13px;
+        }
+
+        /* ========================================
+           Section: Strengths grid
+           ======================================== */
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 991.98px) {
+            .strengths-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .strengths-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Yellow-bold banner section */
+        .yellow-banner-section {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 991.98px) {
+            .yellow-banner-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Section background variants */
+        section.bg-surface {
+            background-color: var(--surface);
+        }
+
+        section.bg-surface-soft {
+            background-color: var(--surface-soft);
+        }
+
+        /* Anchor target pulse */
+        :target.card-base,
+        :target.project-card,
+        :target.cohort-card {
+            animation: targetPulse 1.6s ease-out;
+        }
+
+        @keyframes targetPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(80, 70, 229, 0.45);
+            }
+            70% {
+                box-shadow: 0 0 0 14px rgba(80, 70, 229, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(80, 70, 229, 0);
+            }
+        }
+
+        /* Mobile nav drawer */
+        .mobile-drawer {
+            display: none;
+            position: fixed;
+            top: 64px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--canvas);
+            z-index: 999;
+            padding: 24px 20px;
+            border-top: 1px solid var(--hairline);
+            overflow-y: auto;
+        }
+
+        .mobile-drawer.open {
+            display: block;
+        }
+
+        .mobile-drawer a {
+            display: block;
+            padding: 14px 12px;
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            border-bottom: 1px solid var(--hairline-soft);
+        }
+
+        .mobile-drawer .btn-primary-notion {
+            margin-top: 16px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ========================================
+           Print
+           ======================================== */
+        @media print {
+            .top-nav,
+            .promo-banner,
+            .footer-region {
+                display: none !important;
+            }
+            body {
+                background: #ffffff;
+            }
+            .hero-band {
+                background: #ffffff;
+                color: var(--ink);
+            }
+            .hero-title,
+            .hero-subtitle {
+                color: var(--ink) !important;
+            }
+            .workspace-mockup {
+                box-shadow: none;
+                transform: none;
+                margin-bottom: 24px;
+            }
+            section.section {
+                padding: 24px 0;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <span class="promo-badge">NEW</span>
+        2026년 1분기 — <a href="#teaching">모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 5기</a> 강의 시작
+    </div>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="container-notion top-nav-inner">
+            <a class="nav-brand" href="#top">
+                <span class="nav-brand-mark">박</span>
+                <span class="nav-brand-text">박병준 · AI &amp; IT Consultant</span>
+            </a>
+            <div class="nav-links">
+                <a class="nav-link-item" href="#about">소개</a>
+                <a class="nav-link-item" href="#strengths">핵심 역량</a>
+                <a class="nav-link-item" href="#kdt-graduation">KDT 수료</a>
+                <a class="nav-link-item" href="#teaching">강의</a>
+                <a class="nav-link-item" href="#career">경력</a>
+                <a class="nav-link-item" href="#projects">프로젝트</a>
+            </div>
+            <div class="nav-actions">
+                <a class="btn-secondary-notion" href="mailto:prfsr.limitless@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                    Contact
+                </a>
+                <a class="btn-primary-notion" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">
+                    LinkedIn 연결
+                </a>
+                <button class="nav-mobile-toggle" type="button" id="mobileToggle" aria-label="메뉴 열기">
+                    <i class="bi bi-list" style="font-size: 22px;"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#about">소개</a>
+        <a href="#strengths">핵심 역량</a>
+        <a href="#kdt-graduation">KDT 수료 실적</a>
+        <a href="#teaching">강의 경력</a>
+        <a href="#career">현업 경력</a>
+        <a href="#projects">주요 프로젝트</a>
+        <a class="btn-primary-notion" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">
+            LinkedIn 연결
+        </a>
+    </div>
+
+    <!-- ========================================
+         Hero Band (Deep Navy with Workspace Mockup)
+         ======================================== -->
+    <header id="top" class="hero-band">
+        <!-- Sticky-note dots scattered around hero -->
+        <div class="hero-dots" aria-hidden="true">
+            <span class="hero-dot peach" style="top: 12%; left: 8%;"></span>
+            <span class="hero-dot lg pink" style="top: 22%; left: 88%;"></span>
+            <span class="hero-dot sm purple" style="top: 38%; left: 4%;"></span>
+            <span class="hero-dot yellow" style="top: 6%; left: 78%;"></span>
+            <span class="hero-dot teal" style="top: 30%; left: 14%;"></span>
+            <span class="hero-dot lg green" style="top: 48%; left: 92%;"></span>
+            <span class="hero-dot purple" style="top: 56%; left: 6%;"></span>
+            <span class="hero-dot pink" style="top: 18%; left: 30%;"></span>
+            <span class="hero-dot sm yellow" style="top: 8%; left: 50%;"></span>
+            <span class="hero-dot peach" style="top: 60%; left: 70%;"></span>
+            <span class="hero-dot sm teal" style="top: 14%; left: 96%;"></span>
+            <span class="hero-dot green" style="top: 4%; left: 18%;"></span>
+            <!-- Mesh wires (decorative circles) -->
+            <span class="hero-wire" style="width: 320px; height: 320px; top: -120px; left: -100px;"></span>
+            <span class="hero-wire" style="width: 480px; height: 480px; top: -180px; right: -160px; left: auto;"></span>
+        </div>
+
+        <div class="container-notion">
+            <div class="hero-content">
+                <span class="hero-eyebrow">
+                    <span class="dot"></span>
+                    AI &amp; IT Consultant · Tech Educator
+                </span>
+                <h1 class="t-hero-display hero-title">
+                    Meet your<br />on-demand AI&nbsp;mentor.
+                </h1>
+                <p class="hero-subtitle">
+                    AI · 빅데이터 · 클라우드 생태계를 <strong style="color:#fff;">뉴스 속도</strong>로
+                    교육과 엔지니어링에 적용합니다.<br />
+                    KDT 장기과정 2기수 연속 100% 수료, 만족도 100% 추천을 입증한 컨설턴트.
+                </p>
+                <div class="hero-cta-row">
+                    <a href="#strengths" class="btn-primary-notion">
+                        핵심 역량 살펴보기
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="mailto:prfsr.limitless@gmail.com" class="btn-secondary-on-dark">
+                        강의 / 컨설팅 의뢰
+                    </a>
+                </div>
+            </div>
+
+            <!-- Workspace Mockup Card -->
+            <div class="workspace-mockup">
+                <div class="mockup-titlebar">
+                    <span class="dot-os red"></span>
+                    <span class="dot-os yellow"></span>
+                    <span class="dot-os green"></span>
+                    <span class="breadcrumb-mock">
+                        Workspace / Profile / 박병준
+                    </span>
+                </div>
+                <div class="mockup-body">
+                    <aside class="mockup-sidebar">
+                        <div class="side-section">PROFILE</div>
+                        <div class="side-item active">
+                            <i class="bi bi-person-circle"></i>
+                            <span>Overview</span>
+                        </div>
+                        <div class="side-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <span>교육 &amp; 자격</span>
+                        </div>
+                        <div class="side-item">
+                            <i class="bi bi-stars"></i>
+                            <span>핵심 역량</span>
+                        </div>
+                        <div class="side-item">
+                            <i class="bi bi-trophy"></i>
+                            <span>KDT 수료</span>
+                        </div>
+                        <div class="side-item">
+                            <i class="bi bi-easel"></i>
+                            <span>강의</span>
+                        </div>
+                        <div class="side-item">
+                            <i class="bi bi-briefcase"></i>
+                            <span>현업 경력</span>
+                        </div>
+                        <div class="side-item">
+                            <i class="bi bi-folder2"></i>
+                            <span>프로젝트</span>
+                        </div>
+                    </aside>
+                    <div class="mockup-main">
+                        <div class="mockup-main-header">
+                            <img
+                                src="assets/profile-byungjun-park.png"
+                                alt="박병준 프로필 사진"
+                                class="mockup-avatar"
+                            />
+                            <div>
+                                <h2 class="mockup-main-title">박병준 <span style="font-weight:500;color:var(--steel);font-size:18px;">Park Byungjun</span></h2>
+                                <p class="mockup-main-sub">AI &amp; IT 컨설턴트 · 강사 · 백엔드 엔지니어</p>
+                            </div>
+                        </div>
+                        <div class="mockup-props">
+                            <span class="prop-chip lavender">AI Education</span>
+                            <span class="prop-chip mint">Cloud Native</span>
+                            <span class="prop-chip peach">Backend</span>
+                            <span class="prop-chip sky">MSA</span>
+                            <span class="prop-chip yellow">Kafka</span>
+                            <span class="prop-chip rose">Vibe Coding</span>
+                        </div>
+                        <div class="mockup-props-meta">
+                            <div class="prop-row">
+                                <span class="prop-key"><i class="bi bi-envelope"></i> 이메일</span>
+                                <span class="prop-val"><a href="mailto:prfsr.limitless@gmail.com">prfsr.limitless@gmail.com</a></span>
+                            </div>
+                            <div class="prop-row">
+                                <span class="prop-key"><i class="bi bi-telephone"></i> 연락처</span>
+                            </div>
+                            <div class="prop-row">
+                                <span class="prop-key"><i class="bi bi-linkedin"></i> LinkedIn</span>
+                                <span class="prop-val"><a href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">in/pbjworking</a></span>
+                            </div>
+                            <div class="prop-row">
+                                <span class="prop-key"><i class="bi bi-geo-alt"></i> 활동 지역</span>
+                                <span class="prop-val">Seoul · Global</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Spacer below mockup card -->
+        <div style="height: 100px;"></div>
+    </header>
+
+    <!-- ========================================
+         About: Education & Certificates
+         ======================================== -->
+    <section id="about" class="section">
+        <div class="container-notion">
+            <div class="section-header">
+                <span class="section-eyebrow-tag">About</span>
+                <h2 class="t-h1">교육 사항 &amp; 보유 자격</h2>
+                <p>학문적 기반과 산업 자격이 어떻게 AI · 클라우드 · 백엔드 영역에 융합되어 있는지 보여드립니다.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card-base">
+                        <h3 class="card-h">
+                            <span class="icon-wrap lavender"><i class="bi bi-mortarboard-fill"></i></span>
+                            교육 사항
+                        </h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="period">2025.08 — 현재</span>
+                                <span class="title">AI 빅데이터 MS &amp; MBA</span>
+                                <span class="desc">aSSIST · SDG MS (Switzerland, Geneva)</span>
+                            </li>
+                            <li>
+                                <span class="period">2023.08 — 현재</span>
+                                <span class="title">컴퓨터과학 BA</span>
+                                <span class="desc">한국방송통신대학교</span>
+                            </li>
+                            <li>
+                                <span class="period">— 2016.02</span>
+                                <span class="title">정치외교학 · 신문방송학 BA</span>
+                                <span class="desc">서강대학교</span>
+                            </li>
+                            <li>
+                                <span class="period">— 2008.02</span>
+                                <span class="title">중국어 전공</span>
+                                <span class="desc">서울외국어고등학교</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card-base">
+                        <h3 class="card-h">
+                            <span class="icon-wrap mint"><i class="bi bi-patch-check-fill"></i></span>
+                            자격 사항
+                        </h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="period">2024.06</span>
+                                <span class="title">AWS Certified Solutions Architect Associate</span>
+                                <span class="badge-issuer">Amazon Web Services</span>
+                            </li>
+                            <li>
+                                <span class="period">2023.06</span>
+                                <span class="title">AWS Certified Cloud Practitioner</span>
+                                <span class="badge-issuer">Amazon Web Services</span>
+                            </li>
+                            <li>
+                                <span class="period">2021.06</span>
+                                <span class="title">정보처리기사</span>
+                                <span class="badge-issuer">한국산업인력공단</span>
+                            </li>
+                            <li>
+                                <span class="period">2017.07</span>
+                                <span class="title">국가공인 SQL 개발자</span>
+                                <span class="badge-issuer">한국데이터진흥원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Strengths (Pastel Feature Cards)
+         ======================================== -->
+    <section id="strengths" class="section bg-surface-soft">
+        <div class="container-notion">
+            <div class="section-header center">
+                <span class="section-eyebrow-tag peach">Core Strengths</span>
+                <h2 class="t-h1">차별화된 3가지 핵심 역량</h2>
+                <p>현장의 변화 속도를 곧바로 교육과 엔지니어링에 반영합니다.</p>
+            </div>
+
+            <div class="strengths-grid">
+                <!-- Card 1: Lavender (AI Trend) -->
+                <div class="card-feature lavender">
+                    <div class="card-icon-mark">
+                        <i class="bi bi-newspaper"></i>
+                    </div>
+                    <h3 class="card-title">
+                        뉴스 속도로 업데이트되는 최신 기술 교육
+                    </h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="lead">AI · 빅데이터 · 클라우드 최신 도구의 즉시 도입</span>
+                            <span class="sub">
+                                진행 중인 교육과정에 트렌드를 곧바로 반영하는
+                                <strong>뉴스 레벨의 최신 교육</strong>
+                            </span>
+                            <div class="stack-chips">
+                                <span class="stack-chip">Cursor</span>
+                                <span class="stack-chip">Claude Code</span>
+                                <span class="stack-chip">Antigravity</span>
+                                <span class="stack-chip">Agent Skills</span>
+                                <span class="stack-chip">Multi-Agent</span>
+                                <span class="stack-chip">OpenCode</span>
+                                <span class="stack-chip">OMO</span>
+                                <span class="stack-chip">OpenClaw</span>
+                                <span class="stack-chip">KB</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lead">교육 현장 ↔ 기술 실무의 가교 역할</span>
+                            <span class="sub">
+                                현업 엔지니어링 솔루션을 그대로 다루는 실무형 교육자료와 현장 니즈의 실시간 반영
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Rose (Teaching) -->
+                <div class="card-feature rose">
+                    <div class="card-icon-mark">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3 class="card-title">
+                        수료율 100%의 학습자 맞춤 · 융합 교육
+                    </h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="lead">복잡한 개념의 명확한 전달과 맞춤형 성장 경로 설계</span>
+                            <a href="#kdt-graduation" class="sub sub-link">
+                                2024 &amp; 2025년 KDT 장기과정 <strong>2기수 연속 100% 수료</strong>
+                                <i class="bi bi-arrow-down-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="lead">실습 중심 기획 · AI · 클라우드 · 백엔드 교육 직접 설계</span>
+                            <a href="#satisfaction-evidence" class="sub sub-link">
+                                기업 IT 실무자 교육 — <strong>최고 수준의 만족도 달성</strong>
+                                <i class="bi bi-arrow-down-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="lead">K-12 · 대학생 · 현직 전문가 전 수준 멘토링</span>
+                            <a href="#project-overseas" class="sub sub-link">
+                                미국 인디애나주 초중고 · 퍼듀대학교 · 현직자 기술교육
+                                <i class="bi bi-arrow-down-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Mint (Engineering) -->
+                <div class="card-feature mint">
+                    <div class="card-icon-mark">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3 class="card-title">
+                        장애율 0%의 확장성·안정성 엔지니어링
+                    </h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="lead">확장 가능한 시스템 설계 · 구현 실무 경험</span>
+                            <span class="sub">
+                                <strong>DAU 300만+</strong> 코인거래소 실시간 알림 시스템 &amp; 광고 시스템 대량 트래픽 제어
+                            </span>
+                        </li>
+                        <li>
+                            <span class="lead">클라우드 배포 · 운영 주도</span>
+                            <span class="sub">
+                                (주)키즈노트 광고시스템 리뉴얼 런칭 후 <strong>2년간 개발 장애율 0%</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="lead">데이터 파이프라인 · 분산 아키텍처 설계</span>
+                            <span class="sub">
+                                MSA 시스템 설계 · 구축, Kafka 기반 이벤트 스트리밍 및 재직자 직무 교육
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Yellow-bold banner section + evidence card -->
+            <div class="yellow-banner-section">
+                <div class="card-feature yellow-bold" id="satisfaction-evidence">
+                    <div class="card-icon-mark">
+                        <i class="bi bi-bar-chart-line-fill"></i>
+                    </div>
+                    <h3 class="card-title">
+                        Ask your on-demand AI educator.<br />
+                        <span style="font-weight:500;font-size:20px;color:var(--charcoal);">기업 IT 실무자 교육의 현장 니즈를 완벽히 반영한 특강.</span>
+                    </h3>
+                    <p class="t-body" style="margin-bottom: 20px; color: var(--charcoal);">
+                        하나금융그룹 · KT · LG헬로비전 · KOICA · 모두의연구소 — 기업 현장의 IT 실무자 대상 강의에서 매번 <strong>최고 수준의 만족도</strong>를 달성합니다.
+                    </p>
+                    <img
+                        src="assets/enterprise-it-training-satisfaction.png"
+                        alt="기업 IT 실무자 교육 만족도 그래프"
+                        style="width:100%;border-radius:var(--rounded-md);border:1px solid rgba(15,15,15,0.08);display:block;"
+                    />
+                </div>
+                <div class="card-feature sky">
+                    <div class="card-icon-mark">
+                        <i class="bi bi-chat-square-quote-fill"></i>
+                    </div>
+                    <h3 class="card-title">
+                        LinkedIn 동료 추천사
+                    </h3>
+                    <p class="t-body-sm" style="color: var(--slate); margin-bottom: 16px;">
+                        From Kakao Kidsnote Team (2024)
+                    </p>
+                    <img
+                        src="assets/linkedin-recommendation-kakao-kidsnote.png"
+                        alt="카카오 키즈노트 동료 LinkedIn 추천사"
+                        style="width:100%;border-radius:var(--rounded-md);border:1px solid rgba(15,15,15,0.08);display:block;"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         KDT Graduation Track Record
+         ======================================== -->
+    <section id="kdt-graduation" class="section">
+        <div class="container-notion">
+            <div class="section-header center">
+                <span class="section-eyebrow-tag mint">Track Record</span>
+                <h2 class="t-h1">2024 &amp; 2025년 KDT 장기과정 2기수 연속 100% 수료</h2>
+                <p>두 기수, 1,000시간 장기과정, 두 번의 완주 — 우연이 아닙니다.</p>
+            </div>
+
+            <!-- Stat strip -->
+            <div class="stat-strip">
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">2기수 연속 수료율</div>
+                    <div class="stat-sub">2024년 · 2025년 삼육대학교 KDT</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">48 / 48</div>
+                    <div class="stat-label">총 수료생 (29명 + 19명)</div>
+                    <div class="stat-sub">전원 1,000시간 장기과정 수료</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">교육과정 만족도 추천</div>
+                    <div class="stat-sub">만족도 조사 제출 인원 전원 추천</div>
+                </div>
+            </div>
+
+            <!-- 2024 cohort -->
+            <article class="cohort-card">
+                <div class="cohort-header">
+                    <h3>
+                        <i class="bi bi-mortarboard-fill"></i>
+                        2024년 삼육대학교 KDT 1,000시간 장기과정
+                    </h3>
+                    <div class="cohort-meta">
+                        <span class="badge-notion">
+                            <i class="bi bi-people-fill"></i>
+                            29명 / 29명 수료 100%
+                        </span>
+                        <span class="badge-notion green">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            추천 100%
+                        </span>
+                    </div>
+                </div>
+                <div class="cohort-body">
+                    <details open class="evidence-details">
+                        <summary>
+                            <i class="bi bi-bar-chart-fill"></i>만족도 조사
+                        </summary>
+                        <div class="evidence-body">
+                            <img
+                                src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-satisfaction-survey.png"
+                                alt="2024년 KDT 만족도 조사 결과"
+                            />
+                        </div>
+                    </details>
+                    <details open class="evidence-details">
+                        <summary>
+                            <i class="bi bi-chat-square-quote-fill"></i>수강 후기
+                        </summary>
+                        <div class="evidence-body">
+                            <img
+                                src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-student-reviews.png"
+                                alt="2024년 KDT 수강생 후기"
+                            />
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <!-- 2025 cohort -->
+            <article class="cohort-card">
+                <div class="cohort-header">
+                    <h3>
+                        <i class="bi bi-mortarboard-fill"></i>
+                        2025년 삼육대학교 KDT 1,000시간 장기과정
+                    </h3>
+                    <div class="cohort-meta">
+                        <span class="badge-notion">
+                            <i class="bi bi-people-fill"></i>
+                            19명 / 19명 수료 100%
+                        </span>
+                        <span class="badge-notion green">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            추천 100%
+                        </span>
+                    </div>
+                </div>
+                <div class="cohort-body">
+                    <details open class="evidence-details">
+                        <summary>
+                            <i class="bi bi-bar-chart-fill"></i>만족도 조사
+                        </summary>
+                        <div class="evidence-body">
+                            <img
+                                src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-satisfaction-survey.png"
+                                alt="2025년 KDT 만족도 조사 결과"
+                            />
+                        </div>
+                    </details>
+                    <details open class="evidence-details">
+                        <summary>
+                            <i class="bi bi-chat-square-quote-fill"></i>수강 후기
+                        </summary>
+                        <div class="evidence-body">
+                            <img
+                                src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-student-reviews.png"
+                                alt="2025년 KDT 수강생 후기"
+                            />
+                        </div>
+                    </details>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Teaching Career — Comparison Table
+         ======================================== -->
+    <section id="teaching" class="section bg-surface">
+        <div class="container-notion">
+            <div class="section-header">
+                <span class="section-eyebrow-tag sky">Teaching</span>
+                <h2 class="t-h1">강의 및 교육 경력</h2>
+                <p>2018년부터 누적된 강의 트랙 — 대기업 재직자 교육부터 KDT 장기과정, 국제기구 협력교육까지.</p>
+            </div>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>강의 및 교육 활동</th>
+                            <th style="width: 200px">기간</th>
+                            <th style="width: 180px">운영기관</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 5기</td>
+                            <td>2026.03 ~ 2026.06</td>
+                            <td><span class="badge-notion tag-purple">모두의연구소</span></td>
+                        </tr>
+                        <tr>
+                            <td>모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 2기</td>
+                            <td>2025.10 ~ 2026.01</td>
+                            <td><span class="badge-notion tag-purple">모두의연구소</span></td>
+                        </tr>
+                        <tr>
+                            <td>삼육대학교 KDT 산학협력 학점 연계과정 (AI 활용 클라우드 네이티브 풀스택 엔지니어 양성과정)</td>
+                            <td>2025.01 ~ 2025.09</td>
+                            <td><span class="badge-notion tag-orange">한국정보교육원</span></td>
+                        </tr>
+                        <tr>
+                            <td>구름 프로펙트 클라우드과정 특강 (체계적 프로젝트 문서화 &amp; Kafka 핵심 개념 실무 적용)</td>
+                            <td>2025.06</td>
+                            <td><span class="badge-notion tag-green">구름EDU</span></td>
+                        </tr>
+                        <tr>
+                            <td>스리랑카 커리어 플랫폼 IT 운영자 국내 초청교육 (웹 개발 최신 트렌드 &amp; 생성형 AI 특강)</td>
+                            <td>2025.06</td>
+                            <td><span class="badge-notion tag-purple">KOICA</span></td>
+                        </tr>
+                        <tr>
+                            <td>하나금융그룹 현직자 교육 (리눅스 중급 심화 및 MSA 웹 서버 구축 및 운영 실무 특강)</td>
+                            <td>2025.05</td>
+                            <td><span class="badge-notion tag-orange">하나금융그룹</span></td>
+                        </tr>
+                        <tr>
+                            <td>하나금융그룹 현직자 교육 (클라우드 기반 MSA 서비스 설계 &amp; Kubernetes (EKS) 활용 운영 자동화)</td>
+                            <td>2024.12</td>
+                            <td><span class="badge-notion tag-orange">하나금융그룹</span></td>
+                        </tr>
+                        <tr>
+                            <td>삼육대학교 KDT (클라우드 기반 풀스택 Java Spring Boot &amp; React Web 엔지니어 양성과정)</td>
+                            <td>2024.01 ~ 2024.09</td>
+                            <td><span class="badge-notion tag-orange">한국정보교육원</span></td>
+                        </tr>
+                        <tr>
+                            <td>LG헬로비전 DX DATA SCHOOL 엔지니어 양성과정 프로젝트 멘토링</td>
+                            <td>2024.05 ~ 2024.06</td>
+                            <td><span class="badge-notion tag-green">한국전파진흥협회</span></td>
+                        </tr>
+                        <tr>
+                            <td>KT 재직자 교육 (AWS 기반 Kafka 데이터 스트리밍 &amp; Redis Cache 클러스터 구축 연동 과정)</td>
+                            <td>2024.05</td>
+                            <td><span class="badge-notion tag-purple">삼성 멀티캠퍼스</span></td>
+                        </tr>
+                        <tr>
+                            <td>메이커교육 분야 글로벌 서비스 기획 및 해외 진출기업 컨설팅</td>
+                            <td>2022.11 ~ 2023.12</td>
+                            <td><span class="badge-notion tag-green">메이커스월드</span></td>
+                        </tr>
+                        <tr>
+                            <td>동국대, 건국대, 대학연합 백엔드 개발자 진로 특강</td>
+                            <td>2022.08 ~ 2022.11</td>
+                            <td><span class="badge-notion tag-green">엘리트코리아</span></td>
+                        </tr>
+                        <tr>
+                            <td>내일배움캠프 클라우드 웹 개발자 양성과정 프로젝트 및 진로 멘토링</td>
+                            <td>2021.12 ~ 2022.03</td>
+                            <td><span class="badge-notion tag-orange">스파르타 코딩</span></td>
+                        </tr>
+                        <tr>
+                            <td>기아자동차 노사공동교육 (4차산업혁명 트렌드와 SW/HW 융합기술 특강)</td>
+                            <td>2020.06 ~ 2021.12</td>
+                            <td><span class="badge-notion tag-orange">기아자동차</span></td>
+                        </tr>
+                        <tr>
+                            <td>모듈형 로봇프로그래밍 교육 (미국, 중동)</td>
+                            <td>2018.09 ~ 2019.12</td>
+                            <td><span class="badge-notion tag-green">럭스로보</span></td>
+                        </tr>
+                        <tr>
+                            <td>임베디드SW 엔지니어 양성과정 (아두이노)</td>
+                            <td>2018.07 ~ 2018.09</td>
+                            <td><span class="badge-notion tag-purple">광운대학교</span></td>
+                        </tr>
+                        <tr>
+                            <td>파이썬 웹 프로그래밍 과정 (Django)</td>
+                            <td>2018.04 ~ 2018.05</td>
+                            <td><span class="badge-notion tag-orange">KG IT뱅크</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Career — Comparison Table
+         ======================================== -->
+    <section id="career" class="section">
+        <div class="container-notion">
+            <div class="section-header">
+                <span class="section-eyebrow-tag rose">Career</span>
+                <h2 class="t-h1">현업 경력</h2>
+                <p>국책기관 · 글로벌 사업개발 · 백엔드 엔지니어링 · 기술교육 — 다각도의 IT 산업 이력.</p>
+            </div>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 22%">회사명</th>
+                            <th style="width: 22%">기간</th>
+                            <th style="width: 26%">직위 / 직책</th>
+                            <th>직무</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>한국정보교육원</strong></td>
+                            <td>2024.01 ~ 현재</td>
+                            <td>기술 교육 컨설턴트 및 강사</td>
+                            <td>교육과정 설계 컨설팅 및 기술교육</td>
+                        </tr>
+                        <tr>
+                            <td><strong>데이터스토리 허브</strong></td>
+                            <td>2024.02 ~ 2025.12</td>
+                            <td>(사외) 기술 컨설턴트 및 강사</td>
+                            <td>기업 IT 컨설팅 및 기술교육</td>
+                        </tr>
+                        <tr>
+                            <td><strong>키즈노트</strong></td>
+                            <td>2021.09 ~ 2024.01</td>
+                            <td>연구원</td>
+                            <td>광고 시스템 백엔드 엔지니어</td>
+                        </tr>
+                        <tr>
+                            <td><strong>엑시아소프트</strong></td>
+                            <td>2021.03 ~ 2021.09</td>
+                            <td>연구원</td>
+                            <td>코인 거래소 백엔드 엔지니어</td>
+                        </tr>
+                        <tr>
+                            <td><strong>메이커스월드</strong></td>
+                            <td>2020.09 ~ 2021.03</td>
+                            <td>컨설턴트 및 강사</td>
+                            <td>메이커교육 해외시장개척 지원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>한국생산성본부</strong></td>
+                            <td>2020.02 ~ 2020.09</td>
+                            <td>연구원</td>
+                            <td>SW기업 해외시장개척 지원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>럭스로보</strong></td>
+                            <td>2018.06 ~ 2019.12</td>
+                            <td>팀장</td>
+                            <td>모듈형 로봇 글로벌 사업 개발</td>
+                        </tr>
+                        <tr>
+                            <td><strong>한국소프트웨어산업협회</strong></td>
+                            <td>2016.11 ~ 2018.06</td>
+                            <td>선임연구원</td>
+                            <td>SW 전문가 자격평가시험 개발</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Projects
+         ======================================== -->
+    <section id="projects" class="section bg-surface-soft">
+        <div class="container-notion">
+            <div class="section-header">
+                <span class="section-eyebrow-tag yellow">Projects</span>
+                <h2 class="t-h1">주요 프로젝트 이력</h2>
+                <p>기업 · 국제기구 · 연구기관과의 협업 프로젝트들. 콘텐츠 설계부터 엔지니어링 솔루션 출시까지.</p>
+            </div>
+
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">Koica &amp; Ubion</span>
+                    <h3>스리랑카 방문단 국내 연수 AI Workshop</h3>
+                </div>
+                <div class="project-body">
+                    <img
+                        src="assets/band-photo-koica-srilanka-workshop.jpeg"
+                        alt="스리랑카 방문단 국내 연수 AI Workshop"
+                        class="project-image"
+                    />
+                    <table class="table-mini">
+                        <thead>
+                            <tr>
+                                <th style="width: 110px">일차</th>
+                                <th>주제</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1일차</td>
+                                <td>IT 플랫폼 기술 트렌드 (MSA, 컨테이너 가상화, 클라우드 네이티브)</td>
+                            </tr>
+                            <tr>
+                                <td>2일차</td>
+                                <td>AWS 클라우드 서비스 실습</td>
+                            </tr>
+                            <tr class="row-highlight">
+                                <td><strong>3~5일차</strong></td>
+                                <td><strong>AI 산업 및 기술 트렌드 및 생성형 AI 활용 워크샵</strong></td>
+                            </tr>
+                            <tr>
+                                <td>6일차</td>
+                                <td>ITSQF 소개 및 IT 역량 기반 교육 플랫폼 설계</td>
+                            </tr>
+                            <tr>
+                                <td>7~8일차</td>
+                                <td>플랫폼 운영을 위한 인프라 관리 자동화 (AWS - EKS)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li>머신러닝에서 LLM까지 핵심 개념에 대한 시각적 &amp; 심층적 이해</li>
+                        <li>LLM 관련 기술 소개를 통한 패러다임 학습 및 직관적인 핸즈온 실습</li>
+                        <li>AI 활용 역량 종합 활용을 통한 본격적인 Application 개발 워크샵</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">하나은행 DT</span>
+                    <h3>하나금융그룹 재직자 대상 클라우드 네이티브 DevOps + 리눅스 심화 특강</h3>
+                </div>
+                <div class="project-body">
+                    <img
+                        src="assets/band-photo-hana-linux-training.jpeg"
+                        alt="하나금융그룹 리눅스 심화 교육"
+                        class="project-image"
+                    />
+                    <ul>
+                        <li>
+                            <strong>EKS 인프라 활용 MSA 기반 솔루션 배포 및 인프라 자동화</strong>
+                            <ul>
+                                <li>AWS 서비스 기초 및 심화 이해와 실전 프로젝트</li>
+                                <li>MSA 시스템 기본 이해와 온프레미스, 클라우드 네이티브 실습</li>
+                                <li>AWS K8s 관리형 서비스 EKS 활용 기초</li>
+                                <li>EKS 기반 MSA 아키텍처 솔루션 배포</li>
+                                <li>EKS에 GitOps 및 무중단 배포 전략을 적용한 CI/CD 운영 자동화</li>
+                                <li>AWS 관리형 서비스와 Prometheus &amp; Grafana 모니터링, 알림 결합</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>리눅스 심화과정 — Rocky 리눅스 기반의 네트워크와 보안, 웹 서비스 배포</strong>
+                            <ul>
+                                <li>구체적인 물리적 컴퓨터 장비 레벨에서 발생하는 인프라 관리 기법과 웹 서비스 운영</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>금융 엔지니어링에 대한 미래 기술 인사이트 질문 답변 세션</strong>
+                            <ul>
+                                <li>DevOps와 Enterprise Architecture 기술의 AI 결합 고도화 트렌드 토론</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">카카오 키즈노트</span>
+                    <h3>클라우드 네이티브 MSA 광고 서비스 책임 개발</h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            광고집행 백엔드 서버 리뉴얼 런칭 및 유지보수,
+                            <strong style="color: var(--primary);">광고 매출 증대를 위한 ML 적용 송출 로직 고도화 개발</strong>
+                            <img
+                                src="assets/kakao-kidsnote-ad-revenue-chart-source.png"
+                                alt="키즈노트 광고 서비스 개발 자료"
+                                class="project-image"
+                            />
+                            <div class="callout rose">
+                                <span>재직 중 2년간 MSA 광고 서비스 백엔드 단독 책임개발, 해당 기간 중 <strong>광고 매출 2배 이상 성장</strong></span>
+                            </div>
+                        </li>
+                        <li>
+                            카카오 클라우드 인프라 활용 서비스 개발, 배포 및 모니터링, 분석계 구축 참여 등 전체 프로세스 수행
+                            <div style="margin-top: 6px; color: var(--steel); font-size: 13px;">
+                                * 데이터 파이프라인 구축과 광고 서비스 성과 분석 및 타게팅 구조 수립을 위한 기반 분석 프로젝트 참여
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">엑시아소프트</span>
+                    <h3>AWS 기반 초고속 유저 알림 서비스 개발 &amp; 백오피스 대시보드 / 대용량 데이터 추출 개발</h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            암호화폐 거래소 "코인빗" 초고속 거래 체결 서버 유지관리 및 푸시 알림 시스템 개발
+                            <div class="callout rose">
+                                <span>유저별 관심 자산 가격 모니터링 알림 시스템 <strong>분당 300만 건 발송</strong> 가능한 초고속 처리 시스템 구축</span>
+                            </div>
+                        </li>
+                        <li>
+                            AWS 클라우드 서비스를 활용한 백엔드 API 개발 및 데이터 관리 프로세스 개발
+                            <div style="margin-top: 6px; color: var(--steel); font-size: 13px;">
+                                * 가상자산 거래소 대상의 강화된 정보보호 및 개인정보보호 관리체계(ISMS-P) 백엔드 인증 개발 참여
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">한국직업능력연구원</span>
+                    <h3>중국 AI 교육 고도화 사례 벤치마킹 연구</h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>"중국의 대학 인공지능 교육과 메이커(創客) 창업 정책 연구 (2021)" 참여</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">한국생산성본부</span>
+                    <h3>국내 SW 고성장 기업 글로벌 시장 개척 컨설팅</h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            "SW 고성장클럽 200" 소프트웨어기업 글로벌 진출 지원사업 주관 (Purdue 대학교, Plug&amp;Play 협력 지원 등)
+                            <img
+                                src="assets/band-photo-kpc-sw-global.jpg"
+                                alt="SW 고성장클럽 200 글로벌 진출 지원사업"
+                                class="project-image"
+                            />
+                        </li>
+                        <li>"글로벌 에듀테크센터 구축" 신남방 교육사업 개발 (말레이시아, 캄보디아 등)</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">한밭대학교</span>
+                    <h3>산학협력단 SW &amp; HW 융합 메이커 교육 방법론 연구</h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>"대학주도형 창의융합 미래인재 양성 교육과정 혁신 연구" 수행</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article id="project-overseas" class="project-card">
+                <div class="project-header">
+                    <span class="org-tag-notion">럭스로보</span>
+                    <h3>미국 · 중동 · 중국 시장 진출 및 파트너십 · 기술교류 수행</h3>
+                </div>
+                <div class="project-body">
+                    <ul>
+                        <li>
+                            <strong>미국 파트너사 교육사업 개발 협력 (USRA 연구재단, SDI Innovation 등)</strong>
+                            <ul>
+                                <li>
+                                    보도자료:
+                                    <a href="https://www.sciencetimes.co.kr/nscvrg/view/menu/255?searchCategory=226&nscvrgSn=188400" target="_blank" rel="noopener">사이언스타임스 — 로봇키즈의 열정으로 혁신 일궈내</a>,
+                                    <a href="https://www.koreadaily.com/article/7769750" target="_blank" rel="noopener">미주중앙일보 — "로봇은 시작, 미래인재 양성이 목표"</a>
+                                </li>
+                            </ul>
+                            <div class="gallery">
+                                <img src="assets/luxrobo-us-partnership-01.jpg" alt="미국 파트너사 교육사업 협력 1" />
+                                <img src="assets/luxrobo-us-partnership-02.jpg" alt="미국 파트너사 교육사업 협력 2" />
+                            </div>
+                        </li>
+                        <li>
+                            <strong>중동 지역 교육사업 개발 (아랍에미리트, 오만, 바레인, 말레이시아 등)</strong>
+                            <div class="gallery">
+                                <img src="assets/luxrobo-middle-east-edu-01.png" alt="중동 교육사업 1" />
+                                <img src="assets/luxrobo-middle-east-edu-02.png" alt="중동 교육사업 2" />
+                                <img src="assets/luxrobo-middle-east-edu-03.png" alt="중동 교육사업 3" />
+                            </div>
+                        </li>
+                        <li>
+                            <strong>아두이노 제품 및 교육전략 고도화 기술협력 수행</strong>
+                            (엔지니어 간 교류, 로마 Maker Fair, 상호 방문미팅 등)
+                            <div class="gallery">
+                                <img src="assets/luxrobo-arduino-techexchange-01.png" alt="아두이노 기술협력 1" />
+                                <img src="assets/luxrobo-arduino-techexchange-02.png" alt="아두이노 기술협력 2" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA Banner (Light)
+         ======================================== -->
+    <section class="section" style="padding-bottom: 96px;">
+        <div class="container-notion">
+            <div style="background: var(--surface); border-radius: var(--rounded-lg); padding: 64px 48px; text-align: center;">
+                <h2 class="t-h2" style="margin: 0 0 16px;">강의 · 컨설팅 의뢰는 언제든 환영합니다.</h2>
+                <p class="t-subtitle" style="color: var(--slate); max-width: 560px; margin: 0 auto 32px;">
+                    기업 IT 실무자 교육, 장기과정 강의, 클라우드 아키텍처 설계 컨설팅까지 — 현장의 변화 속도에 맞춰 함께 일합니다.
+                </p>
+                <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+                    <a class="btn-primary-notion" href="mailto:prfsr.limitless@gmail.com">
+                        이메일로 의뢰하기
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a class="btn-secondary-notion" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">
+                        LinkedIn 프로필
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="footer-region">
+        <div class="container-notion">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <span class="nav-brand-mark">박</span>
+                        <span class="nav-brand-text">박병준 · AI &amp; IT Consultant</span>
+                    </div>
+                    <p class="footer-tagline">
+                        AI · 빅데이터 · 클라우드 생태계를 뉴스 속도로 교육과 엔지니어링에 적용합니다.
+                    </p>
+                </div>
+                <div>
+                    <div class="footer-col-title">Profile</div>
+                    <a class="footer-link" href="#about">소개</a>
+                    <a class="footer-link" href="#strengths">핵심 역량</a>
+                    <a class="footer-link" href="#kdt-graduation">KDT 수료</a>
+                </div>
+                <div>
+                    <div class="footer-col-title">Track Record</div>
+                    <a class="footer-link" href="#teaching">강의 경력</a>
+                    <a class="footer-link" href="#career">현업 경력</a>
+                    <a class="footer-link" href="#projects">주요 프로젝트</a>
+                </div>
+                <div>
+                    <div class="footer-col-title">Contact</div>
+                    <a class="footer-link" href="mailto:prfsr.limitless@gmail.com">prfsr.limitless@gmail.com</a>
+                    <a class="footer-link" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="copyright">© <span id="year"></span> Park Byungjun. All Rights Reserved.</span>
+                <span style="color: var(--steel); font-size: 13px;">Designed with Notion-inspired system.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const mobileToggle = document.getElementById("mobileToggle");
+        const mobileDrawer = document.getElementById("mobileDrawer");
+        if (mobileToggle && mobileDrawer) {
+            mobileToggle.addEventListener("click", () => {
+                mobileDrawer.classList.toggle("open");
+            });
+            mobileDrawer.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    mobileDrawer.classList.remove("open");
+                });
+            });
+        }
+    </script>
+</body>
+</html>
