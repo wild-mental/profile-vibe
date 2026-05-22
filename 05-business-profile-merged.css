@@ -339,6 +339,12 @@ section, header, footer { padding: 0; }
     align-items: center;
     gap: 8px;
 }
+.global-nav .nav-brand-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
 .global-nav .nav-brand:hover { text-decoration: none; }
 
 .global-nav .nav-links {
