@@ -1,0 +1,150 @@
+/* ================================================================
+   Ad-revenue chart — in-page Chart.js bar chart
+   ================================================================ */
+@layer components {
+  .ad-revenue-block {
+    margin: 28px 0;
+    border-radius: var(--radius-md);
+    background: rgb(255 255 255 / 0.03);
+    border: 1px solid var(--color-hairline-on-dark);
+    /* `clip` keeps masking but does NOT create a scroll container —
+       required so the sticky child can reach the viewport on mobile. */
+    overflow: hidden;
+    overflow: clip;
+  }
+  /* The hosting band must release its sticky child up to the viewport. */
+  .project-band.has-chart {
+    overflow: hidden;
+    overflow: clip;
+  }
+
+  .ad-revenue-header {
+    padding: 22px 24px 14px;
+    border-bottom: 1px solid var(--color-hairline-on-dark);
+  }
+  .ad-revenue-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary-on-dark);
+    margin: 0 0 6px;
+  }
+  .ad-revenue-title {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.011em;
+    color: var(--color-on-dark);
+    margin: 0 0 6px;
+  }
+  .ad-revenue-sub {
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: var(--color-body-muted);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .ad-revenue-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 9999px;
+    background: var(--color-primary-on-dark);
+    margin: 0 6px;
+    transform: translateY(0);
+  }
+
+  .ad-revenue-scroll-track {
+    position: relative;
+  }
+  .ad-revenue-sticky {
+    padding: 18px 0 16px;
+  }
+  .ad-revenue-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255 255 255 / 0.18) transparent;
+  }
+  .ad-revenue-scroller::-webkit-scrollbar {
+    height: 6px;
+  }
+  .ad-revenue-scroller::-webkit-scrollbar-thumb {
+    background: rgb(255 255 255 / 0.18);
+    border-radius: 9999px;
+  }
+  .ad-revenue-scroller::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .ad-revenue-canvas-wrap {
+    width: 1760px;
+    height: 360px;
+    padding: 10px 24px 4px;
+  }
+  .ad-revenue-canvas-wrap canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
+  .ad-revenue-hint {
+    margin: 10px 24px 4px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: var(--color-body-muted);
+    text-align: center;
+  }
+  .hint-desktop {
+    display: inline;
+  }
+  .hint-mobile {
+    display: none;
+  }
+}
+
+/* Mobile (≤ 734px) — sticky scroll-jacking */
+@media (max-width: 734px) {
+  .ad-revenue-scroll-track {
+    height: 220vh;
+  }
+  .ad-revenue-sticky {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px 0;
+  }
+  .ad-revenue-scroller {
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+  .ad-revenue-canvas-wrap {
+    width: 1280px;
+    height: 300px;
+    padding: 6px 16px 0;
+  }
+  .ad-revenue-header {
+    padding: 18px 18px 12px;
+  }
+  .ad-revenue-title {
+    font-size: 19px;
+  }
+  .ad-revenue-sub {
+    font-size: 12px;
+  }
+  .ad-revenue-hint {
+    margin: 4px 18px 0;
+  }
+  .hint-desktop {
+    display: none;
+  }
+  .hint-mobile {
+    display: inline;
+  }
+}

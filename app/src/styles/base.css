@@ -1,0 +1,189 @@
+/* ================================================================
+   Base — html / body / global resets
+   ================================================================ */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-canvas);
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgb(0 102 204 / 0.18);
+    color: var(--color-ink);
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  section[id],
+  header[id] {
+    scroll-margin-top: 56px;
+  }
+}
+
+/* ================================================================
+   :target pulse animation (info-card / highlight-card / project-band)
+   ================================================================ */
+@keyframes targetPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(0 102 204 / 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgb(0 102 204 / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(0 102 204 / 0);
+  }
+}
+
+@layer components {
+  :target.info-card,
+  :target.highlight-card,
+  :target.project-band {
+    animation: targetPulse 1.6s ease-out;
+  }
+}
+
+/* ================================================================
+   Tile system — alternating full-bleed sections
+   ================================================================ */
+@layer components {
+  .tile {
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+  }
+
+  .tile-light {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+  }
+  .tile-parchment {
+    background: var(--color-parchment);
+    color: var(--color-ink);
+  }
+  .tile-dark {
+    background: var(--color-tile-1);
+    color: var(--color-on-dark);
+  }
+  .tile-dark-2 {
+    background: var(--color-tile-2);
+    color: var(--color-on-dark);
+  }
+  .tile-dark-3 {
+    background: var(--color-tile-3);
+    color: var(--color-on-dark);
+  }
+
+  .tile-dark a,
+  .tile-dark-2 a,
+  .tile-dark-3 a,
+  .project-band a {
+    color: var(--color-primary-on-dark);
+  }
+
+  .tile-container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+  .tile-container-wide {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+  .tile-container-1100 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+
+  .tile-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 64px;
+    padding: 0 22px;
+  }
+  .tile-header.left {
+    text-align: left;
+    margin-left: 22px;
+    margin-right: auto;
+  }
+
+  .tile-header .eyebrow {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-ink-muted-80);
+    letter-spacing: 0;
+    margin-bottom: 12px;
+  }
+  .tile-dark .tile-header .eyebrow,
+  .tile-dark-2 .tile-header .eyebrow,
+  .tile-dark-3 .tile-header .eyebrow {
+    color: var(--color-body-muted);
+  }
+
+  .tile-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    margin: 0 0 12px;
+    color: inherit;
+  }
+
+  .tile-header p {
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+    color: var(--color-ink-muted-80);
+    margin: 0;
+  }
+  .tile-dark .tile-header p,
+  .tile-dark-2 .tile-header p,
+  .tile-dark-3 .tile-header p {
+    color: var(--color-body-muted);
+  }
+}
+
+@media (max-width: 734px) {
+  .tile {
+    padding: 48px 0 !important;
+  }
+  .tile-header {
+    margin-bottom: 40px !important;
+  }
+  .tile-header h2 {
+    font-size: 32px !important;
+  }
+}

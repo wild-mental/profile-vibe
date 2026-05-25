@@ -1,0 +1,52 @@
+/* ================================================================
+   Print styles
+   ================================================================ */
+@media print {
+  body {
+    background: #ffffff;
+  }
+  .global-nav,
+  .mobile-drawer,
+  .footer-region {
+    display: none !important;
+  }
+  .tile,
+  .hero {
+    padding: 1.5rem 0 !important;
+  }
+  .tile-dark,
+  .tile-dark-2,
+  .tile-dark-3,
+  .project-band {
+    background: #ffffff !important;
+    color: var(--color-ink) !important;
+    min-height: auto !important;
+    padding: 1.5rem 0 !important;
+  }
+  .band-photo {
+    display: none !important;
+  }
+  .project-title,
+  .project-body p,
+  .project-body ul li,
+  .project-body p strong,
+  .project-body ul li strong,
+  .metric-callout .metric-label,
+  .metric-callout .metric-value,
+  .project-num,
+  .project-org,
+  .specs-table th,
+  .specs-table td {
+    color: var(--color-ink) !important;
+  }
+  .project-org {
+    border-color: var(--color-ink) !important;
+  }
+  .info-card,
+  .highlight-card,
+  .cohort-card,
+  .stat-card {
+    box-shadow: none !important;
+    border: 1px solid var(--color-hairline);
+  }
+}

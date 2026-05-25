@@ -1,0 +1,61 @@
+/* ================================================================
+   Comparison table (Teaching / Career) + Notion-era badge collapse
+   ================================================================ */
+@layer components {
+  .comparison-table {
+    background: var(--color-canvas);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+  }
+  .comparison-table thead th {
+    background: var(--color-parchment);
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-ink);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .comparison-table tbody td {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: var(--color-ink);
+    border-bottom: 1px solid var(--color-hairline);
+    vertical-align: middle;
+    letter-spacing: -0.016em;
+    line-height: 1.47;
+  }
+  .comparison-table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+  .comparison-table tbody tr:hover {
+    background: var(--color-pearl);
+  }
+  .comparison-table td strong {
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+
+  .badge-notion {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-parchment);
+    color: var(--color-ink-muted-80);
+    border: 1px solid var(--color-hairline);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+  }
+}

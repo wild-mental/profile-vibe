@@ -1,0 +1,260 @@
+/* ================================================================
+   Projects — dark photo bands (Apple environment-style)
+   ================================================================ */
+@layer components {
+  .project-band {
+    position: relative;
+    min-height: auto;
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--color-tile-1);
+    color: var(--color-on-dark);
+  }
+  .project-band.short {
+    padding: 96px 0;
+  }
+  .project-band.tone-2 {
+    background: var(--color-tile-2);
+  }
+  .project-band.tone-3 {
+    background: var(--color-tile-3);
+  }
+
+  .project-band .band-photo {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.45) contrast(1) saturate(0.85);
+    z-index: 0;
+    opacity: 0.7;
+  }
+  .project-band .band-photo.lecture {
+    background-image: url("/assets/band-photo-hana-linux-training.jpeg");
+  }
+  .project-band .band-photo.workshop {
+    background-image: url("/assets/band-photo-koica-srilanka-workshop.jpeg");
+  }
+  .project-band .band-photo.overseas {
+    background-image: url("/assets/band-photo-kpc-sw-global.jpg");
+  }
+  .project-band .band-photo.starfield {
+    background-image: none;
+    opacity: 0;
+  }
+
+  .project-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+
+  .project-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .project-num {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-body-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .project-num::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--color-body-muted);
+  }
+  .project-org {
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-on-dark);
+    border: 1px solid rgb(255 255 255 / 0.4);
+    background: transparent;
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+  }
+
+  .project-title {
+    color: var(--color-on-dark);
+    margin: 0 0 24px;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    text-transform: none;
+  }
+
+  .project-body {
+    max-width: 100%;
+  }
+  .project-body p {
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+    color: var(--color-body-muted);
+    margin: 0 0 20px;
+  }
+  .project-body p strong {
+    font-weight: 600;
+    color: var(--color-on-dark);
+  }
+
+  .project-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    border-top: 1px solid var(--color-hairline-on-dark);
+  }
+  .project-body ul li {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--color-hairline-on-dark);
+    color: var(--color-body-muted);
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+  }
+  .project-body ul li strong {
+    font-weight: 600;
+    color: var(--color-on-dark);
+  }
+  .project-body ul ul {
+    margin: 10px 0 0;
+    padding-left: 0;
+    border-top: 1px solid var(--color-hairline-on-dark);
+  }
+  .project-body ul ul li {
+    padding: 12px 0 12px 24px;
+    position: relative;
+    font-size: 15px;
+    color: var(--color-body-muted);
+    border-bottom: 1px solid var(--color-hairline-on-dark);
+  }
+  .project-body ul ul li:last-child {
+    border-bottom: none;
+  }
+  .project-body ul ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: var(--color-body-muted);
+    font-family: inherit;
+  }
+
+  .metric-callout {
+    border-top: 1px solid rgb(255 255 255 / 0.5);
+    border-bottom: 1px solid rgb(255 255 255 / 0.5);
+    padding: 24px 0;
+    margin: 28px 0;
+  }
+  .metric-callout .metric-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-body-muted);
+    margin-bottom: 10px;
+  }
+  .metric-callout .metric-value {
+    font-family: inherit;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.011em;
+    text-transform: none;
+    color: var(--color-on-dark);
+  }
+
+  .project-image {
+    width: 100%;
+    margin: 28px 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 0;
+    background: var(--color-tile-3);
+  }
+  .project-image img {
+    width: 100%;
+    display: block;
+  }
+
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .project-gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 0;
+  }
+
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    border-top: 1px solid var(--color-hairline-on-dark);
+    border-bottom: 1px solid var(--color-hairline-on-dark);
+  }
+  .specs-table th,
+  .specs-table td {
+    text-align: left;
+    padding: 14px 14px;
+    border-bottom: 1px solid var(--color-hairline-on-dark);
+    color: var(--color-body-muted);
+    font-size: 14px;
+    letter-spacing: -0.016em;
+    line-height: 1.47;
+  }
+  .specs-table thead th {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-on-dark);
+  }
+  .specs-table tr.highlight-row td,
+  .specs-table tr.highlight-row th {
+    color: var(--color-on-dark);
+  }
+}
+
+@media (max-width: 734px) {
+  .project-band,
+  .project-band.short {
+    padding: 64px 0 !important;
+  }
+  .project-title {
+    font-size: 30px !important;
+  }
+  .metric-callout .metric-value {
+    font-size: 26px !important;
+  }
+}

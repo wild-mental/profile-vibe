@@ -1,0 +1,72 @@
+/* ================================================================
+   Evidence Modal — React portal-based lightbox (replaces Bootstrap modal)
+   ================================================================ */
+@layer components {
+  .evidence-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    background: rgb(0 0 0 / 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 56px 24px 24px;
+    overflow-y: auto;
+    animation: evidenceModalFadeIn 0.18s ease-out;
+  }
+  .evidence-modal-dialog {
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .evidence-modal-body {
+    position: relative;
+    padding: 0;
+    text-align: center;
+  }
+  .evidence-modal-body img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 86vh;
+    width: auto;
+    height: auto;
+    border-radius: var(--radius-sm);
+    background: var(--color-canvas);
+  }
+  .evidence-modal-caption {
+    margin: 12px 0 0;
+    color: rgb(255 255 255 / 0.92);
+    font-size: 14px;
+    letter-spacing: -0.016em;
+  }
+  .evidence-modal-close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    background: transparent;
+    border: 0;
+    color: var(--color-on-dark);
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 22px;
+    line-height: 1;
+    padding: 6px 10px;
+  }
+  .evidence-modal-close:hover {
+    opacity: 1;
+  }
+}
+
+@keyframes evidenceModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

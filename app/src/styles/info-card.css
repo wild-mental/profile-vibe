@@ -1,0 +1,89 @@
+/* ================================================================
+   About — info-card + timeline (Apple simplified)
+   ================================================================ */
+@layer components {
+  .info-card {
+    background: var(--color-canvas);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    height: 100%;
+    box-shadow: none;
+  }
+  .info-card h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.011em;
+    margin: 0 0 24px;
+    color: var(--color-ink);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .info-card h3 i {
+    color: var(--color-primary);
+    font-size: 22px;
+  }
+
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline li {
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    border-left: 1px solid var(--color-hairline);
+    margin-left: 4px;
+  }
+  .timeline li:last-child {
+    padding-bottom: 0;
+  }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    border: 0;
+    box-shadow: none;
+  }
+  .timeline .period {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+    letter-spacing: -0.016em;
+  }
+  .timeline .title {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-ink);
+    letter-spacing: -0.022em;
+  }
+  .timeline .desc {
+    display: block;
+    font-size: 14px;
+    color: var(--color-ink-muted-80);
+    letter-spacing: -0.016em;
+    margin-top: 2px;
+  }
+  .timeline .badge-issuer {
+    display: inline-block;
+    background: var(--color-parchment);
+    color: var(--color-ink-muted-80);
+    padding: 2px 8px;
+    border-radius: var(--radius-xs);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-left: 6px;
+  }
+}
