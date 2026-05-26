@@ -1,0 +1,383 @@
+import type { Localized } from "./types";
+
+/**
+ * Central UI copy. Every translatable string used across the
+ * resume site lives here, grouped by section, so that translators
+ * (and reviewers) can scan the document in one place.
+ *
+ * Convention: keep Korean wording sharp/concise; English wording is
+ * polished, business-grade, and reads naturally to a global audience.
+ */
+export const STRINGS = {
+  brand: {
+    name: {
+      ko: "박병준 · AI & IT 컨설턴트",
+      en: "Park Byungjun · AI & IT Consultant",
+    } satisfies Localized,
+    nameFooter: {
+      ko: "박병준 · AI & IT Consultant",
+      en: "Park Byungjun · AI & IT Consultant",
+    } satisfies Localized,
+    tagline: {
+      ko: "AI · 빅데이터 · 클라우드 생태계를 뉴스 속도로 교육과 엔지니어링에 적용합니다.",
+      en: "Bringing the AI, big-data, and cloud ecosystem into both classrooms and production at the speed of news.",
+    } satisfies Localized,
+    documentTitle: {
+      ko: "박병준 | AI & IT 컨설턴트 프로필",
+      en: "Park Byungjun | AI & IT Consultant Profile",
+    } satisfies Localized,
+  },
+
+  nav: {
+    about: { ko: "소개", en: "About" } satisfies Localized,
+    strengths: { ko: "핵심 역량", en: "Strengths" } satisfies Localized,
+    kdt: { ko: "KDT 수료", en: "KDT Outcomes" } satisfies Localized,
+    teaching: { ko: "강의", en: "Teaching" } satisfies Localized,
+    career: { ko: "경력", en: "Career" } satisfies Localized,
+    projects: { ko: "프로젝트", en: "Projects" } satisfies Localized,
+    contact: { ko: "Contact", en: "Contact" } satisfies Localized,
+    linkedin: { ko: "LinkedIn", en: "LinkedIn" } satisfies Localized,
+    menuLabel: { ko: "메뉴 열기", en: "Open menu" } satisfies Localized,
+    languageLabel: {
+      ko: "언어 전환",
+      en: "Switch language",
+    } satisfies Localized,
+  },
+
+  hero: {
+    eyebrow: {
+      ko: "AI & IT Consultant",
+      en: "AI & IT Consultant",
+    } satisfies Localized,
+    nameKr: { ko: "박병준", en: "Park Byungjun" } satisfies Localized,
+    nameEn: { ko: "Park Byungjun", en: "박병준" } satisfies Localized,
+    profilePhotoAlt: {
+      ko: "박병준 프로필 사진",
+      en: "Portrait of Park Byungjun",
+    } satisfies Localized,
+    taglineLead: {
+      ko: "AI · 빅데이터 · 클라우드 생태계를 ",
+      en: "I apply the AI, big-data, and cloud ecosystem in ",
+    } satisfies Localized,
+    taglineLeadStrong: {
+      ko: "뉴스 속도로",
+      en: "near-real time",
+    } satisfies Localized,
+    taglineLeadTail: {
+      ko: " 교육과 엔지니어링에 적용합니다.",
+      en: " — both as an educator and as an engineer.",
+    } satisfies Localized,
+    taglineSubPrefix: {
+      ko: "KDT 장기과정 ",
+      en: "KDT long-track ",
+    } satisfies Localized,
+    taglineSubStrong: {
+      ko: "2기수 연속 100% 수료, 만족도 100% 추천",
+      en: "two cohorts in a row · 100% graduation · 100% recommend rate",
+    } satisfies Localized,
+    kakaoLabel: {
+      ko: "카카오톡 오픈프로필 열기",
+      en: "Open KakaoTalk profile",
+    } satisfies Localized,
+  },
+
+  about: {
+    eyebrow: { ko: "About", en: "About" } satisfies Localized,
+    title: {
+      ko: "교육 사항 & 자격",
+      en: "Education & Certifications",
+    } satisfies Localized,
+    subtitle: {
+      ko: "학문적 배경과 클라우드 · 데이터 분야 공인 자격으로 다져진 기술 인프라.",
+      en: "A technical foundation built on cross-disciplinary studies and industry-recognized cloud and data credentials.",
+    } satisfies Localized,
+    educationCardTitle: { ko: "교육 사항", en: "Education" } satisfies Localized,
+    certCardTitle: {
+      ko: "자격 사항",
+      en: "Certifications",
+    } satisfies Localized,
+  },
+
+  strengths: {
+    eyebrow: { ko: "Core Strengths", en: "Core Strengths" } satisfies Localized,
+    title: {
+      ko: "차별화된 3가지 핵심 역량",
+      en: "Three Defining Strengths",
+    } satisfies Localized,
+    subtitle: {
+      ko: "뉴스 속도의 최신 교육, 100% 수료의 학습자 맞춤 교육, 장애율 0%의 엔지니어링.",
+      en: "Education at the speed of news. Learner-centered teaching with a 100% graduation track record. Engineering with a zero-incident operating history.",
+    } satisfies Localized,
+
+    // Card 1
+    card1Title: {
+      ko: "급변하는 기술 생태계를 뉴스 속도로 업데이트하는 교육",
+      en: "Teaching that tracks a fast-moving tech ecosystem at the speed of news",
+    } satisfies Localized,
+    card1Item1Lead: {
+      ko: "AI · 빅데이터 · 클라우드 최신 도구의 즉시 도입",
+      en: "Immediate adoption of the latest AI, big-data, and cloud tooling",
+    } satisfies Localized,
+    card1Item1SubPrefix: {
+      ko: "진행 중인 교육과정에 트렌드를 곧바로 반영하는 ",
+      en: "Course content is refreshed mid-cohort to deliver ",
+    } satisfies Localized,
+    card1Item1SubStrong: {
+      ko: "뉴스 레벨의 최신 교육",
+      en: "news-level up-to-date instruction",
+    } satisfies Localized,
+    card1Item1SubTail: { ko: "", en: "" } satisfies Localized,
+    card1Item2Lead: {
+      ko: "교육 현장 ↔ 기술 실무의 가교 역할",
+      en: "A bridge between the classroom and real-world engineering",
+    } satisfies Localized,
+    card1Item2Sub: {
+      ko: "현업 엔지니어링 솔루션을 그대로 다루는 실무형 교육자료와 현장 니즈를 실시간 반영",
+      en: "Hands-on materials built around production engineering solutions, continuously updated to reflect on-the-ground needs.",
+    } satisfies Localized,
+
+    // Card 2
+    card2Title: {
+      ko: "수료율 100%의 학습자 맞춤, 미래기술 + 실전기술 융합 교육",
+      en: "Learner-centered teaching that fuses emerging and practical tech — with a 100% graduation rate",
+    } satisfies Localized,
+    card2Item1Lead: {
+      ko: "복잡한 개념의 명확한 전달, 맞춤형 성장 경로 설계",
+      en: "Clear delivery of complex concepts and individually tailored growth paths",
+    } satisfies Localized,
+    card2Item1SubPrefix: {
+      ko: "2024 & 2025년 KDT 장기과정 ",
+      en: "2024 & 2025 KDT long-track program — ",
+    } satisfies Localized,
+    card2Item1SubStrong: {
+      ko: "2기수 연속 100% 수료",
+      en: "100% graduation, two cohorts in a row",
+    } satisfies Localized,
+    card2Item2Lead: {
+      ko: "실습 중심 기획 · AI · 클라우드 · 백엔드 교육 직접 설계",
+      en: "Hands-on curriculum design across product planning, AI, cloud, and backend engineering",
+    } satisfies Localized,
+    card2Item2SubPrefix: {
+      ko: "기업 IT 실무자 교육의 현장 중심 니즈를 완벽히 반영한 특강으로 ",
+      en: "Special seminars precisely aligned with the on-the-job needs of enterprise IT practitioners, achieving ",
+    } satisfies Localized,
+    card2Item2SubStrong: {
+      ko: "최고 수준의 만족도 달성",
+      en: "top-tier satisfaction scores",
+    } satisfies Localized,
+    card2Item3Lead: {
+      ko: "K-12 ~ 대학생 ~ 현직 기술 전문가까지 전 수준 멘토링",
+      en: "Mentoring across every level — K-12 through university and into seasoned industry professionals",
+    } satisfies Localized,
+    card2Item3Sub: {
+      ko: "미국 인디애나주 초중고 · 퍼듀대학교, 입직자 취업준비 · 진로 멘토링, 현직자 기술교육 전 영역",
+      en: "K-12 schools in Indiana, USA · Purdue University · job-readiness and career mentoring for entry-level engineers · advanced technical training for working professionals.",
+    } satisfies Localized,
+
+    // Card 3
+    card3Title: {
+      ko: "확장성과 안정성 설계 기술력으로 장애율 0%의 엔지니어링",
+      en: "Engineering built for scale and stability — with a zero-incident operating record",
+    } satisfies Localized,
+    card3Item1Lead: {
+      ko: "확장 가능한 시스템 설계 · 구현 실무 경험",
+      en: "Hands-on design and implementation of large-scale, high-throughput systems",
+    } satisfies Localized,
+    card3Item1SubStrong: { ko: "DAU 300만+", en: "DAU 3M+" } satisfies Localized,
+    card3Item1SubTail: {
+      ko: " 코인거래소 실시간 알림 시스템 & 광고 시스템에서 대량 트래픽 제어",
+      en: " — large-volume traffic handled across a crypto-exchange real-time notification platform and an advertising system.",
+    } satisfies Localized,
+    card3Item2Lead: {
+      ko: "클라우드 배포 · 운영 주도, 안정성과 효율성 극대화",
+      en: "Led cloud deployment and operations — maximizing both stability and efficiency",
+    } satisfies Localized,
+    card3Item2SubPrefix: {
+      ko: "(주)키즈노트 광고시스템 리뉴얼 런칭 후 ",
+      en: "After the Kidsnote ad-system relaunch — ",
+    } satisfies Localized,
+    card3Item2SubStrong: {
+      ko: "2년간 개발 장애율 0%",
+      en: "zero engineering-side incidents for two consecutive years",
+    } satisfies Localized,
+    card3Item3Lead: {
+      ko: "데이터 파이프라인 최적화 · 분산 아키텍처 설계",
+      en: "Optimization of data pipelines and design of distributed architectures",
+    } satisfies Localized,
+    card3Item3Sub: {
+      ko: "MSA 시스템 설계 · 구축, Kafka 기반 이벤트 스트리밍 및 재직자 직무 교육",
+      en: "Design and build-out of MSA systems and Kafka-based event streaming — also delivered as in-service training for working engineers.",
+    } satisfies Localized,
+
+    satisfactionCardTitle: {
+      ko: "기업 IT 실무자 교육 만족도",
+      en: "Satisfaction · enterprise IT training",
+    } satisfies Localized,
+    satisfactionImageCaption: {
+      ko: "기업 IT 실무자 교육 만족도 그래프",
+      en: "Satisfaction-score chart · enterprise IT training",
+    } satisfies Localized,
+    satisfactionClients: {
+      ko: "하나금융그룹 · KT · LG헬로비전 · KOICA · 모두의연구소",
+      en: "Hana Financial Group · KT · LG HelloVision · KOICA · Modulabs",
+    } satisfies Localized,
+    satisfactionTag: {
+      ko: "— 기업 실무자 대상 강의에서 최고 수준의 만족도를 달성합니다.",
+      en: "— consistently top-tier satisfaction scores from enterprise practitioner audiences.",
+    } satisfies Localized,
+
+    linkedInCardTitle: {
+      ko: "LinkedIn 동료 추천사 (2024)",
+      en: "LinkedIn peer recommendation (2024)",
+    } satisfies Localized,
+    linkedInImageCaption: {
+      ko: "카카오 키즈노트 동료 LinkedIn 추천사",
+      en: "LinkedIn recommendation · Kakao Kidsnote teammate",
+    } satisfies Localized,
+    linkedInQuote: {
+      ko: "“그가 감독하는 동안 발생한 서비스 장애는 0건이었습니다.”",
+      en: "“Under his stewardship, the team recorded zero service incidents.”",
+    } satisfies Localized,
+    linkedInQuoteCite: {
+      ko: "— 카카오 키즈노트 팀",
+      en: "— Kakao Kidsnote team",
+    } satisfies Localized,
+  },
+
+  kdt: {
+    eyebrow: { ko: "Track Record", en: "Track Record" } satisfies Localized,
+    titleLine1: {
+      ko: "2024 & 2025년 KDT 장기과정",
+      en: "2024 & 2025 KDT long-track program",
+    } satisfies Localized,
+    titleLine2: {
+      ko: "2기수 연속 100% 수료",
+      en: "100% graduation — two cohorts in a row",
+    } satisfies Localized,
+    subtitleLine1: {
+      ko: "풀스택 엔지니어 양성 1,000시간 장기과정, 2년간 총 48명",
+      en: "1,000-hour full-stack engineer program — 48 graduates over two years",
+    } satisfies Localized,
+    subtitleLine2: {
+      ko: "— 두 기수 모두 100% 수료, 만족도 제출 인원 전원 추천.",
+      en: "— both cohorts graduated at 100% and every survey respondent gave a positive recommendation.",
+    } satisfies Localized,
+
+    stats: {
+      gradRate: { ko: "2기수 연속 수료율", en: "Graduation rate (2 cohorts)" } satisfies Localized,
+      gradRateSub: {
+        ko: "2024년 · 2025년 삼육대학교 KDT",
+        en: "2024 · 2025 Sahmyook University KDT",
+      } satisfies Localized,
+      totalLabel: {
+        ko: "총 수료생 (29명 + 19명)",
+        en: "Total graduates (29 + 19)",
+      } satisfies Localized,
+      totalSub: {
+        ko: "전원 1,000시간 장기과정 수료",
+        en: "Every graduate completed the full 1,000-hour program",
+      } satisfies Localized,
+      recommendLabel: {
+        ko: "교육과정 만족도 추천",
+        en: "Recommend rate",
+      } satisfies Localized,
+      recommendSub: {
+        ko: "만족도 조사 제출 인원 전원 추천",
+        en: "100% of survey respondents recommended the course",
+      } satisfies Localized,
+    },
+
+    satisfactionTab: {
+      ko: "만족도 조사",
+      en: "Satisfaction survey",
+    } satisfies Localized,
+    reviewsTab: { ko: "수강 후기", en: "Learner reviews" } satisfies Localized,
+  },
+
+  teaching: {
+    eyebrow: { ko: "Teaching", en: "Teaching" } satisfies Localized,
+    title: { ko: "강의 및 교육 경력", en: "Teaching History" } satisfies Localized,
+    subtitle: {
+      ko: "2018년부터 누적된 강의 트랙 — 대기업 재직자 교육부터 KDT 장기과정, 국제기구 협력교육까지.",
+      en: "A continuous teaching track since 2018 — from corporate enterprise training to long-track KDT programs and international development cooperation.",
+    } satisfies Localized,
+    headerProgram: { ko: "강의 및 교육 활동", en: "Program" } satisfies Localized,
+    headerPeriod: { ko: "기간", en: "Period" } satisfies Localized,
+    headerOrg: { ko: "운영기관", en: "Operator" } satisfies Localized,
+  },
+
+  career: {
+    eyebrow: { ko: "Career", en: "Career" } satisfies Localized,
+    title: { ko: "현업 경력", en: "Work Experience" } satisfies Localized,
+    subtitle: {
+      ko: "국책기관 · 글로벌 사업개발 · 백엔드 엔지니어링 · 기술교육 — 다각도의 IT 산업 이력.",
+      en: "Public-sector institutes · global business development · backend engineering · technical training — a multi-angle career across the IT industry.",
+    } satisfies Localized,
+    headerCompany: { ko: "회사명", en: "Company" } satisfies Localized,
+    headerPeriod: { ko: "기간", en: "Period" } satisfies Localized,
+    headerRole: { ko: "직위 / 직책", en: "Title / Role" } satisfies Localized,
+    headerJob: { ko: "직무", en: "Responsibility" } satisfies Localized,
+    present: { ko: "현재", en: "Present" } satisfies Localized,
+  },
+
+  projectsIntro: {
+    eyebrow: { ko: "Mission Log", en: "Mission Log" } satisfies Localized,
+    title: { ko: "주요 프로젝트 이력", en: "Selected Projects" } satisfies Localized,
+    subtitle: {
+      ko: "기업 · 국제기구 · 연구기관과의 협업 — 콘텐츠 설계부터 엔지니어링 솔루션 출시까지.",
+      en: "Engagements with enterprises, international agencies, and research institutes — from curriculum design to shipping engineering solutions.",
+    } satisfies Localized,
+  },
+
+  evidence: {
+    zoomHint: { ko: "원본 보기", en: "View original" } satisfies Localized,
+    closeLabel: { ko: "닫기", en: "Close" } satisfies Localized,
+    expandAriaSuffix: {
+      ko: " 이미지 확대 보기",
+      en: " — open image at full size",
+    } satisfies Localized,
+  },
+
+  contactCta: {
+    title: {
+      ko: "강의 · 컨설팅 의뢰는 언제든 환영합니다.",
+      en: "Always open to teaching engagements and consulting inquiries.",
+    } satisfies Localized,
+    subtitle: {
+      ko: "기업 IT 실무자 교육, 장기과정 강의, 클라우드 아키텍처 설계 컨설팅까지 — 현장의 변화 속도에 맞춰 함께 일합니다.",
+      en: "Enterprise IT training, long-track teaching, cloud-architecture consulting — I work at the pace your team and field demand.",
+    } satisfies Localized,
+    emailButton: {
+      ko: "이메일로 의뢰하기",
+      en: "Reach out by email",
+    } satisfies Localized,
+    linkedInButton: {
+      ko: "LinkedIn 프로필",
+      en: "LinkedIn profile",
+    } satisfies Localized,
+  },
+
+  footer: {
+    profileTitle: { ko: "Profile", en: "Profile" } satisfies Localized,
+    profileAbout: { ko: "소개", en: "About" } satisfies Localized,
+    profileStrengths: { ko: "핵심 역량", en: "Core Strengths" } satisfies Localized,
+    profileKdt: { ko: "KDT 수료", en: "KDT Outcomes" } satisfies Localized,
+    trackRecordTitle: { ko: "Track Record", en: "Track Record" } satisfies Localized,
+    trackTeaching: { ko: "강의 경력", en: "Teaching" } satisfies Localized,
+    trackCareer: { ko: "현업 경력", en: "Work Experience" } satisfies Localized,
+    trackProjects: { ko: "주요 프로젝트", en: "Selected Projects" } satisfies Localized,
+    contactTitle: { ko: "Contact", en: "Contact" } satisfies Localized,
+    copyright: {
+      ko: "All Rights Reserved.",
+      en: "All Rights Reserved.",
+    } satisfies Localized,
+    designedWith: {
+      ko: "Designed with the Apple design system.",
+      en: "Designed with the Apple design system.",
+    } satisfies Localized,
+    kakaoLabel: {
+      ko: "카카오톡 오픈프로필 열기",
+      en: "Open KakaoTalk profile",
+    } satisfies Localized,
+  },
+} as const;

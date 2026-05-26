@@ -1,98 +1,202 @@
+import type { Localized } from "@/i18n";
 import type { TeachingRow } from "@/types";
 
-export const TEACHING_ROWS: readonly TeachingRow[] = [
-  {
-    title:
-      "모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 5기",
-    period: "2026.03 ~ 2026.06",
-    org: "모두의연구소",
-  },
-  {
-    title:
-      "모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 2기",
-    period: "2025.10 ~ 2026.01",
-    org: "모두의연구소",
-  },
-  {
-    title:
-      "삼육대학교 KDT 산학협력 학점 연계과정 (AI 활용 클라우드 네이티브 풀스택 엔지니어 양성과정)",
-    period: "2025.01 ~ 2025.09",
-    org: "한국정보교육원",
-  },
-  {
-    title:
-      "구름 프로펙트 클라우드과정 특강 (체계적 프로젝트 문서화 & Kafka 핵심 개념 실무 적용)",
-    period: "2025.06",
-    org: "구름EDU",
-  },
-  {
-    title:
-      "스리랑카 커리어 플랫폼 IT 운영자 국내 초청교육 (웹 개발 최신 트렌드 & 생성형 AI 특강)",
-    period: "2025.06",
-    org: "KOICA",
-  },
-  {
-    title:
-      "하나금융그룹 현직자 교육 (리눅스 중급 심화 및 MSA 웹 서버 구축 및 운영 실무 특강)",
-    period: "2025.05",
-    org: "하나금융그룹",
-  },
-  {
-    title:
-      "하나금융그룹 현직자 교육 (클라우드 기반 MSA 서비스 설계 & Kubernetes (EKS) 활용 운영 자동화)",
-    period: "2024.12",
-    org: "하나금융그룹",
-  },
-  {
-    title:
-      "삼육대학교 KDT (클라우드 기반 풀스택 Java Spring Boot & React Web 엔지니어 양성과정)",
-    period: "2024.01 ~ 2024.09",
-    org: "한국정보교육원",
-  },
-  {
-    title: "LG헬로비전 DX DATA SCHOOL 엔지니어 양성과정 프로젝트 멘토링",
-    period: "2024.05 ~ 2024.06",
-    org: "한국전파진흥협회",
-  },
-  {
-    title:
-      "KT 재직자 교육 (AWS 기반 Kafka 데이터 스트리밍 & Redis Cache 클러스터 구축 연동 과정)",
-    period: "2024.05",
-    org: "삼성 멀티캠퍼스",
-  },
-  {
-    title: "메이커교육 분야 글로벌 서비스 기획 및 해외 진출기업 컨설팅",
-    period: "2022.11 ~ 2023.12",
-    org: "메이커스월드",
-  },
-  {
-    title: "동국대, 건국대, 대학연합 백엔드 개발자 진로 특강",
-    period: "2022.08 ~ 2022.11",
-    org: "엘리트코리아",
-  },
-  {
-    title: "내일배움캠프 클라우드 웹 개발자 양성과정 프로젝트 및 진로 멘토링",
-    period: "2021.12 ~ 2022.03",
-    org: "스파르타 코딩",
-  },
-  {
-    title: "기아자동차 노사공동교육 (4차산업혁명 트렌드와 SW/HW 융합기술 특강)",
-    period: "2020.06 ~ 2021.12",
-    org: "기아자동차",
-  },
-  {
-    title: "모듈형 로봇프로그래밍 교육 (미국, 중동)",
-    period: "2018.09 ~ 2019.12",
-    org: "럭스로보",
-  },
-  {
-    title: "임베디드SW 엔지니어 양성과정 (아두이노)",
-    period: "2018.07 ~ 2018.09",
-    org: "광운대학교",
-  },
-  {
-    title: "파이썬 웹 프로그래밍 과정 (Django)",
-    period: "2018.04 ~ 2018.05",
-    org: "KG IT뱅크",
-  },
-] as const;
+export const TEACHING_ROWS: Localized<readonly TeachingRow[]> = {
+  ko: [
+    {
+      title:
+        "모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 5기",
+      period: "2026.03 ~ 2026.06",
+      org: "모두의연구소",
+    },
+    {
+      title:
+        "모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 2기",
+      period: "2025.10 ~ 2026.01",
+      org: "모두의연구소",
+    },
+    {
+      title:
+        "삼육대학교 KDT 산학협력 학점 연계과정 (AI 활용 클라우드 네이티브 풀스택 엔지니어 양성과정)",
+      period: "2025.01 ~ 2025.09",
+      org: "한국정보교육원",
+    },
+    {
+      title:
+        "구름 프로펙트 클라우드과정 특강 (체계적 프로젝트 문서화 & Kafka 핵심 개념 실무 적용)",
+      period: "2025.06",
+      org: "구름EDU",
+    },
+    {
+      title:
+        "스리랑카 커리어 플랫폼 IT 운영자 국내 초청교육 (웹 개발 최신 트렌드 & 생성형 AI 특강)",
+      period: "2025.06",
+      org: "KOICA",
+    },
+    {
+      title:
+        "하나금융그룹 현직자 교육 (리눅스 중급 심화 및 MSA 웹 서버 구축 및 운영 실무 특강)",
+      period: "2025.05",
+      org: "하나금융그룹",
+    },
+    {
+      title:
+        "하나금융그룹 현직자 교육 (클라우드 기반 MSA 서비스 설계 & Kubernetes (EKS) 활용 운영 자동화)",
+      period: "2024.12",
+      org: "하나금융그룹",
+    },
+    {
+      title:
+        "삼육대학교 KDT (클라우드 기반 풀스택 Java Spring Boot & React Web 엔지니어 양성과정)",
+      period: "2024.01 ~ 2024.09",
+      org: "한국정보교육원",
+    },
+    {
+      title: "LG헬로비전 DX DATA SCHOOL 엔지니어 양성과정 프로젝트 멘토링",
+      period: "2024.05 ~ 2024.06",
+      org: "한국전파진흥협회",
+    },
+    {
+      title:
+        "KT 재직자 교육 (AWS 기반 Kafka 데이터 스트리밍 & Redis Cache 클러스터 구축 연동 과정)",
+      period: "2024.05",
+      org: "삼성 멀티캠퍼스",
+    },
+    {
+      title: "메이커교육 분야 글로벌 서비스 기획 및 해외 진출기업 컨설팅",
+      period: "2022.11 ~ 2023.12",
+      org: "메이커스월드",
+    },
+    {
+      title: "동국대, 건국대, 대학연합 백엔드 개발자 진로 특강",
+      period: "2022.08 ~ 2022.11",
+      org: "엘리트코리아",
+    },
+    {
+      title: "내일배움캠프 클라우드 웹 개발자 양성과정 프로젝트 및 진로 멘토링",
+      period: "2021.12 ~ 2022.03",
+      org: "스파르타 코딩",
+    },
+    {
+      title: "기아자동차 노사공동교육 (4차산업혁명 트렌드와 SW/HW 융합기술 특강)",
+      period: "2020.06 ~ 2021.12",
+      org: "기아자동차",
+    },
+    {
+      title: "모듈형 로봇프로그래밍 교육 (미국, 중동)",
+      period: "2018.09 ~ 2019.12",
+      org: "럭스로보",
+    },
+    {
+      title: "임베디드SW 엔지니어 양성과정 (아두이노)",
+      period: "2018.07 ~ 2018.09",
+      org: "광운대학교",
+    },
+    {
+      title: "파이썬 웹 프로그래밍 과정 (Django)",
+      period: "2018.04 ~ 2018.05",
+      org: "KG IT뱅크",
+    },
+  ] as const,
+  en: [
+    {
+      title:
+        "Modulabs · AI-enabled Service Planning & Development Pro Program (Vibe-Coding Project Track for Working Professionals) — Cohort 5",
+      period: "Mar. 2026 — Jun. 2026",
+      org: "Modulabs",
+    },
+    {
+      title:
+        "Modulabs · AI-enabled Service Planning & Development Pro Program (Vibe-Coding Project Track for Working Professionals) — Cohort 2",
+      period: "Oct. 2025 — Jan. 2026",
+      org: "Modulabs",
+    },
+    {
+      title:
+        "Sahmyook University KDT · Industry-Academia Credit-linked Program (AI-enabled Cloud-Native Full-Stack Engineer Track)",
+      period: "Jan. 2025 — Sep. 2025",
+      org: "Korea Information Education Institute",
+    },
+    {
+      title:
+        "Goorm Prophect Cloud-Track Seminar (Systematic Project Documentation & Practical Application of Kafka Fundamentals)",
+      period: "Jun. 2025",
+      org: "Goorm EDU",
+    },
+    {
+      title:
+        "Sri Lanka Career-Platform IT Operators Invitational Program (Latest Web-Development Trends & Generative-AI Seminar)",
+      period: "Jun. 2025",
+      org: "KOICA",
+    },
+    {
+      title:
+        "Hana Financial Group · In-Service Training (Intermediate Linux Deep-Dive & MSA Web-Server Build/Operation Workshop)",
+      period: "May 2025",
+      org: "Hana Financial Group",
+    },
+    {
+      title:
+        "Hana Financial Group · In-Service Training (Cloud-based MSA Service Design & Kubernetes (EKS) Operations Automation)",
+      period: "Dec. 2024",
+      org: "Hana Financial Group",
+    },
+    {
+      title:
+        "Sahmyook University KDT (Cloud-based Full-Stack Java Spring Boot & React Web Engineer Track)",
+      period: "Jan. 2024 — Sep. 2024",
+      org: "Korea Information Education Institute",
+    },
+    {
+      title:
+        "LG HelloVision · DX DATA SCHOOL Engineer Track — Project Mentoring",
+      period: "May 2024 — Jun. 2024",
+      org: "Radio Promotion Association of Korea",
+    },
+    {
+      title:
+        "KT · In-Service Training (AWS-based Kafka Data Streaming & Redis Cache Cluster Integration)",
+      period: "May 2024",
+      org: "Samsung Multicampus",
+    },
+    {
+      title:
+        "Global Service Planning for the Maker-Education Sector & Consulting for Overseas-bound Companies",
+      period: "Nov. 2022 — Dec. 2023",
+      org: "Makers World",
+    },
+    {
+      title:
+        "Backend Developer Career Talks · Dongguk Univ., Konkuk Univ., and University Consortium",
+      period: "Aug. 2022 — Nov. 2022",
+      org: "Elite Korea",
+    },
+    {
+      title:
+        "Naeil Baeoom Camp · Cloud Web Developer Track — Project and Career Mentoring",
+      period: "Dec. 2021 — Mar. 2022",
+      org: "Sparta Coding Club",
+    },
+    {
+      title:
+        "Kia Motors · Joint Labor-Management Training (4th Industrial Revolution Trends & SW/HW Convergence Seminar)",
+      period: "Jun. 2020 — Dec. 2021",
+      org: "Kia Motors",
+    },
+    {
+      title: "Modular Robotics Programming (USA, Middle East)",
+      period: "Sep. 2018 — Dec. 2019",
+      org: "Luxrobo",
+    },
+    {
+      title: "Embedded SW Engineer Track (Arduino)",
+      period: "Jul. 2018 — Sep. 2018",
+      org: "Kwangwoon University",
+    },
+    {
+      title: "Python Web Programming Course (Django)",
+      period: "Apr. 2018 — May 2018",
+      org: "KG IT Bank",
+    },
+  ] as const,
+};

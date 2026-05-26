@@ -1,3 +1,5 @@
+import { useT } from "@/i18n";
+import { STRINGS } from "@/i18n/strings";
 import {
   CONTACT_EMAIL,
   GITHUB_URL,
@@ -6,48 +8,48 @@ import {
 } from "@/data/nav";
 
 export function Footer() {
+  const t = useT();
   const year = new Date().getFullYear();
+  const s = STRINGS.footer;
 
   return (
     <footer className="footer-region">
       <div className="footer-grid">
         <div>
           <div className="footer-brand">
-            <span className="nav-brand-text">박병준 · AI &amp; IT Consultant</span>
+            <span className="nav-brand-text">{t(STRINGS.brand.nameFooter)}</span>
           </div>
-          <p className="footer-tagline">
-            AI · 빅데이터 · 클라우드 생태계를 뉴스 속도로 교육과 엔지니어링에 적용합니다.
-          </p>
+          <p className="footer-tagline">{t(STRINGS.brand.tagline)}</p>
         </div>
 
         <div>
-          <div className="footer-col-title">Profile</div>
+          <div className="footer-col-title">{t(s.profileTitle)}</div>
           <a className="footer-link" href="#about">
-            소개
+            {t(s.profileAbout)}
           </a>
           <a className="footer-link" href="#strengths">
-            핵심 역량
+            {t(s.profileStrengths)}
           </a>
           <a className="footer-link" href="#kdt-graduation">
-            KDT 수료
+            {t(s.profileKdt)}
           </a>
         </div>
 
         <div>
-          <div className="footer-col-title">Track Record</div>
+          <div className="footer-col-title">{t(s.trackRecordTitle)}</div>
           <a className="footer-link" href="#teaching">
-            강의 경력
+            {t(s.trackTeaching)}
           </a>
           <a className="footer-link" href="#career">
-            현업 경력
+            {t(s.trackCareer)}
           </a>
           <a className="footer-link" href="#projects">
-            주요 프로젝트
+            {t(s.trackProjects)}
           </a>
         </div>
 
         <div>
-          <div className="footer-col-title">Contact</div>
+          <div className="footer-col-title">{t(s.contactTitle)}</div>
           <a className="footer-link" href={`mailto:${CONTACT_EMAIL}`}>
             {CONTACT_EMAIL}
           </a>
@@ -72,7 +74,7 @@ export function Footer() {
             href={KAKAO_URL}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="카카오톡 오픈프로필 열기"
+            aria-label={t(s.kakaoLabel)}
           >
             Kakao · pbjworking
           </a>
@@ -80,8 +82,10 @@ export function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span className="copyright">© {year} Park Byungjun. All Rights Reserved.</span>
-        <span>Designed with the Apple design system.</span>
+        <span className="copyright">
+          © {year} Park Byungjun. {t(s.copyright)}
+        </span>
+        <span>{t(s.designedWith)}</span>
       </div>
     </footer>
   );

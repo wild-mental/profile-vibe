@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
+import { useT } from "@/i18n";
+import { STRINGS } from "@/i18n/strings";
 import type { EvidenceImage } from "@/types";
 import { EvidenceModalContext } from "./EvidenceModalContext";
 
@@ -57,6 +59,7 @@ type LightboxProps = {
 };
 
 function EvidenceModalLightbox({ image, onClose }: LightboxProps) {
+  const t = useT();
   return (
     <div
       className="evidence-modal-backdrop"
@@ -72,7 +75,7 @@ function EvidenceModalLightbox({ image, onClose }: LightboxProps) {
         <button
           type="button"
           className="evidence-modal-close"
-          aria-label="닫기"
+          aria-label={t(STRINGS.evidence.closeLabel)}
           onClick={onClose}
         >
           ×

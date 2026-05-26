@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>박병준 | AI &amp; IT 컨설턴트 프로필</title>
+    <title data-title-ko="박병준 | AI &amp; IT 컨설턴트 프로필" data-title-en="Park Byungjun | AI &amp; IT Consultant Profile">박병준 | AI &amp; IT 컨설턴트 프로필</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Bootstrap 5 (grid + modal + collapse only — styles overridden by Apple system) -->
@@ -40,15 +40,15 @@
         <div class="global-nav-inner">
             <a class="nav-brand" href="#top">
                 <img class="nav-brand-icon" src="assets/profile-icon-white.png" alt="" aria-hidden="true" />
-                <span>박병준 · AI &amp; IT 컨설턴트</span>
+                <span lang="ko">박병준 · AI &amp; IT 컨설턴트</span><span lang="en">Park Byungjun · AI &amp; IT Consultant</span>
             </a>
             <div class="nav-links">
-                <a class="nav-link-item" href="#about">소개</a>
-                <a class="nav-link-item" href="#strengths">핵심 역량</a>
-                <a class="nav-link-item" href="#kdt-graduation">KDT 수료</a>
-                <a class="nav-link-item" href="#teaching">강의</a>
-                <a class="nav-link-item" href="#career">경력</a>
-                <a class="nav-link-item" href="#projects">프로젝트</a>
+                <a class="nav-link-item" href="#about"><span lang="ko">소개</span><span lang="en">About</span></a>
+                <a class="nav-link-item" href="#strengths"><span lang="ko">핵심 역량</span><span lang="en">Strengths</span></a>
+                <a class="nav-link-item" href="#kdt-graduation"><span lang="ko">KDT 수료</span><span lang="en">KDT Outcomes</span></a>
+                <a class="nav-link-item" href="#teaching"><span lang="ko">강의</span><span lang="en">Teaching</span></a>
+                <a class="nav-link-item" href="#career"><span lang="ko">경력</span><span lang="en">Career</span></a>
+                <a class="nav-link-item" href="#projects"><span lang="ko">프로젝트</span><span lang="en">Projects</span></a>
             </div>
             <div class="nav-actions">
                 <a class="btn-utility-dark" href="mailto:prfsr.limitless@gmail.com">
@@ -58,21 +58,26 @@
                 <a class="btn-utility-blue" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">
                     LinkedIn
                 </a>
-                <button class="nav-mobile-toggle" type="button" id="mobileToggle" aria-label="메뉴 열기">
+                <button class="nav-mobile-toggle" type="button" id="mobileToggle" aria-label="메뉴 열기" data-aria-ko="메뉴 열기" data-aria-en="Open menu">
                     <i class="bi bi-list"></i>
                 </button>
+                <div class="lang-toggle" role="group" aria-label="언어 전환" data-aria-ko="언어 전환" data-aria-en="Switch language" data-i18n-show-always>
+                    <button type="button" class="lang-toggle-option" data-lang-btn="ko">KO</button>
+                    <span class="lang-toggle-sep" aria-hidden="true"></span>
+                    <button type="button" class="lang-toggle-option" data-lang-btn="en">EN</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Mobile drawer -->
     <div class="mobile-drawer" id="mobileDrawer">
-        <a href="#about">소개</a>
-        <a href="#strengths">핵심 역량</a>
-        <a href="#kdt-graduation">KDT 수료</a>
-        <a href="#teaching">강의</a>
-        <a href="#career">경력</a>
-        <a href="#projects">프로젝트</a>
+        <a href="#about"><span lang="ko">소개</span><span lang="en">About</span></a>
+        <a href="#strengths"><span lang="ko">핵심 역량</span><span lang="en">Strengths</span></a>
+        <a href="#kdt-graduation"><span lang="ko">KDT 수료</span><span lang="en">KDT Outcomes</span></a>
+        <a href="#teaching"><span lang="ko">강의</span><span lang="en">Teaching</span></a>
+        <a href="#career"><span lang="ko">경력</span><span lang="en">Career</span></a>
+        <a href="#projects"><span lang="ko">프로젝트</span><span lang="en">Projects</span></a>
         <a href="mailto:prfsr.limitless@gmail.com">Contact</a>
         <a href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
@@ -85,16 +90,20 @@
             <div>
                 <img
                     src="assets/profile-byungjun-park.png"
-                    alt="박병준 프로필 사진"
+                    alt="Park Byungjun portrait"
+                    data-alt-ko="박병준 프로필 사진"
+                    data-alt-en="Portrait of Park Byungjun"
                     class="profile-photo"
                 />
             </div>
             <div>
                 <span class="hero-eyebrow">AI &amp; IT Consultant</span>
-                <h1>박병준<span class="name-roman">Park Byungjun</span></h1>
+                <h1><span lang="ko">박병준</span><span lang="en">Park Byungjun</span><span class="name-roman" lang="ko">Park Byungjun</span><span class="name-roman" lang="en">박병준</span></h1>
                 <p class="tagline">
-                    <span class="tagline-line">AI · 빅데이터 · 클라우드 생태계를 <strong>뉴스 속도로</strong> 교육과 엔지니어링에 적용합니다.</span>
-                    <span class="tagline-line tagline-subline">KDT 장기과정 <strong>2기수 연속 100% 수료, 만족도 100% 추천</strong></span>
+                    <span class="tagline-line" lang="ko">AI · 빅데이터 · 클라우드 생태계를 <strong>뉴스 속도로</strong> 교육과 엔지니어링에 적용합니다.</span>
+                    <span class="tagline-line" lang="en">I apply the AI, big-data, and cloud ecosystem in <strong>near-real time</strong> — both as an educator and as an engineer.</span>
+                    <span class="tagline-line tagline-subline" lang="ko">KDT 장기과정 <strong>2기수 연속 100% 수료, 만족도 100% 추천</strong></span>
+                    <span class="tagline-line tagline-subline" lang="en">KDT long-track <strong>two cohorts in a row · 100% graduation · 100% recommend rate</strong></span>
                 </p>
                 <ul class="contact-list">
                     <li>
@@ -113,7 +122,7 @@
                     </li>
                     <li>
                         <i class="bi bi-chat-fill"></i>
-                        <a href="https://open.kakao.com/me/pbjworking" target="_blank" rel="noopener" aria-label="카카오톡 오픈프로필 열기">Kakao · pbjworking</a>
+                        <a href="https://open.kakao.com/me/pbjworking" target="_blank" rel="noopener" aria-label="Open KakaoTalk profile" data-aria-ko="카카오톡 오픈프로필 열기" data-aria-en="Open KakaoTalk profile">Kakao · pbjworking</a>
                     </li>
                 </ul>
             </div>
@@ -126,34 +135,36 @@
     <section id="about" class="tile tile-parchment">
         <div class="tile-header">
             <span class="eyebrow">About</span>
-            <h2>교육 사항 &amp; 자격</h2>
-            <p>학문적 배경과 클라우드 · 데이터 분야 공인 자격으로 다져진 기술 인프라.</p>
+            <h2 lang="ko">교육 사항 &amp; 자격</h2>
+            <h2 lang="en">Education &amp; Certifications</h2>
+            <p lang="ko">학문적 배경과 클라우드 · 데이터 분야 공인 자격으로 다져진 기술 인프라.</p>
+            <p lang="en">A technical foundation built on cross-disciplinary studies and industry-recognized cloud and data credentials.</p>
         </div>
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="info-card">
-                        <h3><i class="bi bi-mortarboard-fill"></i>교육 사항</h3>
+                        <h3><i class="bi bi-mortarboard-fill"></i><span lang="ko">교육 사항</span><span lang="en">Education</span></h3>
                         <ul class="timeline">
                             <li>
-                                <span class="period">2025.08</span>
-                                <span class="title">AI 빅데이터 MS &amp; MBA</span>
-                                <span class="desc">aSSIST · SDG MS (Switzerland, Geneva)</span>
+                                <span class="period" lang="ko">2025.08</span><span class="period" lang="en">Aug. 2025</span>
+                                <span class="title" lang="ko">AI 빅데이터 MS &amp; MBA</span><span class="title" lang="en">MS in AI &amp; Big Data · MBA</span>
+                                <span class="desc" lang="ko">aSSIST · SDG MS (Switzerland, Geneva)</span><span class="desc" lang="en">aSSIST · SDG MS (Geneva, Switzerland)</span>
                             </li>
                             <li>
-                                <span class="period">2023.08</span>
-                                <span class="title">컴퓨터과학 BA</span>
-                                <span class="desc">한국방송통신대학교</span>
+                                <span class="period" lang="ko">2023.08</span><span class="period" lang="en">Aug. 2023</span>
+                                <span class="title" lang="ko">컴퓨터과학 BA</span><span class="title" lang="en">BA in Computer Science</span>
+                                <span class="desc" lang="ko">한국방송통신대학교</span><span class="desc" lang="en">Korea National Open University</span>
                             </li>
                             <li>
-                                <span class="period">2016.02</span>
-                                <span class="title">정치외교학 · 신문방송학 BA</span>
-                                <span class="desc">서강대학교</span>
+                                <span class="period" lang="ko">2016.02</span><span class="period" lang="en">Feb. 2016</span>
+                                <span class="title" lang="ko">정치외교학 · 신문방송학 BA</span><span class="title" lang="en">BA in Political Science &amp; Journalism</span>
+                                <span class="desc" lang="ko">서강대학교</span><span class="desc" lang="en">Sogang University</span>
                             </li>
                             <li>
-                                <span class="period">2008.02</span>
-                                <span class="title">중국어 전공</span>
-                                <span class="desc">서울외국어고등학교</span>
+                                <span class="period" lang="ko">2008.02</span><span class="period" lang="en">Feb. 2008</span>
+                                <span class="title" lang="ko">중국어 전공</span><span class="title" lang="en">Chinese Language Major</span>
+                                <span class="desc" lang="ko">서울외국어고등학교</span><span class="desc" lang="en">Seoul Foreign Language High School</span>
                             </li>
                         </ul>
                     </div>
@@ -161,27 +172,27 @@
 
                 <div class="col-lg-6">
                     <div class="info-card">
-                        <h3><i class="bi bi-patch-check-fill"></i>자격 사항</h3>
+                        <h3><i class="bi bi-patch-check-fill"></i><span lang="ko">자격 사항</span><span lang="en">Certifications</span></h3>
                         <ul class="timeline">
                             <li>
-                                <span class="period">2024.06</span>
-                                <span class="title">AWS Certified Solutions Architect Associate</span>
+                                <span class="period" lang="ko">2024.06</span><span class="period" lang="en">Jun. 2024</span>
+                                <span class="title" lang="ko">AWS Certified Solutions Architect Associate</span><span class="title" lang="en">AWS Certified Solutions Architect — Associate</span>
                                 <span class="badge-issuer">Amazon Web Services</span>
                             </li>
                             <li>
-                                <span class="period">2023.06</span>
+                                <span class="period" lang="ko">2023.06</span><span class="period" lang="en">Jun. 2023</span>
                                 <span class="title">AWS Certified Cloud Practitioner</span>
                                 <span class="badge-issuer">Amazon Web Services</span>
                             </li>
                             <li>
-                                <span class="period">2021.06</span>
-                                <span class="title">정보처리기사</span>
-                                <span class="badge-issuer">한국산업인력공단</span>
+                                <span class="period" lang="ko">2021.06</span><span class="period" lang="en">Jun. 2021</span>
+                                <span class="title" lang="ko">정보처리기사</span><span class="title" lang="en">Engineer Information Processing (National License, KR)</span>
+                                <span class="badge-issuer" lang="ko">한국산업인력공단</span><span class="badge-issuer" lang="en">Human Resources Development Service of Korea</span>
                             </li>
                             <li>
-                                <span class="period">2017.07</span>
-                                <span class="title">국가공인 SQL 개발자</span>
-                                <span class="badge-issuer">한국데이터진흥원</span>
+                                <span class="period" lang="ko">2017.07</span><span class="period" lang="en">Jul. 2017</span>
+                                <span class="title" lang="ko">국가공인 SQL 개발자</span><span class="title" lang="en">SQL Developer (National Certification, KR)</span>
+                                <span class="badge-issuer" lang="ko">한국데이터진흥원</span><span class="badge-issuer" lang="en">Korea Data Agency</span>
                             </li>
                         </ul>
                     </div>
@@ -196,19 +207,24 @@
     <section id="strengths" class="tile tile-light">
         <div class="tile-header">
             <span class="eyebrow">Core Strengths</span>
-            <h2>차별화된 3가지 핵심 역량</h2>
-            <p>뉴스 속도의 최신 교육, 100% 수료의 학습자 맞춤 교육, 장애율 0%의 엔지니어링.</p>
+            <h2 lang="ko">차별화된 3가지 핵심 역량</h2>
+            <h2 lang="en">Three Defining Strengths</h2>
+            <p lang="ko">뉴스 속도의 최신 교육, 100% 수료의 학습자 맞춤 교육, 장애율 0%의 엔지니어링.</p>
+            <p lang="en">Education at the speed of news. Learner-centered teaching with a 100% graduation track record. Engineering with a zero-incident operating history.</p>
         </div>
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="highlight-card">
                         <div class="icon-circle"><i class="bi bi-newspaper"></i></div>
-                        <h3>급변하는 기술 생태계를 뉴스 속도로 업데이트하는 교육</h3>
+                        <h3 lang="ko">급변하는 기술 생태계를 뉴스 속도로 업데이트하는 교육</h3>
+                        <h3 lang="en">Teaching that tracks a fast-moving tech ecosystem at the speed of news</h3>
                         <ul>
                             <li>
-                                <span class="lead-line">AI · 빅데이터 · 클라우드 최신 도구의 즉시 도입</span>
-                                <span class="sub-line">진행 중인 교육과정에 트렌드를 곧바로 반영하는 <strong>뉴스 레벨의 최신 교육</strong></span>
+                                <span class="lead-line" lang="ko">AI · 빅데이터 · 클라우드 최신 도구의 즉시 도입</span>
+                                <span class="lead-line" lang="en">Immediate adoption of the latest AI, big-data, and cloud tooling</span>
+                                <span class="sub-line" lang="ko">진행 중인 교육과정에 트렌드를 곧바로 반영하는 <strong>뉴스 레벨의 최신 교육</strong></span>
+                                <span class="sub-line" lang="en">Course content is refreshed mid-cohort to deliver <strong>news-level up-to-date instruction</strong></span>
                                 <div class="mt-2">
                                     <span class="stack-chip">Cursor</span>
                                     <span class="stack-chip">Claude Code</span>
@@ -222,8 +238,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span class="lead-line">교육 현장 ↔ 기술 실무의 가교 역할</span>
-                                <span class="sub-line">현업 엔지니어링 솔루션을 그대로 다루는 실무형 교육자료와 현장 니즈를 실시간 반영</span>
+                                <span class="lead-line" lang="ko">교육 현장 ↔ 기술 실무의 가교 역할</span>
+                                <span class="lead-line" lang="en">A bridge between the classroom and real-world engineering</span>
+                                <span class="sub-line" lang="ko">현업 엔지니어링 솔루션을 그대로 다루는 실무형 교육자료와 현장 니즈를 실시간 반영</span>
+                                <span class="sub-line" lang="en">Hands-on materials built around production engineering solutions, continuously updated to reflect on-the-ground needs.</span>
                             </li>
                         </ul>
                     </div>
@@ -232,26 +250,42 @@
                 <div class="col-lg-4">
                     <div class="highlight-card">
                         <div class="icon-circle"><i class="bi bi-people-fill"></i></div>
-                        <h3>수료율 100%의 학습자 맞춤, 미래기술 + 실전기술 융합 교육</h3>
+                        <h3 lang="ko">수료율 100%의 학습자 맞춤, 미래기술 + 실전기술 융합 교육</h3>
+                        <h3 lang="en">Learner-centered teaching that fuses emerging and practical tech — with a 100% graduation rate</h3>
                         <ul>
                             <li>
-                                <span class="lead-line">복잡한 개념의 명확한 전달, 맞춤형 성장 경로 설계</span>
-                                <a href="#kdt-graduation" class="sub-line sub-line-link">
+                                <span class="lead-line" lang="ko">복잡한 개념의 명확한 전달, 맞춤형 성장 경로 설계</span>
+                                <span class="lead-line" lang="en">Clear delivery of complex concepts and individually tailored growth paths</span>
+                                <a href="#kdt-graduation" class="sub-line sub-line-link" lang="ko">
                                     2024 &amp; 2025년 KDT 장기과정 <strong>2기수 연속 100% 수료</strong>
                                     <i class="bi bi-arrow-down-circle"></i>
                                 </a>
-                            </li>
-                            <li>
-                                <span class="lead-line">실습 중심 기획 · AI · 클라우드 · 백엔드 교육 직접 설계</span>
-                                <a href="#satisfaction-evidence" class="sub-line sub-line-link">
-                                    기업 IT 실무자 교육의 현장 중심 니즈를 완벽히 반영한 특강으로 <strong>최고 수준의 만족도 달성</strong>
+                                <a href="#kdt-graduation" class="sub-line sub-line-link" lang="en">
+                                    2024 &amp; 2025 KDT long-track program — <strong>100% graduation, two cohorts in a row</strong>
                                     <i class="bi bi-arrow-down-circle"></i>
                                 </a>
                             </li>
                             <li>
-                                <span class="lead-line">K-12 ~ 대학생 ~ 현직 기술 전문가까지 전 수준 멘토링</span>
-                                <a href="#project-overseas" class="sub-line sub-line-link">
+                                <span class="lead-line" lang="ko">실습 중심 기획 · AI · 클라우드 · 백엔드 교육 직접 설계</span>
+                                <span class="lead-line" lang="en">Hands-on curriculum design across product planning, AI, cloud, and backend engineering</span>
+                                <a href="#satisfaction-evidence" class="sub-line sub-line-link" lang="ko">
+                                    기업 IT 실무자 교육의 현장 중심 니즈를 완벽히 반영한 특강으로 <strong>최고 수준의 만족도 달성</strong>
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                                <a href="#satisfaction-evidence" class="sub-line sub-line-link" lang="en">
+                                    Special seminars precisely aligned with the on-the-job needs of enterprise IT practitioners, achieving <strong>top-tier satisfaction scores</strong>
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="lead-line" lang="ko">K-12 ~ 대학생 ~ 현직 기술 전문가까지 전 수준 멘토링</span>
+                                <span class="lead-line" lang="en">Mentoring across every level — K-12 through university and into seasoned industry professionals</span>
+                                <a href="#project-overseas" class="sub-line sub-line-link" lang="ko">
                                     미국 인디애나주 초중고 · 퍼듀대학교, 입직자 취업준비 · 진로 멘토링, 현직자 기술교육 전 영역
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                </a>
+                                <a href="#project-overseas" class="sub-line sub-line-link" lang="en">
+                                    K-12 schools in Indiana, USA · Purdue University · job-readiness and career mentoring for entry-level engineers · advanced technical training for working professionals.
                                     <i class="bi bi-arrow-down-circle"></i>
                                 </a>
                             </li>
@@ -262,19 +296,26 @@
                 <div class="col-lg-4">
                     <div class="highlight-card">
                         <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
-                        <h3>확장성과 안정성 설계 기술력으로 장애율 0%의 엔지니어링</h3>
+                        <h3 lang="ko">확장성과 안정성 설계 기술력으로 장애율 0%의 엔지니어링</h3>
+                        <h3 lang="en">Engineering built for scale and stability — with a zero-incident operating record</h3>
                         <ul>
                             <li>
-                                <span class="lead-line">확장 가능한 시스템 설계 · 구현 실무 경험</span>
-                                <span class="sub-line"><strong>DAU 300만+</strong> 코인거래소 실시간 알림 시스템 &amp; 광고 시스템에서 대량 트래픽 제어</span>
+                                <span class="lead-line" lang="ko">확장 가능한 시스템 설계 · 구현 실무 경험</span>
+                                <span class="lead-line" lang="en">Hands-on design and implementation of large-scale, high-throughput systems</span>
+                                <span class="sub-line" lang="ko"><strong>DAU 300만+</strong> 코인거래소 실시간 알림 시스템 &amp; 광고 시스템에서 대량 트래픽 제어</span>
+                                <span class="sub-line" lang="en"><strong>DAU 3M+</strong> — large-volume traffic handled across a crypto-exchange real-time notification platform and an advertising system.</span>
                             </li>
                             <li>
-                                <span class="lead-line">클라우드 배포 · 운영 주도, 안정성과 효율성 극대화</span>
-                                <span class="sub-line">(주)키즈노트 광고시스템 리뉴얼 런칭 후 <strong>2년간 개발 장애율 0%</strong></span>
+                                <span class="lead-line" lang="ko">클라우드 배포 · 운영 주도, 안정성과 효율성 극대화</span>
+                                <span class="lead-line" lang="en">Led cloud deployment and operations — maximizing both stability and efficiency</span>
+                                <span class="sub-line" lang="ko">(주)키즈노트 광고시스템 리뉴얼 런칭 후 <strong>2년간 개발 장애율 0%</strong></span>
+                                <span class="sub-line" lang="en">After the Kidsnote ad-system relaunch — <strong>zero engineering-side incidents for two consecutive years</strong></span>
                             </li>
                             <li>
-                                <span class="lead-line">데이터 파이프라인 최적화 · 분산 아키텍처 설계</span>
-                                <span class="sub-line">MSA 시스템 설계 · 구축, Kafka 기반 이벤트 스트리밍 및 재직자 직무 교육</span>
+                                <span class="lead-line" lang="ko">데이터 파이프라인 최적화 · 분산 아키텍처 설계</span>
+                                <span class="lead-line" lang="en">Optimization of data pipelines and design of distributed architectures</span>
+                                <span class="sub-line" lang="ko">MSA 시스템 설계 · 구축, Kafka 기반 이벤트 스트리밍 및 재직자 직무 교육</span>
+                                <span class="sub-line" lang="en">Design and build-out of MSA systems and Kafka-based event streaming — also delivered as in-service training for working engineers.</span>
                             </li>
                         </ul>
                     </div>
@@ -285,55 +326,71 @@
             <div class="row mt-5 g-4 align-items-stretch">
                 <div class="col-12 col-lg-6">
                     <div id="satisfaction-evidence" class="info-card h-100">
-                        <h3><i class="bi bi-bar-chart-line-fill"></i>기업 IT 실무자 교육 만족도</h3>
+                        <h3><i class="bi bi-bar-chart-line-fill"></i><span lang="ko">기업 IT 실무자 교육 만족도</span><span lang="en">Satisfaction · enterprise IT training</span></h3>
                         <button
                             type="button"
                             class="evidence-image-btn is-natural mt-2"
                             data-bs-toggle="modal"
                             data-bs-target="#evidenceModal"
                             data-bs-image="assets/enterprise-it-training-satisfaction.png"
+                            data-bs-caption-ko="기업 IT 실무자 교육 만족도 그래프"
+                            data-bs-caption-en="Satisfaction-score chart · enterprise IT training"
                             data-bs-caption="기업 IT 실무자 교육 만족도 그래프"
-                            aria-label="기업 IT 실무자 교육 만족도 그래프 이미지 확대 보기"
+                            aria-label="Satisfaction-score chart — open full size"
+                            data-aria-ko="기업 IT 실무자 교육 만족도 그래프 이미지 확대 보기"
+                            data-aria-en="Satisfaction-score chart for enterprise IT training — open full size"
                         >
                             <img
                                 src="assets/enterprise-it-training-satisfaction.png"
-                                alt="기업 IT 실무자 교육 만족도 그래프"
+                                alt="Satisfaction-score chart · enterprise IT training"
+                                data-alt-ko="기업 IT 실무자 교육 만족도 그래프"
+                                data-alt-en="Satisfaction-score chart · enterprise IT training"
                                 loading="lazy"
                             />
                             <span class="evidence-zoom-hint">
-                                <i class="bi bi-zoom-in"></i>원본 보기
+                                <i class="bi bi-zoom-in"></i><span lang="ko">원본 보기</span><span lang="en">View original</span>
                             </span>
                         </button>
                         <p class="evidence-summary">
-                            <span class="evidence-summary-clients">하나금융그룹 · KT · LG헬로비전 · KOICA · 모두의연구소</span>
-                            <span class="evidence-summary-tag">— 기업 실무자 대상 강의에서 최고 수준의 만족도를 달성합니다.</span>
+                            <span class="evidence-summary-clients" lang="ko">하나금융그룹 · KT · LG헬로비전 · KOICA · 모두의연구소</span>
+                            <span class="evidence-summary-clients" lang="en">Hana Financial Group · KT · LG HelloVision · KOICA · Modulabs</span>
+                            <span class="evidence-summary-tag" lang="ko">— 기업 실무자 대상 강의에서 최고 수준의 만족도를 달성합니다.</span>
+                            <span class="evidence-summary-tag" lang="en">— consistently top-tier satisfaction scores from enterprise practitioner audiences.</span>
                         </p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="info-card h-100">
-                        <h3><i class="bi bi-chat-square-quote-fill"></i>LinkedIn 동료 추천사 (2024)</h3>
+                        <h3><i class="bi bi-chat-square-quote-fill"></i><span lang="ko">LinkedIn 동료 추천사 (2024)</span><span lang="en">LinkedIn peer recommendation (2024)</span></h3>
                         <button
                             type="button"
                             class="evidence-image-btn is-natural mt-2"
                             data-bs-toggle="modal"
                             data-bs-target="#evidenceModal"
                             data-bs-image="assets/linkedin-recommendation-kakao-kidsnote.png"
+                            data-bs-caption-ko="카카오 키즈노트 동료 LinkedIn 추천사"
+                            data-bs-caption-en="LinkedIn recommendation · Kakao Kidsnote teammate"
                             data-bs-caption="카카오 키즈노트 동료 LinkedIn 추천사"
-                            aria-label="카카오 키즈노트 동료 LinkedIn 추천사 이미지 확대 보기"
+                            aria-label="LinkedIn recommendation — open full size"
+                            data-aria-ko="카카오 키즈노트 동료 LinkedIn 추천사 이미지 확대 보기"
+                            data-aria-en="LinkedIn recommendation — open full size"
                         >
                             <img
                                 src="assets/linkedin-recommendation-kakao-kidsnote.png"
-                                alt="카카오 키즈노트 동료 LinkedIn 추천사"
+                                alt="LinkedIn recommendation · Kakao Kidsnote teammate"
+                                data-alt-ko="카카오 키즈노트 동료 LinkedIn 추천사"
+                                data-alt-en="LinkedIn recommendation · Kakao Kidsnote teammate"
                                 loading="lazy"
                             />
                             <span class="evidence-zoom-hint">
-                                <i class="bi bi-zoom-in"></i>원본 보기
+                                <i class="bi bi-zoom-in"></i><span lang="ko">원본 보기</span><span lang="en">View original</span>
                             </span>
                         </button>
                         <blockquote class="linkedin-quote">
-                            <p class="linkedin-quote-text">&ldquo;그가 감독하는 동안 발생한 서비스 장애는 0건이었습니다.&rdquo;</p>
-                            <cite class="linkedin-quote-cite">— 카카오 키즈노트 팀</cite>
+                            <p class="linkedin-quote-text" lang="ko">&ldquo;그가 감독하는 동안 발생한 서비스 장애는 0건이었습니다.&rdquo;</p>
+                            <p class="linkedin-quote-text" lang="en">&ldquo;Under his stewardship, the team recorded zero service incidents.&rdquo;</p>
+                            <cite class="linkedin-quote-cite" lang="ko">— 카카오 키즈노트 팀</cite>
+                            <cite class="linkedin-quote-cite" lang="en">— Kakao Kidsnote team</cite>
                         </blockquote>
                     </div>
                 </div>
@@ -347,30 +404,38 @@
     <section id="kdt-graduation" class="tile tile-parchment kdt-section">
         <div class="tile-header">
             <span class="eyebrow">Track Record</span>
-            <h2>2024 &amp; 2025년 KDT 장기과정<br>2기수 연속 100% 수료</h2>
-            <p>풀스택 엔지니어 양성 1,000시간 장기과정, 2년간 총 48명<br>— 두 기수 모두 100% 수료, 만족도 제출 인원 전원 추천.</p>
+            <h2 lang="ko">2024 &amp; 2025년 KDT 장기과정<br>2기수 연속 100% 수료</h2>
+            <h2 lang="en">2024 &amp; 2025 KDT long-track program<br>100% graduation — two cohorts in a row</h2>
+            <p lang="ko">풀스택 엔지니어 양성 1,000시간 장기과정, 2년간 총 48명<br>— 두 기수 모두 100% 수료, 만족도 제출 인원 전원 추천.</p>
+            <p lang="en">1,000-hour full-stack engineer program — 48 graduates over two years<br>— both cohorts graduated at 100% and every survey respondent gave a positive recommendation.</p>
         </div>
         <div class="container">
             <div class="row g-4 mb-5">
                 <div class="col-md-4">
                     <div class="stat-card">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">2기수 연속 수료율</span>
-                        <span class="stat-sub">2024년 · 2025년 삼육대학교 KDT</span>
+                        <span class="stat-label" lang="ko">2기수 연속 수료율</span>
+                        <span class="stat-label" lang="en">Graduation rate · 2 consecutive cohorts</span>
+                        <span class="stat-sub" lang="ko">2024년 · 2025년 삼육대학교 KDT</span>
+                        <span class="stat-sub" lang="en">2024 · 2025 Sahmyook University KDT</span>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="stat-card">
                         <span class="stat-number">48 / 48</span>
-                        <span class="stat-label">총 수료생 (29명 + 19명)</span>
-                        <span class="stat-sub">전원 1,000시간 장기과정 수료</span>
+                        <span class="stat-label" lang="ko">총 수료생 (29명 + 19명)</span>
+                        <span class="stat-label" lang="en">Total graduates (29 + 19)</span>
+                        <span class="stat-sub" lang="ko">전원 1,000시간 장기과정 수료</span>
+                        <span class="stat-sub" lang="en">Every learner completed the full 1,000-hour program</span>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="stat-card">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">교육과정 만족도 추천</span>
-                        <span class="stat-sub">만족도 조사 제출 인원 전원 추천</span>
+                        <span class="stat-label" lang="ko">교육과정 만족도 추천</span>
+                        <span class="stat-label" lang="en">Would-recommend rate</span>
+                        <span class="stat-sub" lang="ko">만족도 조사 제출 인원 전원 추천</span>
+                        <span class="stat-sub" lang="en">All survey respondents recommended the course</span>
                     </div>
                 </div>
             </div>
@@ -379,23 +444,24 @@
                 <div class="cohort-header">
                     <h3>
                         <i class="bi bi-mortarboard-fill text-primary me-1"></i>
-                        2024년 삼육대학교 KDT 1,000시간 장기과정
+                        <span lang="ko">2024년 삼육대학교 KDT 1,000시간 장기과정</span>
+                        <span lang="en">2024 Sahmyook University KDT · 1,000-hour Long-track Program</span>
                     </h3>
                     <div class="cohort-meta">
                         <span class="badge bg-primary">
                             <i class="bi bi-people-fill me-1"></i>
-                            29명 중 29명 수료 100%
+                            <span lang="ko">29명 중 29명 수료 100%</span><span lang="en">29 of 29 graduated · 100%</span>
                         </span>
                         <span class="badge bg-success">
                             <i class="bi bi-hand-thumbs-up-fill me-1"></i>
-                            만족도 조사 제출 인원 전원 추천 100%
+                            <span lang="ko">만족도 조사 제출 인원 전원 추천 100%</span><span lang="en">100% recommend rate among survey respondents</span>
                         </span>
                     </div>
                 </div>
                 <div class="row g-3 cohort-body">
                     <div class="col-md-6">
                         <details open class="evidence-details">
-                            <summary><i class="bi bi-bar-chart-fill"></i>만족도 조사</summary>
+                            <summary><i class="bi bi-bar-chart-fill"></i><span lang="ko">만족도 조사</span><span lang="en">Satisfaction survey</span></summary>
                             <div class="evidence-body">
                                 <button
                                     type="button"
@@ -403,16 +469,22 @@
                                     data-bs-toggle="modal"
                                     data-bs-target="#evidenceModal"
                                     data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-satisfaction-survey.png"
+                                    data-bs-caption-ko="2024년 KDT 만족도 조사 결과"
+                                    data-bs-caption-en="2024 KDT satisfaction-survey results"
                                     data-bs-caption="2024년 KDT 만족도 조사 결과"
-                                    aria-label="2024년 KDT 만족도 조사 결과 이미지 확대 보기"
+                                    aria-label="2024 KDT satisfaction-survey results — open full size"
+                                    data-aria-ko="2024년 KDT 만족도 조사 결과 이미지 확대 보기"
+                                    data-aria-en="2024 KDT satisfaction-survey results — open full size"
                                 >
                                     <img
                                         src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-satisfaction-survey.png"
-                                        alt="2024년 KDT 만족도 조사 결과"
+                                        alt="2024 KDT satisfaction-survey results"
+                                        data-alt-ko="2024년 KDT 만족도 조사 결과"
+                                        data-alt-en="2024 KDT satisfaction-survey results"
                                         loading="lazy"
                                     />
                                     <span class="evidence-zoom-hint">
-                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                        <i class="bi bi-zoom-in"></i><span lang="ko">원본 보기</span><span lang="en">View original</span>
                                     </span>
                                 </button>
                             </div>
@@ -420,7 +492,7 @@
                     </div>
                     <div class="col-md-6">
                         <details open class="evidence-details">
-                            <summary><i class="bi bi-chat-square-quote-fill"></i>수강 후기</summary>
+                            <summary><i class="bi bi-chat-square-quote-fill"></i><span lang="ko">수강 후기</span><span lang="en">Learner reviews</span></summary>
                             <div class="evidence-body">
                                 <button
                                     type="button"
@@ -428,16 +500,22 @@
                                     data-bs-toggle="modal"
                                     data-bs-target="#evidenceModal"
                                     data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-student-reviews.png"
+                                    data-bs-caption-ko="2024년 KDT 수강생 후기"
+                                    data-bs-caption-en="2024 KDT learner reviews"
                                     data-bs-caption="2024년 KDT 수강생 후기"
-                                    aria-label="2024년 KDT 수강생 후기 이미지 확대 보기"
+                                    aria-label="2024 KDT learner reviews — open full size"
+                                    data-aria-ko="2024년 KDT 수강생 후기 이미지 확대 보기"
+                                    data-aria-en="2024 KDT learner reviews — open full size"
                                 >
                                     <img
                                         src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2024-student-reviews.png"
-                                        alt="2024년 KDT 수강생 후기"
+                                        alt="2024 KDT learner reviews"
+                                        data-alt-ko="2024년 KDT 수강생 후기"
+                                        data-alt-en="2024 KDT learner reviews"
                                         loading="lazy"
                                     />
                                     <span class="evidence-zoom-hint">
-                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                        <i class="bi bi-zoom-in"></i><span lang="ko">원본 보기</span><span lang="en">View original</span>
                                     </span>
                                 </button>
                             </div>
@@ -450,23 +528,24 @@
                 <div class="cohort-header">
                     <h3>
                         <i class="bi bi-mortarboard-fill text-primary me-1"></i>
-                        2025년 삼육대학교 KDT 1,000시간 장기과정
+                        <span lang="ko">2025년 삼육대학교 KDT 1,000시간 장기과정</span>
+                        <span lang="en">2025 Sahmyook University KDT · 1,000-hour Long-track Program</span>
                     </h3>
                     <div class="cohort-meta">
                         <span class="badge bg-primary">
                             <i class="bi bi-people-fill me-1"></i>
-                            19명 중 19명 수료 100%
+                            <span lang="ko">19명 중 19명 수료 100%</span><span lang="en">19 of 19 graduated · 100%</span>
                         </span>
                         <span class="badge bg-success">
                             <i class="bi bi-hand-thumbs-up-fill me-1"></i>
-                            만족도 조사 제출 인원 전원 추천 100%
+                            <span lang="ko">만족도 조사 제출 인원 전원 추천 100%</span><span lang="en">100% recommend rate among survey respondents</span>
                         </span>
                     </div>
                 </div>
                 <div class="row g-3 cohort-body">
                     <div class="col-md-6">
                         <details open class="evidence-details">
-                            <summary><i class="bi bi-bar-chart-fill"></i>만족도 조사</summary>
+                            <summary><i class="bi bi-bar-chart-fill"></i><span lang="ko">만족도 조사</span><span lang="en">Satisfaction survey</span></summary>
                             <div class="evidence-body">
                                 <button
                                     type="button"
@@ -474,16 +553,22 @@
                                     data-bs-toggle="modal"
                                     data-bs-target="#evidenceModal"
                                     data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-satisfaction-survey.png"
+                                    data-bs-caption-ko="2025년 KDT 만족도 조사 결과"
+                                    data-bs-caption-en="2025 KDT satisfaction-survey results"
                                     data-bs-caption="2025년 KDT 만족도 조사 결과"
-                                    aria-label="2025년 KDT 만족도 조사 결과 이미지 확대 보기"
+                                    aria-label="2025 KDT satisfaction-survey results — open full size"
+                                    data-aria-ko="2025년 KDT 만족도 조사 결과 이미지 확대 보기"
+                                    data-aria-en="2025 KDT satisfaction-survey results — open full size"
                                 >
                                     <img
                                         src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-satisfaction-survey.png"
-                                        alt="2025년 KDT 만족도 조사 결과"
+                                        alt="2025 KDT satisfaction-survey results"
+                                        data-alt-ko="2025년 KDT 만족도 조사 결과"
+                                        data-alt-en="2025 KDT satisfaction-survey results"
                                         loading="lazy"
                                     />
                                     <span class="evidence-zoom-hint">
-                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                        <i class="bi bi-zoom-in"></i><span lang="ko">원본 보기</span><span lang="en">View original</span>
                                     </span>
                                 </button>
                             </div>
@@ -491,7 +576,7 @@
                     </div>
                     <div class="col-md-6">
                         <details open class="evidence-details">
-                            <summary><i class="bi bi-chat-square-quote-fill"></i>수강 후기</summary>
+                            <summary><i class="bi bi-chat-square-quote-fill"></i><span lang="ko">수강 후기</span><span lang="en">Learner reviews</span></summary>
                             <div class="evidence-body">
                                 <button
                                     type="button"
@@ -499,16 +584,22 @@
                                     data-bs-toggle="modal"
                                     data-bs-target="#evidenceModal"
                                     data-bs-image="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-student-reviews.png"
+                                    data-bs-caption-ko="2025년 KDT 수강생 후기"
+                                    data-bs-caption-en="2025 KDT learner reviews"
                                     data-bs-caption="2025년 KDT 수강생 후기"
-                                    aria-label="2025년 KDT 수강생 후기 이미지 확대 보기"
+                                    aria-label="2025 KDT learner reviews — open full size"
+                                    data-aria-ko="2025년 KDT 수강생 후기 이미지 확대 보기"
+                                    data-aria-en="2025 KDT learner reviews — open full size"
                                 >
                                     <img
                                         src="pages/assets/2024-2025년-kdt-장기과정-2기수-연속-100-수료/kdt-2025-student-reviews.png"
-                                        alt="2025년 KDT 수강생 후기"
+                                        alt="2025 KDT learner reviews"
+                                        data-alt-ko="2025년 KDT 수강생 후기"
+                                        data-alt-en="2025 KDT learner reviews"
                                         loading="lazy"
                                     />
                                     <span class="evidence-zoom-hint">
-                                        <i class="bi bi-zoom-in"></i>원본 보기
+                                        <i class="bi bi-zoom-in"></i><span lang="ko">원본 보기</span><span lang="en">View original</span>
                                     </span>
                                 </button>
                             </div>
@@ -525,104 +616,157 @@
     <section id="teaching" class="tile tile-light">
         <div class="tile-header">
             <span class="eyebrow">Teaching</span>
-            <h2>강의 및 교육 경력</h2>
-            <p>2018년부터 누적된 강의 트랙 — 대기업 재직자 교육부터 KDT 장기과정, 국제기구 협력교육까지.</p>
+            <h2 lang="ko">강의 및 교육 경력</h2>
+            <h2 lang="en">Teaching History</h2>
+            <p lang="ko">2018년부터 누적된 강의 트랙 — 대기업 재직자 교육부터 KDT 장기과정, 국제기구 협력교육까지.</p>
+            <p lang="en">A continuous teaching track since 2018 — from corporate enterprise training to long-track KDT programs and international development cooperation.</p>
         </div>
         <div class="tile-container-wide">
             <div class="comparison-table">
                 <table>
                     <thead>
                         <tr>
-                            <th>강의 및 교육 활동</th>
-                            <th style="width: 200px">기간</th>
-                            <th style="width: 180px">운영기관</th>
+                            <th><span lang="ko">강의 및 교육 활동</span><span lang="en">Program</span></th>
+                            <th style="width: 200px"><span lang="ko">기간</span><span lang="en">Period</span></th>
+                            <th style="width: 180px"><span lang="ko">운영기관</span><span lang="en">Operator</span></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 5기</td>
-                            <td>2026.03 ~ 2026.06</td>
-                            <td><span class="badge-notion tag-purple">모두의연구소</span></td>
+                            <td>
+                                <span lang="ko">모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 5기</span>
+                                <span lang="en">Modulabs · AI-enabled Service Planning &amp; Development Pro Program (Vibe-Coding Project Track for Working Professionals) — Cohort 5</span>
+                            </td>
+                            <td><span lang="ko">2026.03 ~ 2026.06</span><span lang="en">Mar. 2026 — Jun. 2026</span></td>
+                            <td><span class="badge-notion tag-purple"><span lang="ko">모두의연구소</span><span lang="en">Modulabs</span></span></td>
                         </tr>
                         <tr>
-                            <td>모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 2기</td>
-                            <td>2025.10 ~ 2026.01</td>
-                            <td><span class="badge-notion tag-purple">모두의연구소</span></td>
+                            <td>
+                                <span lang="ko">모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 2기</span>
+                                <span lang="en">Modulabs · AI-enabled Service Planning &amp; Development Pro Program (Vibe-Coding Project Track for Working Professionals) — Cohort 2</span>
+                            </td>
+                            <td><span lang="ko">2025.10 ~ 2026.01</span><span lang="en">Oct. 2025 — Jan. 2026</span></td>
+                            <td><span class="badge-notion tag-purple"><span lang="ko">모두의연구소</span><span lang="en">Modulabs</span></span></td>
                         </tr>
                         <tr>
-                            <td>삼육대학교 KDT 산학협력 학점 연계과정 (AI 활용 클라우드 네이티브 풀스택 엔지니어 양성과정)</td>
-                            <td>2025.01 ~ 2025.09</td>
-                            <td><span class="badge-notion tag-orange">한국정보교육원</span></td>
+                            <td>
+                                <span lang="ko">삼육대학교 KDT 산학협력 학점 연계과정 (AI 활용 클라우드 네이티브 풀스택 엔지니어 양성과정)</span>
+                                <span lang="en">Sahmyook University KDT · Industry-Academia Credit-linked Program (AI-enabled Cloud-Native Full-Stack Engineer Track)</span>
+                            </td>
+                            <td><span lang="ko">2025.01 ~ 2025.09</span><span lang="en">Jan. 2025 — Sep. 2025</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">한국정보교육원</span><span lang="en">Korea Info. Edu. Institute</span></span></td>
                         </tr>
                         <tr>
-                            <td>구름 프로펙트 클라우드과정 특강 (체계적 프로젝트 문서화 &amp; Kafka 핵심 개념 실무 적용)</td>
-                            <td>2025.06</td>
-                            <td><span class="badge-notion tag-green">구름EDU</span></td>
+                            <td>
+                                <span lang="ko">구름 프로펙트 클라우드과정 특강 (체계적 프로젝트 문서화 &amp; Kafka 핵심 개념 실무 적용)</span>
+                                <span lang="en">Goorm Prophect Cloud-Track Seminar (Systematic Project Documentation &amp; Practical Application of Kafka Fundamentals)</span>
+                            </td>
+                            <td><span lang="ko">2025.06</span><span lang="en">Jun. 2025</span></td>
+                            <td><span class="badge-notion tag-green"><span lang="ko">구름EDU</span><span lang="en">Goorm EDU</span></span></td>
                         </tr>
                         <tr>
-                            <td>스리랑카 커리어 플랫폼 IT 운영자 국내 초청교육 (웹 개발 최신 트렌드 &amp; 생성형 AI 특강)</td>
-                            <td>2025.06</td>
+                            <td>
+                                <span lang="ko">스리랑카 커리어 플랫폼 IT 운영자 국내 초청교육 (웹 개발 최신 트렌드 &amp; 생성형 AI 특강)</span>
+                                <span lang="en">Sri Lanka Career-Platform IT Operators Invitational Program (Latest Web-Development Trends &amp; Generative-AI Seminar)</span>
+                            </td>
+                            <td><span lang="ko">2025.06</span><span lang="en">Jun. 2025</span></td>
                             <td><span class="badge-notion tag-purple">KOICA</span></td>
                         </tr>
                         <tr>
-                            <td>하나금융그룹 현직자 교육 (리눅스 중급 심화 및 MSA 웹 서버 구축 및 운영 실무 특강)</td>
-                            <td>2025.05</td>
-                            <td><span class="badge-notion tag-orange">하나금융그룹</span></td>
+                            <td>
+                                <span lang="ko">하나금융그룹 현직자 교육 (리눅스 중급 심화 및 MSA 웹 서버 구축 및 운영 실무 특강)</span>
+                                <span lang="en">Hana Financial Group · In-Service Training (Intermediate Linux Deep-Dive &amp; MSA Web-Server Build/Operation Workshop)</span>
+                            </td>
+                            <td><span lang="ko">2025.05</span><span lang="en">May 2025</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">하나금융그룹</span><span lang="en">Hana Financial Group</span></span></td>
                         </tr>
                         <tr>
-                            <td>하나금융그룹 현직자 교육 (클라우드 기반 MSA 서비스 설계 &amp; Kubernetes (EKS) 활용 운영 자동화)</td>
-                            <td>2024.12</td>
-                            <td><span class="badge-notion tag-orange">하나금융그룹</span></td>
+                            <td>
+                                <span lang="ko">하나금융그룹 현직자 교육 (클라우드 기반 MSA 서비스 설계 &amp; Kubernetes (EKS) 활용 운영 자동화)</span>
+                                <span lang="en">Hana Financial Group · In-Service Training (Cloud-based MSA Service Design &amp; Kubernetes (EKS) Operations Automation)</span>
+                            </td>
+                            <td><span lang="ko">2024.12</span><span lang="en">Dec. 2024</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">하나금융그룹</span><span lang="en">Hana Financial Group</span></span></td>
                         </tr>
                         <tr>
-                            <td>삼육대학교 KDT (클라우드 기반 풀스택 Java Spring Boot &amp; React Web 엔지니어 양성과정)</td>
-                            <td>2024.01 ~ 2024.09</td>
-                            <td><span class="badge-notion tag-orange">한국정보교육원</span></td>
+                            <td>
+                                <span lang="ko">삼육대학교 KDT (클라우드 기반 풀스택 Java Spring Boot &amp; React Web 엔지니어 양성과정)</span>
+                                <span lang="en">Sahmyook University KDT (Cloud-based Full-Stack Java Spring Boot &amp; React Web Engineer Track)</span>
+                            </td>
+                            <td><span lang="ko">2024.01 ~ 2024.09</span><span lang="en">Jan. 2024 — Sep. 2024</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">한국정보교육원</span><span lang="en">Korea Info. Edu. Institute</span></span></td>
                         </tr>
                         <tr>
-                            <td>LG헬로비전 DX DATA SCHOOL 엔지니어 양성과정 프로젝트 멘토링</td>
-                            <td>2024.05 ~ 2024.06</td>
-                            <td><span class="badge-notion tag-green">한국전파진흥협회</span></td>
+                            <td>
+                                <span lang="ko">LG헬로비전 DX DATA SCHOOL 엔지니어 양성과정 프로젝트 멘토링</span>
+                                <span lang="en">LG HelloVision · DX DATA SCHOOL Engineer Track — Project Mentoring</span>
+                            </td>
+                            <td><span lang="ko">2024.05 ~ 2024.06</span><span lang="en">May 2024 — Jun. 2024</span></td>
+                            <td><span class="badge-notion tag-green"><span lang="ko">한국전파진흥협회</span><span lang="en">Radio Promotion Assoc. KR</span></span></td>
                         </tr>
                         <tr>
-                            <td>KT 재직자 교육 (AWS 기반 Kafka 데이터 스트리밍 &amp; Redis Cache 클러스터 구축 연동 과정)</td>
-                            <td>2024.05</td>
-                            <td><span class="badge-notion tag-purple">삼성 멀티캠퍼스</span></td>
+                            <td>
+                                <span lang="ko">KT 재직자 교육 (AWS 기반 Kafka 데이터 스트리밍 &amp; Redis Cache 클러스터 구축 연동 과정)</span>
+                                <span lang="en">KT · In-Service Training (AWS-based Kafka Data Streaming &amp; Redis Cache Cluster Integration)</span>
+                            </td>
+                            <td><span lang="ko">2024.05</span><span lang="en">May 2024</span></td>
+                            <td><span class="badge-notion tag-purple"><span lang="ko">삼성 멀티캠퍼스</span><span lang="en">Samsung Multicampus</span></span></td>
                         </tr>
                         <tr>
-                            <td>메이커교육 분야 글로벌 서비스 기획 및 해외 진출기업 컨설팅</td>
-                            <td>2022.11 ~ 2023.12</td>
-                            <td><span class="badge-notion tag-green">메이커스월드</span></td>
+                            <td>
+                                <span lang="ko">메이커교육 분야 글로벌 서비스 기획 및 해외 진출기업 컨설팅</span>
+                                <span lang="en">Global Service Planning for the Maker-Education Sector &amp; Consulting for Overseas-bound Companies</span>
+                            </td>
+                            <td><span lang="ko">2022.11 ~ 2023.12</span><span lang="en">Nov. 2022 — Dec. 2023</span></td>
+                            <td><span class="badge-notion tag-green"><span lang="ko">메이커스월드</span><span lang="en">Makers World</span></span></td>
                         </tr>
                         <tr>
-                            <td>동국대, 건국대, 대학연합 백엔드 개발자 진로 특강</td>
-                            <td>2022.08 ~ 2022.11</td>
-                            <td><span class="badge-notion tag-green">엘리트코리아</span></td>
+                            <td>
+                                <span lang="ko">동국대, 건국대, 대학연합 백엔드 개발자 진로 특강</span>
+                                <span lang="en">Backend Developer Career Talks · Dongguk Univ., Konkuk Univ., and University Consortium</span>
+                            </td>
+                            <td><span lang="ko">2022.08 ~ 2022.11</span><span lang="en">Aug. 2022 — Nov. 2022</span></td>
+                            <td><span class="badge-notion tag-green"><span lang="ko">엘리트코리아</span><span lang="en">Elite Korea</span></span></td>
                         </tr>
                         <tr>
-                            <td>내일배움캠프 클라우드 웹 개발자 양성과정 프로젝트 및 진로 멘토링</td>
-                            <td>2021.12 ~ 2022.03</td>
-                            <td><span class="badge-notion tag-orange">스파르타 코딩</span></td>
+                            <td>
+                                <span lang="ko">내일배움캠프 클라우드 웹 개발자 양성과정 프로젝트 및 진로 멘토링</span>
+                                <span lang="en">Naeil Baeoom Camp · Cloud Web Developer Track — Project and Career Mentoring</span>
+                            </td>
+                            <td><span lang="ko">2021.12 ~ 2022.03</span><span lang="en">Dec. 2021 — Mar. 2022</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">스파르타 코딩</span><span lang="en">Sparta Coding Club</span></span></td>
                         </tr>
                         <tr>
-                            <td>기아자동차 노사공동교육 (4차산업혁명 트렌드와 SW/HW 융합기술 특강)</td>
-                            <td>2020.06 ~ 2021.12</td>
-                            <td><span class="badge-notion tag-orange">기아자동차</span></td>
+                            <td>
+                                <span lang="ko">기아자동차 노사공동교육 (4차산업혁명 트렌드와 SW/HW 융합기술 특강)</span>
+                                <span lang="en">Kia Motors · Joint Labor-Management Training (4th Industrial Revolution Trends &amp; SW/HW Convergence Seminar)</span>
+                            </td>
+                            <td><span lang="ko">2020.06 ~ 2021.12</span><span lang="en">Jun. 2020 — Dec. 2021</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">기아자동차</span><span lang="en">Kia Motors</span></span></td>
                         </tr>
                         <tr>
-                            <td>모듈형 로봇프로그래밍 교육 (미국, 중동)</td>
-                            <td>2018.09 ~ 2019.12</td>
-                            <td><span class="badge-notion tag-green">럭스로보</span></td>
+                            <td>
+                                <span lang="ko">모듈형 로봇프로그래밍 교육 (미국, 중동)</span>
+                                <span lang="en">Modular Robotics Programming (USA, Middle East)</span>
+                            </td>
+                            <td><span lang="ko">2018.09 ~ 2019.12</span><span lang="en">Sep. 2018 — Dec. 2019</span></td>
+                            <td><span class="badge-notion tag-green"><span lang="ko">럭스로보</span><span lang="en">Luxrobo</span></span></td>
                         </tr>
                         <tr>
-                            <td>임베디드SW 엔지니어 양성과정 (아두이노)</td>
-                            <td>2018.07 ~ 2018.09</td>
-                            <td><span class="badge-notion tag-purple">광운대학교</span></td>
+                            <td>
+                                <span lang="ko">임베디드SW 엔지니어 양성과정 (아두이노)</span>
+                                <span lang="en">Embedded SW Engineer Track (Arduino)</span>
+                            </td>
+                            <td><span lang="ko">2018.07 ~ 2018.09</span><span lang="en">Jul. 2018 — Sep. 2018</span></td>
+                            <td><span class="badge-notion tag-purple"><span lang="ko">광운대학교</span><span lang="en">Kwangwoon University</span></span></td>
                         </tr>
                         <tr>
-                            <td>파이썬 웹 프로그래밍 과정 (Django)</td>
-                            <td>2018.04 ~ 2018.05</td>
-                            <td><span class="badge-notion tag-orange">KG IT뱅크</span></td>
+                            <td>
+                                <span lang="ko">파이썬 웹 프로그래밍 과정 (Django)</span>
+                                <span lang="en">Python Web Programming Course (Django)</span>
+                            </td>
+                            <td><span lang="ko">2018.04 ~ 2018.05</span><span lang="en">Apr. 2018 — May 2018</span></td>
+                            <td><span class="badge-notion tag-orange"><span lang="ko">KG IT뱅크</span><span lang="en">KG IT Bank</span></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -636,68 +780,70 @@
     <section id="career" class="tile tile-parchment">
         <div class="tile-header">
             <span class="eyebrow">Career</span>
-            <h2>현업 경력</h2>
-            <p>국책기관 · 글로벌 사업개발 · 백엔드 엔지니어링 · 기술교육 — 다각도의 IT 산업 이력.</p>
+            <h2 lang="ko">현업 경력</h2>
+            <h2 lang="en">Work Experience</h2>
+            <p lang="ko">국책기관 · 글로벌 사업개발 · 백엔드 엔지니어링 · 기술교육 — 다각도의 IT 산업 이력.</p>
+            <p lang="en">Public-sector institutes · global business development · backend engineering · technical training — a multi-angle career across the IT industry.</p>
         </div>
         <div class="tile-container-wide">
             <div class="comparison-table">
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 22%">회사명</th>
-                            <th style="width: 22%">기간</th>
-                            <th style="width: 26%">직위 / 직책</th>
-                            <th>직무</th>
+                            <th style="width: 22%"><span lang="ko">회사명</span><span lang="en">Company</span></th>
+                            <th style="width: 22%"><span lang="ko">기간</span><span lang="en">Period</span></th>
+                            <th style="width: 26%"><span lang="ko">직위 / 직책</span><span lang="en">Title / Role</span></th>
+                            <th><span lang="ko">직무</span><span lang="en">Responsibility</span></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>한국정보교육원</strong></td>
-                            <td>2024.01 ~ 현재</td>
-                            <td>기술 교육 컨설턴트 및 강사</td>
-                            <td>교육과정 설계 컨설팅 및 기술교육</td>
+                            <td><strong><span lang="ko">한국정보교육원</span><span lang="en">Korea Information Education Institute</span></strong></td>
+                            <td><span lang="ko">2024.01 ~ 현재</span><span lang="en">Jan. 2024 — Present</span></td>
+                            <td><span lang="ko">기술 교육 컨설턴트 및 강사</span><span lang="en">Tech Education Consultant &amp; Instructor</span></td>
+                            <td><span lang="ko">교육과정 설계 컨설팅 및 기술교육</span><span lang="en">Curriculum-design consulting and technical instruction</span></td>
                         </tr>
                         <tr>
-                            <td><strong>데이터스토리 허브</strong></td>
-                            <td>2024.02 ~ 2025.12</td>
-                            <td>(사외) 기술 컨설턴트 및 강사</td>
-                            <td>기업 IT 컨설팅 및 기술교육</td>
+                            <td><strong><span lang="ko">데이터스토리 허브</span><span lang="en">Datastory Hub</span></strong></td>
+                            <td><span lang="ko">2024.02 ~ 2025.12</span><span lang="en">Feb. 2024 — Dec. 2025</span></td>
+                            <td><span lang="ko">(사외) 기술 컨설턴트 및 강사</span><span lang="en">External Tech Consultant &amp; Instructor</span></td>
+                            <td><span lang="ko">기업 IT 컨설팅 및 기술교육</span><span lang="en">Enterprise IT consulting and technical training</span></td>
                         </tr>
                         <tr>
-                            <td><strong>키즈노트</strong></td>
-                            <td>2021.09 ~ 2024.01</td>
-                            <td>연구원</td>
-                            <td>광고 시스템 백엔드 엔지니어</td>
+                            <td><strong><span lang="ko">키즈노트</span><span lang="en">Kakao Kidsnote</span></strong></td>
+                            <td><span lang="ko">2021.09 ~ 2024.01</span><span lang="en">Sep. 2021 — Jan. 2024</span></td>
+                            <td><span lang="ko">연구원</span><span lang="en">Research Engineer</span></td>
+                            <td><span lang="ko">광고 시스템 백엔드 엔지니어</span><span lang="en">Backend engineer · advertising platform</span></td>
                         </tr>
                         <tr>
-                            <td><strong>엑시아소프트</strong></td>
-                            <td>2021.03 ~ 2021.09</td>
-                            <td>연구원</td>
-                            <td>코인 거래소 백엔드 엔지니어</td>
+                            <td><strong><span lang="ko">엑시아소프트</span><span lang="en">Axiasoft (Coinbit)</span></strong></td>
+                            <td><span lang="ko">2021.03 ~ 2021.09</span><span lang="en">Mar. 2021 — Sep. 2021</span></td>
+                            <td><span lang="ko">연구원</span><span lang="en">Research Engineer</span></td>
+                            <td><span lang="ko">코인 거래소 백엔드 엔지니어</span><span lang="en">Backend engineer · crypto exchange</span></td>
                         </tr>
                         <tr>
-                            <td><strong>메이커스월드</strong></td>
-                            <td>2020.09 ~ 2021.03</td>
-                            <td>컨설턴트 및 강사</td>
-                            <td>메이커교육 해외시장개척 지원</td>
+                            <td><strong><span lang="ko">메이커스월드</span><span lang="en">Makers World</span></strong></td>
+                            <td><span lang="ko">2020.09 ~ 2021.03</span><span lang="en">Sep. 2020 — Mar. 2021</span></td>
+                            <td><span lang="ko">컨설턴트 및 강사</span><span lang="en">Consultant &amp; Instructor</span></td>
+                            <td><span lang="ko">메이커교육 해외시장개척 지원</span><span lang="en">Overseas market development for maker-education</span></td>
                         </tr>
                         <tr>
-                            <td><strong>한국생산성본부</strong></td>
-                            <td>2020.02 ~ 2020.09</td>
-                            <td>연구원</td>
-                            <td>SW기업 해외시장개척 지원</td>
+                            <td><strong><span lang="ko">한국생산성본부</span><span lang="en">Korea Productivity Center</span></strong></td>
+                            <td><span lang="ko">2020.02 ~ 2020.09</span><span lang="en">Feb. 2020 — Sep. 2020</span></td>
+                            <td><span lang="ko">연구원</span><span lang="en">Researcher</span></td>
+                            <td><span lang="ko">SW기업 해외시장개척 지원</span><span lang="en">Global market expansion support for Korean SW companies</span></td>
                         </tr>
                         <tr>
-                            <td><strong>럭스로보</strong></td>
-                            <td>2018.06 ~ 2019.12</td>
-                            <td>팀장</td>
-                            <td>모듈형 로봇 글로벌 사업 개발</td>
+                            <td><strong><span lang="ko">럭스로보</span><span lang="en">Luxrobo</span></strong></td>
+                            <td><span lang="ko">2018.06 ~ 2019.12</span><span lang="en">Jun. 2018 — Dec. 2019</span></td>
+                            <td><span lang="ko">팀장</span><span lang="en">Team Lead</span></td>
+                            <td><span lang="ko">모듈형 로봇 글로벌 사업 개발</span><span lang="en">Global business development for modular robotics</span></td>
                         </tr>
                         <tr>
-                            <td><strong>한국소프트웨어산업협회</strong></td>
-                            <td>2016.11 ~ 2018.06</td>
-                            <td>선임연구원</td>
-                            <td>SW 전문가 자격평가시험 개발</td>
+                            <td><strong><span lang="ko">한국소프트웨어산업협회</span><span lang="en">Korea Software Industry Association</span></strong></td>
+                            <td><span lang="ko">2016.11 ~ 2018.06</span><span lang="en">Nov. 2016 — Jun. 2018</span></td>
+                            <td><span lang="ko">선임연구원</span><span lang="en">Senior Researcher</span></td>
+                            <td><span lang="ko">SW 전문가 자격평가시험 개발</span><span lang="en">Development of national SW professional certification exams</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -711,8 +857,10 @@
     <section id="projects" class="tile tile-dark">
         <div class="tile-header">
             <span class="eyebrow">Mission Log</span>
-            <h2>주요 프로젝트 이력</h2>
-            <p>기업 · 국제기구 · 연구기관과의 협업 — 콘텐츠 설계부터 엔지니어링 솔루션 출시까지.</p>
+            <h2 lang="ko">주요 프로젝트 이력</h2>
+            <h2 lang="en">Selected Projects</h2>
+            <p lang="ko">기업 · 국제기구 · 연구기관과의 협업 — 콘텐츠 설계부터 엔지니어링 솔루션 출시까지.</p>
+            <p lang="en">Engagements with enterprises, international agencies, and research institutes — from curriculum design to shipping engineering solutions.</p>
         </div>
     </section>
 
@@ -724,12 +872,17 @@
                 <span class="project-num">M-01</span>
                 <span class="project-org">KOICA · UBION</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 스리랑카 방문단 국내 연수<br />
                 AI Workshop
             </h3>
+            <h3 class="project-title" lang="en">
+                Sri Lanka Delegation · In-Korea Training<br />
+                AI Workshop
+            </h3>
             <div class="project-body">
-                <p>스리랑카 방문단 국내 연수 AI Workshop — 머신러닝에서 LLM까지 시각적 · 심층적 이해부터 본격 Application 개발 워크샵까지 완주.</p>
+                <p lang="ko">스리랑카 방문단 국내 연수 AI Workshop — 머신러닝에서 LLM까지 시각적 · 심층적 이해부터 본격 Application 개발 워크샵까지 완주.</p>
+                <p lang="en">In-Korea AI workshop for the Sri Lanka delegation — from a visual, in-depth grounding in machine learning through LLMs all the way to building real applications end-to-end.</p>
 
                 <table class="specs-table">
                     <thead>
@@ -741,31 +894,51 @@
                     <tbody>
                         <tr>
                             <th>Day 1</th>
-                            <td>IT 플랫폼 기술 트렌드 (MSA, 컨테이너 가상화, 클라우드 네이티브)</td>
+                            <td>
+                                <span lang="ko">IT 플랫폼 기술 트렌드 (MSA, 컨테이너 가상화, 클라우드 네이티브)</span>
+                                <span lang="en">IT platform tech trends (MSA, container virtualization, cloud-native)</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>Day 2</th>
-                            <td>AWS 클라우드 서비스 실습</td>
+                            <td>
+                                <span lang="ko">AWS 클라우드 서비스 실습</span>
+                                <span lang="en">Hands-on with AWS cloud services</span>
+                            </td>
                         </tr>
                         <tr class="highlight-row">
                             <th>Day 3 — 5</th>
-                            <td>AI 산업 및 기술 트렌드 / 생성형 AI 활용 워크샵</td>
+                            <td>
+                                <span lang="ko">AI 산업 및 기술 트렌드 / 생성형 AI 활용 워크샵</span>
+                                <span lang="en">AI industry and tech trends / generative-AI applied workshop</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>Day 6</th>
-                            <td>ITSQF 소개 및 IT 역량 기반 교육 플랫폼 설계</td>
+                            <td>
+                                <span lang="ko">ITSQF 소개 및 IT 역량 기반 교육 플랫폼 설계</span>
+                                <span lang="en">Intro to ITSQF and designing competency-based learning platforms</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>Day 7 — 8</th>
-                            <td>플랫폼 운영을 위한 인프라 관리 자동화 (AWS - EKS)</td>
+                            <td>
+                                <span lang="ko">플랫폼 운영을 위한 인프라 관리 자동화 (AWS - EKS)</span>
+                                <span lang="en">Infrastructure automation for platform operations (AWS — EKS)</span>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
 
-                <ul>
+                <ul lang="ko">
                     <li>머신러닝에서 LLM까지 핵심 개념에 대한 시각적 &amp; 심층적 이해</li>
                     <li>LLM 관련 기술 소개를 통한 패러다임 학습 및 직관적인 핸즈온 실습</li>
                     <li>AI 활용 역량 종합 활용을 통한 본격적인 Application 개발 워크샵</li>
+                </ul>
+                <ul lang="en">
+                    <li>Visual, deep-dive coverage of core concepts from classical ML through LLMs</li>
+                    <li>Paradigm-level walk-throughs of LLM-related tech, paired with intuitive hands-on labs</li>
+                    <li>A capstone-style application-development workshop that ties the full AI skillset together</li>
                 </ul>
             </div>
         </div>
@@ -777,15 +950,20 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-02</span>
-                <span class="project-org">하나금융그룹 DT</span>
+                <span class="project-org" lang="ko">하나금융그룹 DT</span><span class="project-org" lang="en">Hana Financial Group DT</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 클라우드 네이티브 DevOps<br />
                 + 리눅스 심화 특강
             </h3>
+            <h3 class="project-title" lang="en">
+                Cloud-Native DevOps<br />
+                + Linux Deep-Dive
+            </h3>
             <div class="project-body">
-                <p>하나금융그룹 재직자 대상 클라우드 네이티브 DevOps + 리눅스 심화 특강 — EKS 인프라부터 Rocky 리눅스 기반 보안·웹 서비스 배포까지.</p>
-                <ul>
+                <p lang="ko">하나금융그룹 재직자 대상 클라우드 네이티브 DevOps + 리눅스 심화 특강 — EKS 인프라부터 Rocky 리눅스 기반 보안·웹 서비스 배포까지.</p>
+                <p lang="en">In-service training for Hana Financial Group on cloud-native DevOps and advanced Linux — from EKS infrastructure to Rocky-Linux–based security and web-service deployment.</p>
+                <ul lang="ko">
                     <li>
                         <strong>EKS 인프라 활용 MSA 기반 솔루션 배포 및 인프라 자동화</strong>
                         <ul>
@@ -810,6 +988,31 @@
                         </ul>
                     </li>
                 </ul>
+                <ul lang="en">
+                    <li>
+                        <strong>MSA-based solution deployment and infrastructure automation on EKS</strong>
+                        <ul>
+                            <li>AWS fundamentals through advanced topics, anchored in hands-on projects</li>
+                            <li>MSA foundations with both on-prem and cloud-native exercises</li>
+                            <li>Working with AWS' managed Kubernetes service (EKS)</li>
+                            <li>Deploying MSA architecture solutions on EKS</li>
+                            <li>CI/CD automation on EKS using GitOps and zero-downtime deployment strategies</li>
+                            <li>Integrating AWS managed services with Prometheus &amp; Grafana for monitoring and alerting</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Advanced Linux — Rocky-Linux–based networking, security, and web-service deployment</strong>
+                        <ul>
+                            <li>Infrastructure management and web-service operations at the physical-host level</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Future-tech insight Q&amp;A for financial engineering</strong>
+                        <ul>
+                            <li>Discussion of trends in fusing DevOps and Enterprise Architecture with AI</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -820,14 +1023,19 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-03</span>
-                <span class="project-org">카카오 키즈노트</span>
+                <span class="project-org" lang="ko">카카오 키즈노트</span><span class="project-org" lang="en">Kakao Kidsnote</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 클라우드 네이티브 MSA<br />
                 광고 서비스 책임 개발
             </h3>
+            <h3 class="project-title" lang="en">
+                Cloud-Native MSA<br />
+                Advertising Platform · Lead Developer
+            </h3>
             <div class="project-body">
-                <p>클라우드 네이티브 MSA 광고 서비스 책임 개발 — 광고집행 백엔드 서버 리뉴얼 런칭, 광고 매출 증대를 위한 ML 적용 송출 로직 고도화 개발.</p>
+                <p lang="ko">클라우드 네이티브 MSA 광고 서비스 책임 개발 — 광고집행 백엔드 서버 리뉴얼 런칭, 광고 매출 증대를 위한 ML 적용 송출 로직 고도화 개발.</p>
+                <p lang="en">Lead developer for the cloud-native MSA advertising service — relaunched the ad-serving backend and built ML-driven delivery-logic enhancements that grew ad revenue.</p>
 
                 <!-- In-page ad-revenue chart (Chart.js)
                      - 43 monthly bars, 2020.01 ~ 2023.07
@@ -836,10 +1044,14 @@
                      - Mobile: sticky scroll-jacking when the chart is centered in viewport -->
                 <div class="ad-revenue-block" data-chart-block>
                     <header class="ad-revenue-header">
-                        <p class="ad-revenue-eyebrow">Kidsnote · 광고매출 추이</p>
-                        <h4 class="ad-revenue-title">20 ~ 23년 키즈노트 광고매출</h4>
-                        <p class="ad-revenue-sub">
+                        <p class="ad-revenue-eyebrow"><span lang="ko">Kidsnote · 광고매출 추이</span><span lang="en">Kidsnote · ad-revenue timeline</span></p>
+                        <h4 class="ad-revenue-title" lang="ko">20 ~ 23년 키즈노트 광고매출</h4>
+                        <h4 class="ad-revenue-title" lang="en">Kidsnote ad revenue · 2020 — 2023</h4>
+                        <p class="ad-revenue-sub" lang="ko">
                             월별 매출 (단위 · 백만원) · 재직 기간(21.09 ~ 23.07) <span class="ad-revenue-dot"></span> 표시
+                        </p>
+                        <p class="ad-revenue-sub" lang="en">
+                            Monthly revenue (KRW millions) · tenure window: Sep. 2021 — Jul. 2023 <span class="ad-revenue-dot"></span> marker
                         </p>
                     </header>
 
@@ -847,26 +1059,35 @@
                         <div class="ad-revenue-sticky" data-chart-sticky>
                             <div class="ad-revenue-scroller" data-chart-scroller>
                                 <div class="ad-revenue-canvas-wrap">
-                                    <canvas id="adRevenueChart" aria-label="20~23년 키즈노트 광고매출 막대 그래프"></canvas>
+                                    <canvas id="adRevenueChart" aria-label="Kidsnote ad-revenue bar chart, 2020–2023"></canvas>
                                 </div>
                             </div>
                             <p class="ad-revenue-hint">
-                                <span class="hint-desktop">↔ 마우스 휠을 굴리면 그래프가 좌우로 스크롤됩니다</span>
-                                <span class="hint-mobile">↕ 페이지를 내리면 그래프가 좌우로 펼쳐집니다</span>
+                                <span class="hint-desktop" lang="ko">↔ 마우스 휠을 굴리면 그래프가 좌우로 스크롤됩니다</span>
+                                <span class="hint-desktop" lang="en">↔ Scroll the wheel to pan the chart left ↔ right</span>
+                                <span class="hint-mobile" lang="ko">↕ 페이지를 내리면 그래프가 좌우로 펼쳐집니다</span>
+                                <span class="hint-mobile" lang="en">↕ Scroll the page to unfold the chart horizontally</span>
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="metric-callout">
-                    <div class="metric-label">2년간 단독 책임개발 성과</div>
-                    <div class="metric-value">광고 매출 2배 이상 성장 · 개발 장애율 0%</div>
+                    <div class="metric-label" lang="ko">2년간 단독 책임개발 성과</div>
+                    <div class="metric-label" lang="en">Outcome over 2 years as sole owner</div>
+                    <div class="metric-value" lang="ko">광고 매출 2배 이상 성장 · 개발 장애율 0%</div>
+                    <div class="metric-value" lang="en">Ad revenue more than 2× · zero engineering incidents</div>
                 </div>
 
-                <ul>
+                <ul lang="ko">
                     <li>광고집행 백엔드 서버 리뉴얼 런칭 및 유지보수, ML 적용 송출 로직 고도화 개발</li>
                     <li>카카오 클라우드 인프라 활용 서비스 개발 · 배포 · 모니터링, 분석계 구축 참여 등 전체 프로세스 수행</li>
                     <li>데이터 파이프라인 구축과 광고 서비스 성과 분석 및 타게팅 구조 수립을 위한 기반 분석 프로젝트 참여</li>
+                </ul>
+                <ul lang="en">
+                    <li>Relaunched and maintained the ad-serving backend; built ML-powered upgrades to the delivery logic</li>
+                    <li>Owned the end-to-end lifecycle on Kakao Cloud — development, deployment, monitoring, and participation in the analytics-layer build-out</li>
+                    <li>Built data pipelines and contributed to analytics groundwork for ad-performance measurement and targeting architecture</li>
                 </ul>
             </div>
         </div>
@@ -878,24 +1099,36 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-04</span>
-                <span class="project-org">엑시아소프트 · 코인빗</span>
+                <span class="project-org" lang="ko">엑시아소프트 · 코인빗</span><span class="project-org" lang="en">Axiasoft · Coinbit</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 AWS 기반 초고속 유저 알림 서비스<br />
                 &amp; 백오피스 / 대용량 데이터 추출 개발
             </h3>
+            <h3 class="project-title" lang="en">
+                AWS-based High-Throughput User Notifications<br />
+                &amp; Back-office / Large-Volume Data Extraction
+            </h3>
             <div class="project-body">
-                <p>AWS 기반 초고속 유저 알림 서비스 개발 &amp; 백오피스 대시보드 · 대용량 데이터 추출 — 암호화폐 거래소 "코인빗" 초고속 거래 체결 서버 유지관리.</p>
+                <p lang="ko">AWS 기반 초고속 유저 알림 서비스 개발 &amp; 백오피스 대시보드 · 대용량 데이터 추출 — 암호화폐 거래소 "코인빗" 초고속 거래 체결 서버 유지관리.</p>
+                <p lang="en">Built an AWS-based high-throughput user-notification service plus back-office dashboards and large-volume data-extraction tools — also responsible for maintaining the matching-engine servers behind the "Coinbit" crypto exchange.</p>
 
                 <div class="metric-callout">
-                    <div class="metric-label">초고속 처리 시스템 성능</div>
-                    <div class="metric-value">분당 300만 건 알림 발송</div>
+                    <div class="metric-label" lang="ko">초고속 처리 시스템 성능</div>
+                    <div class="metric-label" lang="en">High-throughput system performance</div>
+                    <div class="metric-value" lang="ko">분당 300만 건 알림 발송</div>
+                    <div class="metric-value" lang="en">3M notifications dispatched per minute</div>
                 </div>
 
-                <ul>
+                <ul lang="ko">
                     <li>유저별 관심 자산 가격 모니터링 알림 시스템 — <strong>분당 300만 건 발송</strong> 가능한 초고속 처리 시스템 구축</li>
                     <li>AWS 클라우드 서비스를 활용한 백엔드 API 개발 및 데이터 관리 프로세스 개발</li>
                     <li>가상자산 거래소 대상의 강화된 정보보호 및 개인정보보호 관리체계(ISMS-P) 백엔드 인증 개발 참여</li>
+                </ul>
+                <ul lang="en">
+                    <li>Built a per-user watchlist price-alert system — a high-throughput pipeline able to <strong>dispatch 3M notifications per minute</strong></li>
+                    <li>Developed backend APIs and data-management workflows on AWS</li>
+                    <li>Contributed to ISMS-P backend certification work — Korea's hardened information- and personal-data-protection management standard for crypto exchanges</li>
                 </ul>
             </div>
         </div>
@@ -907,16 +1140,24 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-05</span>
-                <span class="project-org">한국직업능력연구원</span>
+                <span class="project-org" lang="ko">한국직업능력연구원</span><span class="project-org" lang="en">KRIVET (Korea Research Institute for Vocational Education &amp; Training)</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 중국 AI 교육 고도화<br />
                 사례 벤치마킹 연구
             </h3>
+            <h3 class="project-title" lang="en">
+                Benchmarking China's Advanced AI Education<br />
+                Case-Study Research
+            </h3>
             <div class="project-body">
-                <p>중국 AI 교육 고도화 사례 벤치마킹 연구.</p>
-                <ul>
+                <p lang="ko">중국 AI 교육 고도화 사례 벤치마킹 연구.</p>
+                <p lang="en">Benchmarking research on advanced AI-education practices in China.</p>
+                <ul lang="ko">
                     <li>"중국의 대학 인공지능 교육과 메이커(創客) 창업 정책 연구 (2021)" 참여 — 한국직업능력연구원</li>
+                </ul>
+                <ul lang="en">
+                    <li>Contributing researcher · "University AI Education and Maker (chuàngkè) Entrepreneurship Policy in China (2021)" — KRIVET</li>
                 </ul>
             </div>
         </div>
@@ -928,25 +1169,36 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-06</span>
-                <span class="project-org">한국생산성본부</span>
+                <span class="project-org" lang="ko">한국생산성본부</span><span class="project-org" lang="en">Korea Productivity Center (KPC)</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 국내 SW 고성장 기업<br />
                 글로벌 시장 개척 컨설팅
             </h3>
+            <h3 class="project-title" lang="en">
+                Global Market Expansion Consulting<br />
+                for Korea's High-Growth SW Companies
+            </h3>
             <div class="project-body">
-                <p>국내 SW 고성장 기업 글로벌 시장 개척 컨설팅 — Purdue 대학교 · Plug&amp;Play 협력 지원 등.</p>
+                <p lang="ko">국내 SW 고성장 기업 글로벌 시장 개척 컨설팅 — Purdue 대학교 · Plug&amp;Play 협력 지원 등.</p>
+                <p lang="en">Global market-expansion consulting for high-growth Korean software companies — including partnerships with Purdue University and Plug &amp; Play.</p>
 
                 <div class="project-image">
                     <img
                         src="assets/band-photo-kpc-sw-global.jpg"
-                        alt="SW 고성장클럽 200 글로벌 진출 지원사업"
+                        alt="SW High-Growth Club 200 · Global Expansion Support Program"
+                        data-alt-ko="SW 고성장클럽 200 글로벌 진출 지원사업"
+                        data-alt-en="SW High-Growth Club 200 · Global Expansion Support Program"
                     />
                 </div>
 
-                <ul>
+                <ul lang="ko">
                     <li>"SW 고성장클럽 200" 소프트웨어기업 글로벌 진출 지원사업 주관 (Purdue 대학교, Plug&amp;Play 협력 지원 등)</li>
                     <li>"글로벌 에듀테크센터 구축" 신남방 교육사업 개발 (말레이시아 · 캄보디아 등)</li>
+                </ul>
+                <ul lang="en">
+                    <li>Program lead for the "SW High-Growth Club 200" global-expansion initiative for SW companies (partnership support with Purdue University, Plug &amp; Play, etc.)</li>
+                    <li>Designed New Southern Policy education programs as part of the "Global EdTech Center" initiative (Malaysia, Cambodia, etc.)</li>
                 </ul>
             </div>
         </div>
@@ -958,16 +1210,24 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-07</span>
-                <span class="project-org">한밭대학교</span>
+                <span class="project-org" lang="ko">한밭대학교</span><span class="project-org" lang="en">Hanbat National University</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 산학협력단 SW &amp; HW 융합<br />
                 메이커 교육 방법론 연구
             </h3>
+            <h3 class="project-title" lang="en">
+                University Industry-Academia Cooperation Foundation<br />
+                SW &amp; HW Convergence · Maker-Education Methodology
+            </h3>
             <div class="project-body">
-                <p>산학협력단 SW &amp; HW 융합 메이커 교육 방법론 연구.</p>
-                <ul>
+                <p lang="ko">산학협력단 SW &amp; HW 융합 메이커 교육 방법론 연구.</p>
+                <p lang="en">Research with the university's industry-academia cooperation foundation into SW + HW convergence maker-education methodologies.</p>
+                <ul lang="ko">
                     <li>"대학주도형 창의융합 미래인재 양성 교육과정 혁신 연구" 수행</li>
+                </ul>
+                <ul lang="en">
+                    <li>Carried out the study "University-led Curriculum Innovation for Cultivating Creative-Convergence Future Talent"</li>
                 </ul>
             </div>
         </div>
@@ -979,15 +1239,20 @@
         <div class="project-content">
             <div class="project-meta-row">
                 <span class="project-num">M-08</span>
-                <span class="project-org">럭스로보</span>
+                <span class="project-org" lang="ko">럭스로보</span><span class="project-org" lang="en">Luxrobo</span>
             </div>
-            <h3 class="project-title">
+            <h3 class="project-title" lang="ko">
                 미국 · 중동 · 중국 시장 진출 및<br />
                 파트너십 · 기술교류 수행
             </h3>
+            <h3 class="project-title" lang="en">
+                US · Middle East · China Market Entry<br />
+                Partnership &amp; Technical-Exchange Operations
+            </h3>
             <div class="project-body">
-                <p>미국 · 중동 · 중국 시장 진출 및 파트너십 · 기술교류 수행.</p>
-                <ul>
+                <p lang="ko">미국 · 중동 · 중국 시장 진출 및 파트너십 · 기술교류 수행.</p>
+                <p lang="en">Led market entry and partnership / technical-exchange activities across the US, the Middle East, and China.</p>
+                <ul lang="ko">
                     <li>
                         <strong>미국 파트너사 교육사업 개발 협력 (USRA 연구재단, SDI Innovation 등)</strong>
                         <ul>
@@ -1018,6 +1283,37 @@
                         </div>
                     </li>
                 </ul>
+                <ul lang="en">
+                    <li>
+                        <strong>Education-business co-development with US partners (USRA Research Foundation, SDI Innovation, etc.)</strong>
+                        <ul>
+                            <li>
+                                Press:
+                                <a href="https://www.sciencetimes.co.kr/nscvrg/view/menu/255?searchCategory=226&nscvrgSn=188400" target="_blank" rel="noopener">Science Times — "Driving innovation with the passion of robot kids"</a>,
+                                <a href="https://www.koreadaily.com/article/7769750" target="_blank" rel="noopener">Korea Daily (US) — "Robots are just the start; the goal is nurturing future talent"</a>
+                            </li>
+                        </ul>
+                        <div class="project-gallery">
+                            <img src="assets/luxrobo-us-partnership-01.jpg" alt="US partner co-development · 1" />
+                            <img src="assets/luxrobo-us-partnership-02.jpg" alt="US partner co-development · 2" />
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Education-program development across the Middle East (UAE · Oman · Bahrain · Malaysia, etc.)</strong>
+                        <div class="project-gallery">
+                            <img src="assets/luxrobo-middle-east-edu-01.png" alt="Middle East education program · 1" />
+                            <img src="assets/luxrobo-middle-east-edu-02.png" alt="Middle East education program · 2" />
+                            <img src="assets/luxrobo-middle-east-edu-03.png" alt="Middle East education program · 3" />
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Technical cooperation to evolve Arduino's product line and education strategy</strong> — engineer-to-engineer exchange, the Rome Maker Faire, and reciprocal site visits
+                        <div class="project-gallery">
+                            <img src="assets/luxrobo-arduino-techexchange-01.png" alt="Arduino technical exchange · 1" />
+                            <img src="assets/luxrobo-arduino-techexchange-02.png" alt="Arduino technical exchange · 2" />
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -1027,15 +1323,17 @@
          ============================================================ -->
     <section class="tile tile-light">
         <div class="contact-cta-wrap">
-            <h2>강의 · 컨설팅 의뢰는 언제든 환영합니다.</h2>
-            <p>기업 IT 실무자 교육, 장기과정 강의, 클라우드 아키텍처 설계 컨설팅까지 — 현장의 변화 속도에 맞춰 함께 일합니다.</p>
+            <h2 lang="ko">강의 · 컨설팅 의뢰는 언제든 환영합니다.</h2>
+            <h2 lang="en">Always open to teaching engagements and consulting inquiries.</h2>
+            <p lang="ko">기업 IT 실무자 교육, 장기과정 강의, 클라우드 아키텍처 설계 컨설팅까지 — 현장의 변화 속도에 맞춰 함께 일합니다.</p>
+            <p lang="en">Enterprise IT training, long-track teaching, cloud-architecture consulting — I work at the pace your team and field demand.</p>
             <div class="contact-cta-actions">
                 <a class="btn-pill-primary" href="mailto:prfsr.limitless@gmail.com">
-                    이메일로 의뢰하기
+                    <span lang="ko">이메일로 의뢰하기</span><span lang="en">Reach out by email</span>
                     <i class="bi bi-arrow-right"></i>
                 </a>
                 <a class="btn-pill-secondary" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">
-                    LinkedIn 프로필
+                    <span lang="ko">LinkedIn 프로필</span><span lang="en">LinkedIn profile</span>
                 </a>
             </div>
         </div>
@@ -1048,30 +1346,34 @@
         <div class="footer-grid">
             <div>
                 <div class="footer-brand">
-                    <span class="nav-brand-text">박병준 · AI &amp; IT Consultant</span>
+                    <span class="nav-brand-text" lang="ko">박병준 · AI &amp; IT Consultant</span>
+                    <span class="nav-brand-text" lang="en">Park Byungjun · AI &amp; IT Consultant</span>
                 </div>
-                <p class="footer-tagline">
+                <p class="footer-tagline" lang="ko">
                     AI · 빅데이터 · 클라우드 생태계를 뉴스 속도로 교육과 엔지니어링에 적용합니다.
+                </p>
+                <p class="footer-tagline" lang="en">
+                    Bringing the AI, big-data, and cloud ecosystem into both classrooms and production at the speed of news.
                 </p>
             </div>
             <div>
                 <div class="footer-col-title">Profile</div>
-                <a class="footer-link" href="#about">소개</a>
-                <a class="footer-link" href="#strengths">핵심 역량</a>
-                <a class="footer-link" href="#kdt-graduation">KDT 수료</a>
+                <a class="footer-link" href="#about"><span lang="ko">소개</span><span lang="en">About</span></a>
+                <a class="footer-link" href="#strengths"><span lang="ko">핵심 역량</span><span lang="en">Core Strengths</span></a>
+                <a class="footer-link" href="#kdt-graduation"><span lang="ko">KDT 수료</span><span lang="en">KDT Outcomes</span></a>
             </div>
             <div>
                 <div class="footer-col-title">Track Record</div>
-                <a class="footer-link" href="#teaching">강의 경력</a>
-                <a class="footer-link" href="#career">현업 경력</a>
-                <a class="footer-link" href="#projects">주요 프로젝트</a>
+                <a class="footer-link" href="#teaching"><span lang="ko">강의 경력</span><span lang="en">Teaching</span></a>
+                <a class="footer-link" href="#career"><span lang="ko">현업 경력</span><span lang="en">Work Experience</span></a>
+                <a class="footer-link" href="#projects"><span lang="ko">주요 프로젝트</span><span lang="en">Selected Projects</span></a>
             </div>
             <div>
                 <div class="footer-col-title">Contact</div>
                 <a class="footer-link" href="mailto:prfsr.limitless@gmail.com">prfsr.limitless@gmail.com</a>
                 <a class="footer-link" href="https://www.linkedin.com/in/pbjworking/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="footer-link" href="https://github.com/wild-mental" target="_blank" rel="noopener">GitHub</a>
-                <a class="footer-link" href="https://open.kakao.com/me/pbjworking" target="_blank" rel="noopener" aria-label="카카오톡 오픈프로필 열기">Kakao · pbjworking</a>
+                <a class="footer-link" href="https://open.kakao.com/me/pbjworking" target="_blank" rel="noopener" aria-label="Open KakaoTalk profile" data-aria-ko="카카오톡 오픈프로필 열기" data-aria-en="Open KakaoTalk profile">Kakao · pbjworking</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -1094,7 +1396,9 @@
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="modal"
-                    aria-label="닫기"
+                    aria-label="Close"
+                    data-aria-ko="닫기"
+                    data-aria-en="Close"
                 ></button>
                 <div class="modal-body">
                     <img id="evidenceModalImage" src="" alt="" />
@@ -1115,6 +1419,88 @@
     <script>
         const yearEl = document.getElementById("year");
         if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // ----------------------------------------------------------------
+        // Language switcher (KO / EN)
+        //   - Reads / writes `html.lang` so the CSS-only show/hide rules
+        //     do the heavy lifting (see [lang] pairs throughout the body).
+        //   - Persists the choice to localStorage.
+        //   - Re-syncs aria-labels, image alts, title, and the ad-revenue
+        //     chart so non-DOM-text contexts stay in sync.
+        // ----------------------------------------------------------------
+        const LangSwitcher = (function () {
+            const STORAGE_KEY = "profile.lang";
+
+            function readInitial() {
+                try {
+                    const stored = localStorage.getItem(STORAGE_KEY);
+                    if (stored === "ko" || stored === "en") return stored;
+                } catch (_) { /* private mode */ }
+                const browser = (navigator.language || "").toLowerCase();
+                return browser.indexOf("ko") === 0 ? "ko" : "en";
+            }
+
+            function syncAttributePairs(root, base, langKo, langEn, lang) {
+                root.querySelectorAll("[" + langKo + "]").forEach(function (el) {
+                    const val = lang === "ko"
+                        ? el.getAttribute(langKo)
+                        : el.getAttribute(langEn);
+                    if (val != null) el.setAttribute(base, val);
+                });
+            }
+
+            function apply(lang) {
+                const root = document.documentElement;
+                root.lang = lang;
+                root.setAttribute("data-lang", lang);
+
+                // Title element — has data-title-ko / data-title-en attrs.
+                const titleEl = document.querySelector("title[data-title-ko]");
+                if (titleEl) {
+                    const t = lang === "ko"
+                        ? titleEl.getAttribute("data-title-ko")
+                        : titleEl.getAttribute("data-title-en");
+                    if (t) titleEl.textContent = t.replace(/&amp;/g, "&");
+                }
+
+                // aria-label pairs.
+                syncAttributePairs(document, "aria-label", "data-aria-ko", "data-aria-en", lang);
+                // img alt pairs.
+                syncAttributePairs(document, "alt", "data-alt-ko", "data-alt-en", lang);
+                // data-bs-caption pairs (evidence modal triggers).
+                syncAttributePairs(document, "data-bs-caption", "data-bs-caption-ko", "data-bs-caption-en", lang);
+
+                // Active toggle button styling.
+                document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
+                    const isActive = btn.getAttribute("data-lang-btn") === lang;
+                    btn.classList.toggle("is-active", isActive);
+                    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+                });
+
+                try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
+
+                // Let listeners react (chart, etc.).
+                document.dispatchEvent(new CustomEvent("langchange", { detail: { lang: lang } }));
+            }
+
+            function init() {
+                const lang = readInitial();
+                apply(lang);
+
+                document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
+                    btn.addEventListener("click", function () {
+                        apply(btn.getAttribute("data-lang-btn"));
+                    });
+                });
+            }
+
+            return {
+                init: init,
+                apply: apply,
+                get current() { return document.documentElement.lang || "ko"; },
+            };
+        })();
+        LangSwitcher.init();
 
         // Mobile nav drawer toggle
         (function () {
@@ -1142,10 +1528,12 @@
                 const trigger = event.relatedTarget;
                 if (!trigger) return;
                 const innerImg = trigger.querySelector("img");
+                const lang = LangSwitcher.current;
                 const src =
                     trigger.getAttribute("data-bs-image") ||
                     (innerImg ? innerImg.getAttribute("src") : "");
                 const caption =
+                    trigger.getAttribute(lang === "ko" ? "data-bs-caption-ko" : "data-bs-caption-en") ||
                     trigger.getAttribute("data-bs-caption") ||
                     (innerImg ? innerImg.getAttribute("alt") : "") ||
                     "";
@@ -1189,21 +1577,67 @@
                 825, 805, 1000, 1000, 895, 800, 830       // 2023.01 ~ 07
             ];
 
-            // Build labels — compact ".MM"-style for most months, year prefix for January.
-            // e.g. "20년 1월", "3월", "5월", ..., "21년 1월", ...
-            const labels = [];
-            for (let year = 20; year <= 23; year++) {
-                const maxMonth = year === 23 ? 7 : 12;
-                for (let m = 1; m <= maxMonth; m++) {
-                    labels.push(m === 1 ? year + "년 " + m + "월" : m + "월");
-                }
-            }
-
             const TENURE_START = 20; // 2021.09 onwards
             const COLOR_TENURE = "#2997ff";
             const COLOR_BEFORE = "rgba(255, 255, 255, 0.22)";
             const COLOR_TENURE_HOVER = "#5ab0ff";
             const COLOR_BEFORE_HOVER = "rgba(255, 255, 255, 0.35)";
+
+            // Locale-aware formatters & labels. The chart is rebuilt on
+            // language change so we always read the latest active lang.
+            const I18N = {
+                ko: {
+                    monthShort: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],
+                    yearLabel: (yyyy) => (yyyy - 2000) + "년 1월",
+                    yearMarker: "년",
+                    refPreAvg: "기존 평균",
+                    refPreMax: "기존 최대",
+                    refTenureAvg: "재직 평균",
+                    refTenureMax: "재직 최대",
+                    tenureTooltipTag: "  · 재직 기간",
+                    wonSuffix: "원",
+                    localeId: "ko-KR",
+                    fmtAxis: (v) => v === 0 ? "0" : (v / 100).toFixed(0) + "억",
+                    fmtRef: (v) => parseFloat((v / 100).toFixed(2)) + "억",
+                    fmtBar: (v) => (v / 100).toFixed(1) + "억",
+                    tooltipTitle: (i) => {
+                        const year = 2020 + Math.floor(i / 12);
+                        const month = (i % 12) + 1;
+                        return year + "년 " + month + "월";
+                    }
+                },
+                en: {
+                    monthShort: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+                    yearLabel: (yyyy) => yyyy + " Jan",
+                    yearMarker: "Jan",
+                    refPreAvg: "Pre-tenure avg.",
+                    refPreMax: "Pre-tenure max",
+                    refTenureAvg: "Tenure avg.",
+                    refTenureMax: "Tenure max",
+                    tenureTooltipTag: "  · tenure",
+                    wonSuffix: " KRW",
+                    localeId: "en-US",
+                    fmtAxis: (v) => v === 0 ? "0" : "₩" + v + "M",
+                    fmtRef: (v) => "₩" + parseFloat(v.toFixed(1)) + "M",
+                    fmtBar: (v) => "₩" + v.toFixed(0) + "M",
+                    tooltipTitle: function (i) {
+                        const year = 2020 + Math.floor(i / 12);
+                        return this.monthShort[i % 12] + " " + year;
+                    }
+                }
+            };
+
+            const buildLabels = (lang) => {
+                const dict = I18N[lang] || I18N.ko;
+                const out = [];
+                for (let year = 2020; year <= 2023; year++) {
+                    const maxMonth = year === 2023 ? 7 : 12;
+                    for (let m = 1; m <= maxMonth; m++) {
+                        out.push(m === 1 ? dict.yearLabel(year) : dict.monthShort[m - 1]);
+                    }
+                }
+                return out;
+            };
 
             // Reference lines: average / max for each period (백만원)
             const preValues = values.slice(0, TENURE_START);
@@ -1215,19 +1649,14 @@
                 tenureAvg: avg(tenureValues),
                 tenureMax: Math.max.apply(null, tenureValues)
             };
-            const fmtBillion = (v) => {
-                // 백만원 -> 억원, 소수 2자리 (trailing zeros trimmed)
-                const b = v / 100;
-                return parseFloat(b.toFixed(2)) + "억";
-            };
 
-            // Inline Chart.js plugin — paints "x.x억" on top of each bar.
-            // Tenure bars get full-white labels, pre-tenure bars dimmer.
+            // Inline Chart.js plugin — paints "x.x억" / "₩xM" on top of each bar.
             const barValueLabelsPlugin = {
                 id: "adRevenueBarValues",
                 afterDatasetsDraw: function (chart) {
                     const meta = chart.getDatasetMeta(0);
                     if (!meta || !meta.data) return;
+                    const dict = I18N[document.documentElement.lang] || I18N.ko;
                     const ctx = chart.ctx;
                     ctx.save();
                     ctx.font = '600 10px -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Pretendard Variable", system-ui, "Noto Sans KR", sans-serif';
@@ -1240,8 +1669,7 @@
                         ctx.fillStyle = isTenure
                             ? "rgba(255, 255, 255, 0.92)"
                             : "rgba(255, 255, 255, 0.5)";
-                        const text = (v / 100).toFixed(1) + "억";
-                        ctx.fillText(text, bar.x, bar.y - 4);
+                        ctx.fillText(dict.fmtBar(v), bar.x, bar.y - 4);
                     });
                     ctx.restore();
                 }
@@ -1260,16 +1688,17 @@
                     const RED_TEXT = "#ff8b8e";
                     const BLUE_LINE = "rgba(64, 156, 255, 0.78)";
                     const BLUE_TEXT = "#5aafff";
+                    const dict = I18N[document.documentElement.lang] || I18N.ko;
 
                     // All ref-line labels are LEFT-aligned to the start of the
                     // chart plot area with a comfortable padding so the type
                     // never touches the y-axis ticks.
                     const refs = [
-                        { v: stats.preAvg,    line: RED_LINE,  text: RED_TEXT,  label: "기존 평균 · " + fmtBillion(stats.preAvg),    above: true },
-                        { v: stats.preMax,    line: RED_LINE,  text: RED_TEXT,  label: "기존 최대 · " + fmtBillion(stats.preMax),    above: true },
-                        { v: stats.tenureAvg, line: BLUE_LINE, text: BLUE_TEXT, label: "재직 평균 · " + fmtBillion(stats.tenureAvg), above: true },
+                        { v: stats.preAvg,    line: RED_LINE,  text: RED_TEXT,  label: dict.refPreAvg    + " · " + dict.fmtRef(stats.preAvg),    above: true },
+                        { v: stats.preMax,    line: RED_LINE,  text: RED_TEXT,  label: dict.refPreMax    + " · " + dict.fmtRef(stats.preMax),    above: true },
+                        { v: stats.tenureAvg, line: BLUE_LINE, text: BLUE_TEXT, label: dict.refTenureAvg + " · " + dict.fmtRef(stats.tenureAvg), above: true },
                         // Tenure-max sits near the chart top — label BELOW its line so it isn't clipped.
-                        { v: stats.tenureMax, line: BLUE_LINE, text: BLUE_TEXT, label: "재직 최대 · " + fmtBillion(stats.tenureMax), above: false }
+                        { v: stats.tenureMax, line: BLUE_LINE, text: BLUE_TEXT, label: dict.refTenureMax + " · " + dict.fmtRef(stats.tenureMax), above: false }
                     ];
 
                     const LABEL_LEFT_PAD = 18;       // breathing room from the y-axis
@@ -1334,11 +1763,15 @@
                 return hover ? COLOR_BEFORE_HOVER : COLOR_BEFORE;
             };
 
+            // Tick callbacks read the *current* lang at draw time so we
+            // never have to rebuild the chart instance on language change.
+            const yearMarkerOf = () => (I18N[document.documentElement.lang] || I18N.ko).yearMarker;
+
             const chart = new Chart(canvas, {
                 type: "bar",
                 plugins: [barValueLabelsPlugin, referenceLinesPlugin],
                 data: {
-                    labels: labels,
+                    labels: buildLabels(document.documentElement.lang || "ko"),
                     datasets: [{
                         label: "광고매출 (백만원)",
                         data: values,
@@ -1369,16 +1802,15 @@
                             displayColors: false,
                             callbacks: {
                                 title: (ctx) => {
-                                    const i = ctx[0].dataIndex;
-                                    const year = 2020 + Math.floor(i / 12);
-                                    const month = (i % 12) + 1;
-                                    return year + "년 " + month + "월";
+                                    const dict = I18N[document.documentElement.lang] || I18N.ko;
+                                    return dict.tooltipTitle.call(dict, ctx[0].dataIndex);
                                 },
                                 label: (ctx) => {
+                                    const dict = I18N[document.documentElement.lang] || I18N.ko;
                                     const v = ctx.parsed.y;
-                                    const won = (v * 1000000).toLocaleString("ko-KR");
-                                    const tag = ctx.dataIndex >= TENURE_START ? "  · 재직 기간" : "";
-                                    return won + "원" + tag;
+                                    const won = (v * 1000000).toLocaleString(dict.localeId);
+                                    const tag = ctx.dataIndex >= TENURE_START ? dict.tenureTooltipTag : "";
+                                    return won + dict.wonSuffix + tag;
                                 }
                             }
                         }
@@ -1390,13 +1822,15 @@
                                 color: function (ctx) {
                                     // Year-prefixed January labels are highlighted brighter.
                                     const lbl = ctx.tick && ctx.tick.label;
-                                    return typeof lbl === "string" && lbl.indexOf("년") !== -1
+                                    const marker = yearMarkerOf();
+                                    return typeof lbl === "string" && lbl.indexOf(marker) !== -1
                                         ? "rgba(255,255,255,0.85)"
                                         : "rgba(255,255,255,0.5)";
                                 },
                                 font: function (ctx) {
                                     const lbl = ctx.tick && ctx.tick.label;
-                                    const isYear = typeof lbl === "string" && lbl.indexOf("년") !== -1;
+                                    const marker = yearMarkerOf();
+                                    const isYear = typeof lbl === "string" && lbl.indexOf(marker) !== -1;
                                     return {
                                         family: "inherit",
                                         size: isYear ? 11 : 10,
@@ -1424,8 +1858,8 @@
                                 font: { family: "inherit", size: 11 },
                                 padding: 10,
                                 callback: (val) => {
-                                    if (val === 0) return "0";
-                                    return (val / 100).toFixed(0) + "억";
+                                    const dict = I18N[document.documentElement.lang] || I18N.ko;
+                                    return dict.fmtAxis(val);
                                 },
                                 stepSize: 200
                             }
@@ -1445,14 +1879,21 @@
                                 font: { family: "inherit", size: 11 },
                                 padding: 10,
                                 callback: (val) => {
-                                    if (val === 0) return "0";
-                                    return (val / 100).toFixed(0) + "억";
+                                    const dict = I18N[document.documentElement.lang] || I18N.ko;
+                                    return dict.fmtAxis(val);
                                 },
                                 stepSize: 200
                             }
                         }
                     }
                 }
+            });
+
+            // Refresh labels and redraw when language changes.
+            document.addEventListener("langchange", function (e) {
+                const nextLang = (e.detail && e.detail.lang) || document.documentElement.lang || "ko";
+                chart.data.labels = buildLabels(nextLang);
+                chart.update();
             });
 
             // -------------------------------------------------------------

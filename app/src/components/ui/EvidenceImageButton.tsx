@@ -1,3 +1,5 @@
+import { useT } from "@/i18n";
+import { STRINGS } from "@/i18n/strings";
 import type { EvidenceImage } from "@/types";
 import { useEvidenceModal } from "./EvidenceModalContext";
 
@@ -17,6 +19,7 @@ export function EvidenceImageButton({
   natural,
   className,
 }: EvidenceImageButtonProps) {
+  const t = useT();
   const { open } = useEvidenceModal();
   const finalClass = [
     "evidence-image-btn",
@@ -30,13 +33,13 @@ export function EvidenceImageButton({
     <button
       type="button"
       className={finalClass}
-      aria-label={`${image.caption} 이미지 확대 보기`}
+      aria-label={`${image.caption}${t(STRINGS.evidence.expandAriaSuffix)}`}
       onClick={() => open(image)}
     >
       <img src={image.src} alt={image.caption} loading="lazy" />
       <span className="evidence-zoom-hint">
         <i className="bi bi-zoom-in" />
-        원본 보기
+        {t(STRINGS.evidence.zoomHint)}
       </span>
     </button>
   );

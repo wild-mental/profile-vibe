@@ -75,6 +75,63 @@
     font-size: 16px;
   }
 
+  /* ----------------------------------------------------------------
+     KO / EN language toggle — a compact segmented pill that sits
+     at the far-right of the nav (after Contact / LinkedIn).
+     ---------------------------------------------------------------- */
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    height: 28px;
+    padding: 0 4px;
+    border: 1px solid rgb(255 255 255 / 0.22);
+    border-radius: var(--radius-pill);
+    background: rgb(255 255 255 / 0.04);
+    color: var(--color-on-dark);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    user-select: none;
+  }
+  .lang-toggle-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    height: 24px;
+    padding: 0 6px;
+    border: 0;
+    background: transparent;
+    color: rgb(255 255 255 / 0.62);
+    font: inherit;
+    cursor: pointer;
+    border-radius: var(--radius-pill);
+    transition: color 120ms ease, background-color 120ms ease;
+  }
+  .lang-toggle-option:hover {
+    color: var(--color-on-dark);
+  }
+  .lang-toggle-option.is-active {
+    color: var(--color-on-dark);
+    background: rgb(255 255 255 / 0.18);
+  }
+  .lang-toggle-option:focus-visible {
+    outline: 2px solid var(--color-primary-focus);
+    outline-offset: 2px;
+  }
+  .lang-toggle-sep {
+    width: 1px;
+    height: 12px;
+    background: rgb(255 255 255 / 0.2);
+    margin: 0 2px;
+  }
+
+  /* Inline placement variant — used inside the mobile drawer. */
+  .lang-toggle.is-drawer {
+    margin: 6px 0 8px;
+  }
+
   .mobile-drawer {
     display: none;
     position: fixed;
@@ -115,5 +172,15 @@
   .global-nav .nav-actions .btn-utility-dark,
   .global-nav .nav-actions .btn-utility-blue {
     display: none !important;
+  }
+  /* Keep the language toggle visible on mobile, but tighten its sizing
+     so the 44px nav bar doesn't crowd. */
+  .global-nav .nav-actions .lang-toggle {
+    height: 26px;
+  }
+  .global-nav .nav-actions .lang-toggle-option {
+    height: 22px;
+    min-width: 24px;
+    padding: 0 4px;
   }
 }

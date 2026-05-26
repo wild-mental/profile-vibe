@@ -1,29 +1,32 @@
 import { EvidenceImageButton } from "@/components/ui/EvidenceImageButton";
+import { useT } from "@/i18n";
+import { STRINGS } from "@/i18n/strings";
 import { KDT_COHORTS, KDT_STATS } from "@/data/kdt";
 import type { CohortRow } from "@/types";
 
 export function KdtGraduationSection() {
+  const t = useT();
+  const k = STRINGS.kdt;
+
   return (
-    <section
-      id="kdt-graduation"
-      className="tile tile-parchment kdt-section"
-    >
+    <section id="kdt-graduation" className="tile tile-parchment kdt-section">
       <div className="tile-header">
-        <span className="eyebrow">Track Record</span>
+        <span className="eyebrow">{t(k.eyebrow)}</span>
         <h2>
-          2024 &amp; 2025년 KDT 장기과정
+          {t(k.titleLine1)}
           <br />
-          2기수 연속 100% 수료
+          {t(k.titleLine2)}
         </h2>
         <p>
-          풀스택 엔지니어 양성 1,000시간 장기과정, 2년간 총 48명
-          <br />— 두 기수 모두 100% 수료, 만족도 제출 인원 전원 추천.
+          {t(k.subtitleLine1)}
+          <br />
+          {t(k.subtitleLine2)}
         </p>
       </div>
 
       <div className="tile-container-1100">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {KDT_STATS.map((stat) => (
+          {t(KDT_STATS).map((stat) => (
             <div key={stat.label} className="stat-card">
               <span className="stat-number">{stat.number}</span>
               <span className="stat-label">{stat.label}</span>
@@ -32,7 +35,7 @@ export function KdtGraduationSection() {
           ))}
         </div>
 
-        {KDT_COHORTS.map((cohort) => (
+        {t(KDT_COHORTS).map((cohort) => (
           <CohortCard key={cohort.id} cohort={cohort} />
         ))}
       </div>
@@ -41,6 +44,9 @@ export function KdtGraduationSection() {
 }
 
 function CohortCard({ cohort }: { cohort: CohortRow }) {
+  const t = useT();
+  const k = STRINGS.kdt;
+
   return (
     <article className="cohort-card">
       <div className="cohort-header">
@@ -61,7 +67,7 @@ function CohortCard({ cohort }: { cohort: CohortRow }) {
         <details open className="evidence-details">
           <summary>
             <i className="bi bi-bar-chart-fill" />
-            만족도 조사
+            {t(k.satisfactionTab)}
           </summary>
           <div className="evidence-body">
             <EvidenceImageButton image={cohort.satisfaction} />
@@ -70,7 +76,7 @@ function CohortCard({ cohort }: { cohort: CohortRow }) {
         <details open className="evidence-details">
           <summary>
             <i className="bi bi-chat-square-quote-fill" />
-            수강 후기
+            {t(k.reviewsTab)}
           </summary>
           <div className="evidence-body">
             <EvidenceImageButton image={cohort.reviews} />

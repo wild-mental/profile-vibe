@@ -382,11 +382,81 @@ section, header, footer { padding: 0; }
     font-size: 16px;
 }
 
+/* ----------------------------------------------------------------
+   KO / EN language toggle — compact segmented pill at the far-right
+   of the global nav (also available in the mobile drawer).
+   ---------------------------------------------------------------- */
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    height: 28px;
+    padding: 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--on-dark);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    user-select: none;
+}
+.lang-toggle-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    height: 24px;
+    padding: 0 6px;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.62);
+    font: inherit;
+    cursor: pointer;
+    border-radius: var(--radius-pill);
+    transition: color 120ms ease, background-color 120ms ease;
+}
+.lang-toggle-option:hover { color: var(--on-dark); }
+.lang-toggle-option.is-active {
+    color: var(--on-dark);
+    background: rgba(255, 255, 255, 0.18);
+}
+.lang-toggle-option:focus-visible {
+    outline: 2px solid var(--primary-focus, var(--primary));
+    outline-offset: 2px;
+}
+.lang-toggle-sep {
+    width: 1px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 2px;
+}
+.lang-toggle.is-drawer { margin: 6px 0 8px; }
+
+/* ----------------------------------------------------------------
+   `lang` attribute switching mechanism. Each translatable string in
+   the document is authored as a `<span lang="ko">…</span>` paired
+   with a sibling `<span lang="en">…</span>`. Setting `html.lang`
+   shows one and hides the other, with no JS text manipulation.
+   ---------------------------------------------------------------- */
+html[lang="ko"] [lang="en"]:not([data-i18n-show-always]),
+html[lang="en"] [lang="ko"]:not([data-i18n-show-always]) {
+    display: none !important;
+}
+
 @media (max-width: 833px) {
     .global-nav .nav-links { display: none; }
     .global-nav .nav-mobile-toggle { display: inline-flex; }
     .global-nav .nav-actions .btn-utility-dark,
     .global-nav .nav-actions .btn-utility-blue { display: none; }
+    /* Keep the language toggle visible on mobile, but tighten its sizing
+       so the 44px nav bar doesn't crowd. */
+    .global-nav .nav-actions .lang-toggle { height: 26px; }
+    .global-nav .nav-actions .lang-toggle-option {
+        height: 22px;
+        min-width: 24px;
+        padding: 0 4px;
+    }
 }
 
 /* ================================================================

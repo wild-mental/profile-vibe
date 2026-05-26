@@ -12,28 +12,31 @@ import { ProjectsIntroSection } from "@/components/sections/ProjectsIntroSection
 import { StrengthsSection } from "@/components/sections/StrengthsSection";
 import { TeachingSection } from "@/components/sections/TeachingSection";
 import { EvidenceModalProvider } from "@/components/ui/EvidenceModal";
+import { LanguageProvider } from "@/i18n";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
-    <EvidenceModalProvider>
-      <GlobalNav onToggleMobileMenu={() => setDrawerOpen((v) => !v)} />
-      <MobileDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+    <LanguageProvider>
+      <EvidenceModalProvider>
+        <GlobalNav onToggleMobileMenu={() => setDrawerOpen((v) => !v)} />
+        <MobileDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
 
-      <HeroSection />
-      <AboutSection />
-      <StrengthsSection />
-      <KdtGraduationSection />
-      <TeachingSection />
-      <CareerSection />
+        <HeroSection />
+        <AboutSection />
+        <StrengthsSection />
+        <KdtGraduationSection />
+        <TeachingSection />
+        <CareerSection />
 
-      <ProjectsIntroSection />
-      <ProjectsList />
+        <ProjectsIntroSection />
+        <ProjectsList />
 
-      <ContactCtaSection />
-      <Footer />
-    </EvidenceModalProvider>
+        <ContactCtaSection />
+        <Footer />
+      </EvidenceModalProvider>
+    </LanguageProvider>
   );
 }
 

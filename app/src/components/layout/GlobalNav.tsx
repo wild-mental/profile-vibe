@@ -1,10 +1,15 @@
+import { useT } from "@/i18n";
+import { STRINGS } from "@/i18n/strings";
 import { CONTACT_EMAIL, LINKEDIN_URL, NAV_LINKS } from "@/data/nav";
+import { LanguageToggle } from "./LanguageToggle";
 
 type GlobalNavProps = {
   onToggleMobileMenu: () => void;
 };
 
 export function GlobalNav({ onToggleMobileMenu }: GlobalNavProps) {
+  const t = useT();
+
   return (
     <nav className="global-nav">
       <div className="global-nav-inner">
@@ -15,13 +20,13 @@ export function GlobalNav({ onToggleMobileMenu }: GlobalNavProps) {
             alt=""
             aria-hidden="true"
           />
-          <span>박병준 · AI &amp; IT 컨설턴트</span>
+          <span>{t(STRINGS.brand.name)}</span>
         </a>
 
         <div className="nav-links">
           {NAV_LINKS.map((link) => (
             <a key={link.href} className="nav-link-item" href={link.href}>
-              {link.label}
+              {t(link.label)}
             </a>
           ))}
         </div>
@@ -29,7 +34,7 @@ export function GlobalNav({ onToggleMobileMenu }: GlobalNavProps) {
         <div className="nav-actions">
           <a className="btn-utility-dark" href={`mailto:${CONTACT_EMAIL}`}>
             <i className="bi bi-envelope" />
-            Contact
+            {t(STRINGS.nav.contact)}
           </a>
           <a
             className="btn-utility-blue"
@@ -37,12 +42,13 @@ export function GlobalNav({ onToggleMobileMenu }: GlobalNavProps) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            {t(STRINGS.nav.linkedin)}
           </a>
+          <LanguageToggle />
           <button
             type="button"
             className="nav-mobile-toggle"
-            aria-label="메뉴 열기"
+            aria-label={t(STRINGS.nav.menuLabel)}
             onClick={onToggleMobileMenu}
           >
             <i className="bi bi-list" />
