@@ -120,11 +120,11 @@ export const STRINGS = {
     } satisfies Localized,
     card1Item1SubPrefix: {
       ko: "진행 중인 교육과정에 트렌드를 곧바로 반영하는 ",
-      en: "Course content is refreshed mid-cohort to deliver ",
+      en: "Curricula are continuously refreshed with current industry trends, delivering ",
     } satisfies Localized,
     card1Item1SubStrong: {
       ko: "뉴스 레벨의 최신 교육",
-      en: "news-level up-to-date instruction",
+      en: "news-cycle-level relevance",
     } satisfies Localized,
     card1Item1SubTail: { ko: "", en: "" } satisfies Localized,
     card1Item2Lead: {
@@ -133,7 +133,7 @@ export const STRINGS = {
     } satisfies Localized,
     card1Item2Sub: {
       ko: "현업 엔지니어링 솔루션을 그대로 다루는 실무형 교육자료와 현장 니즈를 실시간 반영",
-      en: "Hands-on materials built around production engineering solutions, continuously updated to reflect on-the-ground needs.",
+      en: "Hands-on materials built around production engineering solutions — continuously updated as the field evolves.",
     } satisfies Localized,
 
     // Card 2
@@ -167,7 +167,7 @@ export const STRINGS = {
     } satisfies Localized,
     card2Item3Lead: {
       ko: "K-12 ~ 대학생 ~ 현직 기술 전문가까지 전 수준 멘토링",
-      en: "Mentoring across every level — K-12 through university and into seasoned industry professionals",
+      en: "Mentoring across every level — K-12 through university and through to seasoned industry professionals",
     } satisfies Localized,
     card2Item3Sub: {
       ko: "미국 인디애나주 초중고 · 퍼듀대학교, 입직자 취업준비 · 진로 멘토링, 현직자 기술교육 전 영역",
@@ -186,7 +186,7 @@ export const STRINGS = {
     card3Item1SubStrong: { ko: "DAU 300만+", en: "DAU 3M+" } satisfies Localized,
     card3Item1SubTail: {
       ko: " 코인거래소 실시간 알림 시스템 & 광고 시스템에서 대량 트래픽 제어",
-      en: " — large-volume traffic handled across a crypto-exchange real-time notification platform and an advertising system.",
+      en: " — high-volume traffic managed across a crypto-exchange real-time notification platform and an advertising system.",
     } satisfies Localized,
     card3Item2Lead: {
       ko: "클라우드 배포 · 운영 주도, 안정성과 효율성 극대화",
@@ -260,7 +260,7 @@ export const STRINGS = {
     } satisfies Localized,
     subtitleLine2: {
       ko: "— 두 기수 모두 100% 수료, 만족도 제출 인원 전원 추천.",
-      en: "— both cohorts graduated at 100% and every survey respondent gave a positive recommendation.",
+      en: "— both cohorts at 100% completion — every survey respondent recommended the course.",
     } satisfies Localized,
 
     stats: {
@@ -311,7 +311,7 @@ export const STRINGS = {
     title: { ko: "현업 경력", en: "Work Experience" } satisfies Localized,
     subtitle: {
       ko: "국책기관 · 글로벌 사업개발 · 백엔드 엔지니어링 · 기술교육 — 다각도의 IT 산업 이력.",
-      en: "Public-sector institutes · global business development · backend engineering · technical training — a multi-angle career across the IT industry.",
+      en: "A multidisciplinary IT career spanning public-sector institutions, global business development, backend engineering, and technical education.",
     } satisfies Localized,
     headerCompany: { ko: "회사명", en: "Company" } satisfies Localized,
     headerPeriod: { ko: "기간", en: "Period" } satisfies Localized,

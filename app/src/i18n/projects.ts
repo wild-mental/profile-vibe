@@ -414,7 +414,7 @@ export const HANBAT: SimpleProject = {
   },
   lead: {
     ko: "산학협력단 SW & HW 융합 메이커 교육 방법론 연구.",
-    en: "Research with the university's industry-academia cooperation foundation into SW + HW convergence maker-education methodologies.",
+    en: "Research on SW–HW convergence maker-education methodology for the university's industry-academia cooperation foundation.",
   },
   bullets: {
     ko: [
@@ -440,7 +440,7 @@ export const LUXROBO: LuxroboCopy = {
   },
   lead: {
     ko: "미국 · 중동 · 중국 시장 진출 및 파트너십 · 기술교류 수행.",
-    en: "Led market entry and partnership / technical-exchange activities across the US, the Middle East, and China.",
+    en: "Led market entry, partnership development, and technical exchange across the U.S., Middle East, and China.",
   },
   sections: {
     ko: [

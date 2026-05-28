@@ -69,13 +69,13 @@ export const CAREER_ROWS: Localized<readonly CareerRow[]> = {
       company: "Kakao Kidsnote",
       period: "Sep. 2021 — Jan. 2024",
       role: "Research Engineer",
-      job: "Backend engineer · advertising platform",
+      job: "Backend Engineer for Advertising Systems",
     },
     {
       company: "Axiasoft (Coinbit)",
       period: "Mar. 2021 — Sep. 2021",
       role: "Research Engineer",
-      job: "Backend engineer · crypto exchange",
+      job: "Backend Engineer for Cryptocurrency Exchange",
     },
     {
       company: "Makers World",

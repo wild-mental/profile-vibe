@@ -1,6 +1,6 @@
 ---
 name: notion-cli
-description: Operates on Notion pages and documents via Notion CLI (ntn). Covers read-first workflows, local markdown export with images, recursive internal-page download, and relative link wiring. Use when using ntn, downloading Notion pages to markdown, resolving file:// images, or linking internal Notion pages locally.
+description: Operates on Notion pages and documents via Notion CLI (ntn). Covers read-first workflows, local markdown export with images, recursive internal-page download, and relative link wiring. Use when the user mentions ntn, Notion CLI, downloading Notion pages to markdown, file:// images, or internal page links. Do not use for generic Notion API work without ntn.
 ---
 
 # Notion CLI + Local LLM Operating Rules
@@ -9,6 +9,10 @@ description: Operates on Notion pages and documents via Notion CLI (ntn). Covers
 
 Notion 워크스페이스의 페이지·문서·데이터베이스를 사람이 쓰는 협업 공간으로 두고,
 로컬 LLM Agent는 이를 읽고 분석하고 갱신한다.
+
+## 시작 시 확인
+
+작업 시작 전 `ntn doctor`를 실행해 인증·워크스페이스 상태를 확인한다. 실패 시 `curl -fsSL https://ntn.dev | bash && ntn login` 안내.
 
 ---
 
@@ -257,9 +261,14 @@ Notion 내부 페이지 링크는 표준 `[text](url)` 이 아니다:
 
 로컬 다운로드 시 **`[링크 텍스트](상대경로.md)`** 로 변환해야 한다. URL만 있고 로컬 파일이 없으면 Notion URL fallback.
 
-## 7. Cursor 스킬 발견
+## 7. Codex 스킬 발견
 
-개인 스킬 `~/.cursor/skills/` 생성 후 UI에 안 보이면 **Reload Window** 필요. 수동 호출: `/notion-cli`.
+| 위치 | 경로 |
+|------|------|
+| 프로젝트 | `.agents/skills/notion-cli/SKILL.md` |
+| 개인 | `~/.agents/skills/notion-cli/SKILL.md` |
+
+수동 호출: `/skills` 또는 `$notion-cli`. 스킬 변경이 반영되지 않으면 Codex를 재시작한다.
 
 ---
 
