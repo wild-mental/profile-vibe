@@ -78,6 +78,7 @@ function HanaDtTraining() {
 
   return (
     <ProjectBand
+      id="project-hana"
       num={HANA.num}
       org={t(HANA.org)}
       photo="lecture"
@@ -114,6 +115,7 @@ function KakaoKidsnote() {
 
   return (
     <ProjectBand
+      id="project-kakao"
       num={KAKAO.num}
       org={t(KAKAO.org)}
       tone="tone-3"
@@ -147,6 +149,7 @@ function AxiaSoftCoinbit() {
 
   return (
     <ProjectBand
+      id="project-axia"
       num={AXIA.num}
       org={t(AXIA.org)}
       tone="tone-2"

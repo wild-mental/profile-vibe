@@ -34,6 +34,7 @@ export const STRINGS = {
     kdt: { ko: "KDT 수료", en: "KDT Outcomes" } satisfies Localized,
     teaching: { ko: "강의", en: "Teaching" } satisfies Localized,
     career: { ko: "경력", en: "Career" } satisfies Localized,
+    fintech: { ko: "Fintech AX", en: "Fintech AX" } satisfies Localized,
     projects: { ko: "프로젝트", en: "Projects" } satisfies Localized,
     contact: { ko: "Contact", en: "Contact" } satisfies Localized,
     linkedin: { ko: "LinkedIn", en: "LinkedIn" } satisfies Localized,
@@ -318,6 +319,116 @@ export const STRINGS = {
     headerRole: { ko: "직위 / 직책", en: "Title / Role" } satisfies Localized,
     headerJob: { ko: "직무", en: "Responsibility" } satisfies Localized,
     present: { ko: "현재", en: "Present" } satisfies Localized,
+  },
+
+  fintech: {
+    eyebrow: { ko: "Fintech × AX", en: "Fintech × AX" } satisfies Localized,
+    title: {
+      ko: "금융 특화 AX · PM 역량",
+      en: "Fintech & Financial AX",
+    } satisfies Localized,
+    subtitle: {
+      ko: "전통 금융 인프라에 대한 높은 이해와 가상자산 · 핀테크 실무를 바탕으로, 규제 · 보안 · 신뢰성을 충족하는 AI 전환(AX) 프로덕트 기획과 아키텍처 설계를 리드합니다.",
+      en: "Built on deep traditional-finance infrastructure knowledge and hands-on crypto/fintech experience — I lead AX product strategy and architecture that satisfies compliance, security, and reliability.",
+    } satisfies Localized,
+
+    // Card 1 — domain depth
+    card1Title: {
+      ko: "전통 금융 + 가상자산을 아우르는 도메인 실무 깊이",
+      en: "Domain depth spanning traditional finance and digital assets",
+    } satisfies Localized,
+    card1Item1Lead: {
+      ko: "하나금융그룹 현직자 대상 인프라 아키텍처 가이드",
+      en: "Infrastructure-architecture guidance for Hana Financial Group practitioners",
+    } satisfies Localized,
+    card1Item1Sub: {
+      ko: "MSA · EKS 클라우드 현대화 컨설팅 — 폐쇄망 · 망분리 규제 샌드박스와 금융 데이터 보안 가이드라인 컨텍스트 보유",
+      en: "MSA · EKS cloud-modernization consulting — with firm context on closed networks, network-separation regulatory sandboxes, and financial-data security guidelines",
+    } satisfies Localized,
+    card1Item2Lead: {
+      ko: "가상자산 플랫폼 대용량 트래픽 · 보안 인증 대응",
+      en: "High-volume traffic and security certification on a digital-asset platform",
+    } satisfies Localized,
+    card1Item2Sub: {
+      ko: "거래소 실시간성 보장을 위한 **분당 300만 건** 알림 분산 처리 아키텍처 설계 · **ISMS-P** 인증 개발 프로토콜 리드",
+      en: "Designed a distributed alerting architecture handling **3M messages/min** for exchange real-time guarantees · led the **ISMS-P** certification development protocol",
+    } satisfies Localized,
+
+    // Card 2 — data-driven PM
+    card2Title: {
+      ko: "지표와 규제를 동시에 다루는 데이터 기반 핀테크 PM",
+      en: "Data-driven fintech PM that balances metrics and regulation",
+    } satisfies Localized,
+    card2Item1Lead: {
+      ko: "데이터 기반 금융 프로덕트 고도화 (Data-driven PM)",
+      en: "Data-driven financial product growth",
+    } satisfies Localized,
+    card2Item1Sub: {
+      ko: "키즈노트 대규모 행동 데이터 분석 · ML 타게팅 로직 기획 · 적용으로 **BM 매출 2배 성장** 견인",
+      en: "Analyzed large-scale user-behavior data and shipped ML targeting logic at Kidsnote — driving **2× BM revenue growth**",
+    } satisfies Localized,
+    card2Item2Lead: {
+      ko: "지표(Data)와 규제를 동시에 고려한 PM 의사결정",
+      en: "PM decisions that weigh data and regulation together",
+    } satisfies Localized,
+    card2Item2Sub: {
+      ko: "데이터 근거와 컴플라이언스 제약을 통합하는, 핀테크 기획의 핵심 의사결정 역량 증명",
+      en: "Proven ability to fuse data evidence with compliance constraints — the core decision skill in fintech planning",
+    } satisfies Localized,
+
+    // Card 3 — AX methodology
+    card3Title: {
+      ko: "경영 전략 프레임워크를 LLM에 이식한 AX 기획 방법론",
+      en: "AX methodology that ports strategy frameworks onto LLMs",
+    } satisfies Localized,
+    card3Item1Lead: {
+      ko: "프레임워크 융합형 핀테크 AX 기획",
+      en: "Framework-fused fintech AX planning",
+    } satisfies Localized,
+    card3Item1Sub: {
+      ko: "JTBD · Porter's Five Forces · Value Chain 등 정통 전략 프레임워크를 **LLM 프롬프트 엔지니어링 · Multi-Agent 워크플로우**로 이식",
+      en: "Porting classic strategy frameworks — JTBD, Porter's Five Forces, Value Chain — into **LLM prompt engineering and multi-agent workflows**",
+    } satisfies Localized,
+    card3Item2Lead: {
+      ko: "페인포인트 정의 → AI 에이전트 결합 → 자동화 PRD",
+      en: "From pain-point definition to AI-agent automation PRDs",
+    } satisfies Localized,
+    card3Item2Sub: {
+      ko: "고객 페인포인트 정의부터 AI 에이전트 결합 비용 최적화 · 자동화까지 아우르는 고도화된 PRD 작성 셋업 능력",
+      en: "Advanced PRD setups spanning pain-point definition through AI-agent cost optimization and automation",
+    } satisfies Localized,
+
+    // Curriculum preview
+    curriculumTitle: {
+      ko: "Fintech AX PM 양성 과정 — 강의 모듈 미리보기",
+      en: "Fintech AX PM Program — teaching-module preview",
+    } satisfies Localized,
+    curriculumHeaderModule: { ko: "모듈", en: "Module" } satisfies Localized,
+    curriculumHeaderTopic: { ko: "주제", en: "Topic" } satisfies Localized,
+    curriculum: {
+      ko: [
+        { module: "M1", topic: "금융 도메인 & 규제 이해 — Compliance · Security · Reliability, 망분리 · ISMS-P" },
+        { module: "M2", topic: "핀테크 시장 구조 & 고객 분석 — JTBD · Porter's Five Forces · Value Chain" },
+        { module: "M3", topic: "데이터 기반 PM 의사결정 — 지표 설계 · ML 타게팅 기획", highlight: true },
+        { module: "M4", topic: "AX 기획 방법론 — 프레임워크의 LLM 프롬프트 / Multi-Agent 이식" },
+        { module: "M5", topic: "AI 에이전트 결합 PRD 작성 & 비용 최적화 자동화 실습" },
+      ],
+      en: [
+        { module: "M1", topic: "Finance domain & regulation — compliance, security, reliability; network separation & ISMS-P" },
+        { module: "M2", topic: "Fintech market structure & customer analysis — JTBD · Porter's Five Forces · Value Chain" },
+        { module: "M3", topic: "Data-driven PM decisions — metric design & ML targeting planning", highlight: true },
+        { module: "M4", topic: "AX methodology — porting frameworks into LLM prompts / multi-agent workflows" },
+        { module: "M5", topic: "Building AI-agent-integrated PRDs & cost-optimization automation labs" },
+      ],
+    } satisfies Localized<readonly { module: string; topic: string; highlight?: boolean }[]>,
+    curriculumNote: {
+      ko: "하나금융그룹 · KT 등 현직 금융 · 기술 실무자 대상 강의에서 검증된 전달력 — ",
+      en: "Delivery proven with working finance and tech practitioners at Hana Financial Group, KT, and more — ",
+    } satisfies Localized,
+    curriculumNoteLink: {
+      ko: "교육 만족도 근거 보기",
+      en: "see the satisfaction evidence",
+    } satisfies Localized,
   },
 
   projectsIntro: {

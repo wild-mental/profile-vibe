@@ -6,6 +6,7 @@ import { ProjectsList } from "@/components/projects/ProjectsList";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { CareerSection } from "@/components/sections/CareerSection";
 import { ContactCtaSection } from "@/components/sections/ContactCtaSection";
+import { FintechAxSection } from "@/components/sections/FintechAxSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { KdtGraduationSection } from "@/components/sections/KdtGraduationSection";
 import { ProjectsIntroSection } from "@/components/sections/ProjectsIntroSection";
@@ -29,6 +30,8 @@ function App() {
         <KdtGraduationSection />
         <TeachingSection />
         <CareerSection />
+
+        <FintechAxSection />
 
         <ProjectsIntroSection />
         <ProjectsList />

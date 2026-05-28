@@ -16,6 +16,7 @@ export const NAV_LINKS: ReadonlyArray<{
   { href: "#kdt-graduation", label: STRINGS.nav.kdt },
   { href: "#teaching", label: STRINGS.nav.teaching },
   { href: "#career", label: STRINGS.nav.career },
+  { href: "#fintech-ax", label: STRINGS.nav.fintech },
   { href: "#projects", label: STRINGS.nav.projects },
 ] as const;
 
