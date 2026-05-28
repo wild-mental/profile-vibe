@@ -400,25 +400,27 @@ export const STRINGS = {
 
     // Curriculum preview
     curriculumTitle: {
-      ko: "Fintech AX PM 양성 과정 — 강의 모듈 미리보기",
+      ko: "Fintech AX PM 양성 과정 — 핵심 노하우 영역과 교육 키워드",
       en: "Fintech AX PM Program — teaching-module preview",
     } satisfies Localized,
     curriculumHeaderModule: { ko: "모듈", en: "Module" } satisfies Localized,
     curriculumHeaderTopic: { ko: "주제", en: "Topic" } satisfies Localized,
     curriculum: {
       ko: [
-        { module: "M1", topic: "금융 도메인 & 규제 이해 — Compliance · Security · Reliability, 망분리 · ISMS-P" },
-        { module: "M2", topic: "핀테크 시장 구조 & 고객 분석 — JTBD · Porter's Five Forces · Value Chain" },
-        { module: "M3", topic: "데이터 기반 PM 의사결정 — 지표 설계 · ML 타게팅 기획", highlight: true },
-        { module: "M4", topic: "AX 기획 방법론 — 프레임워크의 LLM 프롬프트 / Multi-Agent 이식" },
-        { module: "M5", topic: "AI 에이전트 결합 PRD 작성 & 비용 최적화 자동화 실습" },
+        { module: "핀테크 AI 트렌드", topic: "초개인화 자산관리 & 대화형 UI, 초지능화 및 초자율화 기반 운영 효율화, 핀테크 B2B 인프라 사업 확장" },
+        { module: "금융 도메인 특성 이해", topic: "금융 규제 준수, 보안 및 신뢰성 유지, 망분리 및 성능 최적화, ISMS-P 인증 획득" },
+        { module: "핀테크 시장 구조 분석", topic: "시장 구조 분석, 고객 분석, JTBD, Porter's Five Forces, Value Chain 기반 기획" },
+        { module: "데이터 기반 의사결정", topic: "AI 활용 시장 기회 탐색, 메트릭 설계, 데이터 기반 의사결정, ML 타게팅 기획" },
+        { module: "AX 기획 방법론", topic: "AI 기반 기존 워크플로우의 자동화 및 지능화, Multi-Agent 워크플로우 기반의 수준높은 AI 활용" },
+        { module: "AI 활용 MVP 제작", topic: "AI 에이전트 활용 PRD 구체화 & 바이브코딩 기반 프로토타입 및 MVP 제작을 통한 기획 검증" },
       ],
       en: [
-        { module: "M1", topic: "Finance domain & regulation — compliance, security, reliability; network separation & ISMS-P" },
-        { module: "M2", topic: "Fintech market structure & customer analysis — JTBD · Porter's Five Forces · Value Chain" },
-        { module: "M3", topic: "Data-driven PM decisions — metric design & ML targeting planning", highlight: true },
-        { module: "M4", topic: "AX methodology — porting frameworks into LLM prompts / multi-agent workflows" },
-        { module: "M5", topic: "Building AI-agent-integrated PRDs & cost-optimization automation labs" },
+        { module: "Fintech AI trends", topic: "Personalized asset management & conversational UI, AI-powered operational efficiency, Fintech B2B infrastructure expansion" },
+        { module: "Understanding the finance domain", topic: "Compliance, security, and reliability maintenance, network separation and performance optimization, ISMS-P certification" },
+        { module: "Fintech market structure analysis", topic: "Market structure analysis, customer analysis, JTBD, Porter's Five Forces, Value Chain-based planning" },
+        { module: "Data-driven decision-making", topic: "AI-driven market opportunity discovery, metric design, data-driven decision-making, ML targeting planning" },
+        { module: "AX methodology", topic: "Automation and intelligence of existing workflows, high-level AI utilization with Multi-Agent workflows" },
+        { module: "AI-driven MVP creation", topic: "AI agent-utilized PRD concretization & Vibe coding-based prototype & MVP creation for planning verification" },
       ],
     } satisfies Localized<readonly { module: string; topic: string; highlight?: boolean }[]>,
     curriculumNote: {
