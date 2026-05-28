@@ -129,7 +129,7 @@ export function FintechAxSection() {
               <table>
                 <thead>
                   <tr>
-                    <th style={{ width: "16%" }}>
+                    <th style={{ width: "28%" }}>
                       {t(s.curriculumHeaderModule)}
                     </th>
                     <th>{t(s.curriculumHeaderTopic)}</th>
@@ -141,13 +141,7 @@ export function FintechAxSection() {
                       <td>
                         <strong>{row.module}</strong>
                       </td>
-                      <td>
-                        {row.highlight ? (
-                          <strong>{row.topic}</strong>
-                        ) : (
-                          row.topic
-                        )}
-                      </td>
+                      <td>{row.topic}</td>
                     </tr>
                   ))}
                 </tbody>
