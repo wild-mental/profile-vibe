@@ -422,7 +422,7 @@ export const STRINGS = {
         { module: "AX methodology", topic: "Automation and intelligence of existing workflows, high-level AI utilization with Multi-Agent workflows" },
         { module: "AI-driven MVP creation", topic: "AI agent-utilized PRD concretization & Vibe coding-based prototype & MVP creation for planning verification" },
       ],
-    } satisfies Localized<readonly { module: string; topic: string; highlight?: boolean }[]>,
+    } satisfies Localized<readonly { module: string; topic: string }[]>,
     curriculumNote: {
       ko: "하나금융그룹 · KT 등 현직 금융 · 기술 실무자 대상 강의에서 검증된 전달력 — ",
       en: "Delivery proven with working finance and tech practitioners at Hana Financial Group, KT, and more — ",
