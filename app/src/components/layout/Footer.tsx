@@ -83,9 +83,8 @@ export function Footer() {
 
       <div className="footer-bottom">
         <span className="copyright">
-          © {year} Park Byungjun. {t(s.copyright)}
+          © {year} Byungjun Park. {t(s.copyright)}
         </span>
-        <span>{t(s.designedWith)}</span>
       </div>
     </footer>
   );

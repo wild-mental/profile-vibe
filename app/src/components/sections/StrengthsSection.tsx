@@ -1,5 +1,5 @@
 import { EvidenceImageButton } from "@/components/ui/EvidenceImageButton";
-import { useT } from "@/i18n";
+import { useLang, useT } from "@/i18n";
 import { STRINGS } from "@/i18n/strings";
 
 const NEWS_STACK = [
@@ -16,6 +16,7 @@ const NEWS_STACK = [
 
 export function StrengthsSection() {
   const t = useT();
+  const { lang } = useLang();
   const s = STRINGS.strengths;
 
   return (
@@ -129,7 +130,10 @@ export function StrengthsSection() {
               natural
               className="mt-2"
               image={{
-                src: "/assets/enterprise-it-training-satisfaction.png",
+                src:
+                  lang === "en"
+                    ? "/assets/enterprise-it-training-satisfaction_en.png"
+                    : "/assets/enterprise-it-training-satisfaction.png",
                 caption: t(s.satisfactionImageCaption),
               }}
             />

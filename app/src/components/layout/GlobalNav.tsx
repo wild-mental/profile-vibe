@@ -1,6 +1,6 @@
 import { useT } from "@/i18n";
 import { STRINGS } from "@/i18n/strings";
-import { CONTACT_EMAIL, LINKEDIN_URL, NAV_LINKS } from "@/data/nav";
+import { LINKEDIN_URL, NAV_LINKS } from "@/data/nav";
 import { LanguageToggle } from "./LanguageToggle";
 
 type GlobalNavProps = {
@@ -32,10 +32,6 @@ export function GlobalNav({ onToggleMobileMenu }: GlobalNavProps) {
         </div>
 
         <div className="nav-actions">
-          <a className="btn-utility-dark" href={`mailto:${CONTACT_EMAIL}`}>
-            <i className="bi bi-envelope" />
-            {t(STRINGS.nav.contact)}
-          </a>
           <a
             className="btn-utility-blue"
             href={LINKEDIN_URL}

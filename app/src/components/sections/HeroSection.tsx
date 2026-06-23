@@ -1,4 +1,4 @@
-import { useT } from "@/i18n";
+import { useLang, useT } from "@/i18n";
 import { STRINGS } from "@/i18n/strings";
 import {
   CONTACT_EMAIL,
@@ -9,6 +9,7 @@ import {
 
 export function HeroSection() {
   const t = useT();
+  const { lang } = useLang();
 
   return (
     <header id="top" className="hero tile-light">
@@ -29,11 +30,15 @@ export function HeroSection() {
           <p className="tagline">
             <span className="tagline-line">
               {t(STRINGS.hero.taglineLead)}
+              {/* Line is long — break so the speed phrase (KO: 뉴스 속도로 / EN: at the speed of news) starts a new line. */}
+              <br />
               <strong>{t(STRINGS.hero.taglineLeadStrong)}</strong>
               {t(STRINGS.hero.taglineLeadTail)}
             </span>
             <span className="tagline-line tagline-subline">
               {t(STRINGS.hero.taglineSubPrefix)}
+              {/* EN subline is long — break before the em-dash so the metrics start a new line. */}
+              {lang === "en" && <br />}
               <strong>{t(STRINGS.hero.taglineSubStrong)}</strong>
             </span>
           </p>

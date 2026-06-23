@@ -12,19 +12,19 @@ export const STRINGS = {
   brand: {
     name: {
       ko: "박병준 · AI & IT 컨설턴트",
-      en: "Park Byungjun · AI & IT Consultant",
+      en: "Byungjun Park · AI & IT Consultant",
     } satisfies Localized,
     nameFooter: {
       ko: "박병준 · AI & IT Consultant",
-      en: "Park Byungjun · AI & IT Consultant",
+      en: "Byungjun Park · AI & IT Consultant",
     } satisfies Localized,
     tagline: {
-      ko: "AI · 빅데이터 · 클라우드 생태계를 뉴스 속도로 교육과 엔지니어링에 적용합니다.",
-      en: "Bringing the AI, big-data, and cloud ecosystem into both classrooms and production at the speed of news.",
+      ko: "AI · 빅데이터 · 클라우드 생태계의 최신 기술을 뉴스 속도로 교육과 엔지니어링에 적용합니다.",
+      en: "Bringing the latest from the AI, big-data, and cloud ecosystem into classrooms and production at the speed of news.",
     } satisfies Localized,
     documentTitle: {
       ko: "박병준 | AI & IT 컨설턴트 프로필",
-      en: "Park Byungjun | AI & IT Consultant Profile",
+      en: "Byungjun Park | AI & IT Consultant Profile",
     } satisfies Localized,
   },
 
@@ -50,19 +50,19 @@ export const STRINGS = {
       ko: "AI & IT Consultant",
       en: "AI & IT Consultant",
     } satisfies Localized,
-    nameKr: { ko: "박병준", en: "Park Byungjun" } satisfies Localized,
-    nameEn: { ko: "Park Byungjun", en: "박병준" } satisfies Localized,
+    nameKr: { ko: "박병준", en: "Byungjun Park" } satisfies Localized,
+    nameEn: { ko: "Byungjun Park", en: "박병준" } satisfies Localized,
     profilePhotoAlt: {
       ko: "박병준 프로필 사진",
-      en: "Portrait of Park Byungjun",
+      en: "Portrait of Byungjun Park",
     } satisfies Localized,
     taglineLead: {
-      ko: "AI · 빅데이터 · 클라우드 생태계를 ",
-      en: "I apply the AI, big-data, and cloud ecosystem in ",
+      ko: "AI · 빅데이터 · 클라우드 생태계의 최신 트렌드를 ",
+      en: "I apply the latest from the AI, big-data, and cloud ecosystem ",
     } satisfies Localized,
     taglineLeadStrong: {
       ko: "뉴스 속도로",
-      en: "near-real time",
+      en: "at the speed of news",
     } satisfies Localized,
     taglineLeadTail: {
       ko: " 교육과 엔지니어링에 적용합니다.",
@@ -70,11 +70,11 @@ export const STRINGS = {
     } satisfies Localized,
     taglineSubPrefix: {
       ko: "KDT 장기과정 ",
-      en: "KDT long-track ",
+      en: "Korea's national K-Digital Training (KDT), a year-long bootcamp",
     } satisfies Localized,
     taglineSubStrong: {
       ko: "2기수 연속 100% 수료, 만족도 100% 추천",
-      en: "two cohorts in a row · 100% graduation · 100% recommend rate",
+      en: "— two cohorts in a row · 100% graduation · 100% recommend rate",
     } satisfies Localized,
     kakaoLabel: {
       ko: "카카오톡 오픈프로필 열기",
@@ -168,7 +168,7 @@ export const STRINGS = {
     } satisfies Localized,
     card2Item3Lead: {
       ko: "K-12 ~ 대학생 ~ 현직 기술 전문가까지 전 수준 멘토링",
-      en: "Mentoring across every level — K-12 through university and through to seasoned industry professionals",
+      en: "Mentoring at every level — from K-12 and university students through to seasoned industry professionals",
     } satisfies Localized,
     card2Item3Sub: {
       ko: "미국 인디애나주 초중고 · 퍼듀대학교, 입직자 취업준비 · 진로 멘토링, 현직자 기술교육 전 영역",
@@ -280,7 +280,7 @@ export const STRINGS = {
       } satisfies Localized,
       recommendLabel: {
         ko: "교육과정 만족도 추천",
-        en: "Recommend rate",
+        en: "Recommendation rate",
       } satisfies Localized,
       recommendSub: {
         ko: "만족도 조사 제출 인원 전원 추천",
@@ -329,7 +329,7 @@ export const STRINGS = {
     } satisfies Localized,
     subtitle: {
       ko: "전통 금융 인프라에 대한 높은 이해와 가상자산 · 핀테크 실무를 바탕으로, 규제 · 보안 · 신뢰성을 충족하는 AI 전환(AX) 프로덕트 기획과 아키텍처 설계를 리드합니다.",
-      en: "Built on deep traditional-finance infrastructure knowledge and hands-on crypto/fintech experience — I lead AX product strategy and architecture that satisfies compliance, security, and reliability.",
+      en: "Built on deep traditional-finance infrastructure knowledge and hands-on crypto/fintech experience — I lead AX product strategy and architecture that meets compliance, security, and reliability requirements.",
     } satisfies Localized,
 
     // Card 1 — domain depth
@@ -343,7 +343,7 @@ export const STRINGS = {
     } satisfies Localized,
     card1Item1Sub: {
       ko: "MSA · EKS 클라우드 현대화 컨설팅 — 폐쇄망 · 망분리 규제 샌드박스와 금융 데이터 보안 가이드라인 컨텍스트 보유",
-      en: "MSA · EKS cloud-modernization consulting — with firm context on closed networks, network-separation regulatory sandboxes, and financial-data security guidelines",
+      en: "MSA · EKS cloud-modernization consulting — well-versed in closed networks, network-separation regulatory sandboxes, and financial-data security guidelines",
     } satisfies Localized,
     card1Item2Lead: {
       ko: "가상자산 플랫폼 대용량 트래픽 · 보안 인증 대응",
@@ -351,7 +351,7 @@ export const STRINGS = {
     } satisfies Localized,
     card1Item2Sub: {
       ko: "거래소 실시간성 보장을 위한 **분당 300만 건** 알림 분산 처리 아키텍처 설계 · **ISMS-P** 인증 개발 프로토콜 리드",
-      en: "Designed a distributed alerting architecture handling **3M messages/min** for exchange real-time guarantees · led the **ISMS-P** certification development protocol",
+      en: "Designed a distributed alerting architecture handling **3M messages/min** to guarantee the exchange's real-time performance · led the development protocol for **ISMS-P** certification",
     } satisfies Localized,
 
     // Card 2 — data-driven PM
@@ -365,7 +365,7 @@ export const STRINGS = {
     } satisfies Localized,
     card2Item1Sub: {
       ko: "키즈노트 대규모 행동 데이터 분석 · ML 타게팅 로직 기획 · 적용으로 **BM 매출 2배 성장** 견인",
-      en: "Analyzed large-scale user-behavior data and shipped ML targeting logic at Kidsnote — driving **2× BM revenue growth**",
+      en: "Analyzed large-scale user-behavior data and shipped ML targeting logic at Kidsnote — driving **2× revenue growth**",
     } satisfies Localized,
     card2Item2Lead: {
       ko: "지표(Data)와 규제를 동시에 고려한 PM 의사결정",
@@ -419,13 +419,13 @@ export const STRINGS = {
         { module: "Understanding the finance domain", topic: "Compliance, security, and reliability maintenance, network separation and performance optimization, ISMS-P certification" },
         { module: "Fintech market structure analysis", topic: "Market structure analysis, customer analysis, JTBD, Porter's Five Forces, Value Chain-based planning" },
         { module: "Data-driven decision-making", topic: "AI-driven market opportunity discovery, metric design, data-driven decision-making, ML targeting planning" },
-        { module: "AX methodology", topic: "Automation and intelligence of existing workflows, high-level AI utilization with Multi-Agent workflows" },
-        { module: "AI-driven MVP creation", topic: "AI agent-utilized PRD concretization & Vibe coding-based prototype & MVP creation for planning verification" },
+        { module: "AX methodology", topic: "Intelligent automation of existing workflows; advanced AI use through multi-agent workflows" },
+        { module: "AI-driven MVP creation", topic: "Fleshing out PRDs with AI agents, then validating plans through vibe-coding prototypes and MVPs" },
       ],
     } satisfies Localized<readonly { module: string; topic: string }[]>,
     curriculumNote: {
       ko: "하나금융그룹 · KT 등 현직 금융 · 기술 실무자 대상 강의에서 검증된 전달력 — ",
-      en: "Delivery proven with working finance and tech practitioners at Hana Financial Group, KT, and more — ",
+      en: "Proven delivery with working finance and tech practitioners at Hana Financial Group, KT, and more — ",
     } satisfies Localized,
     curriculumNoteLink: {
       ko: "교육 만족도 근거 보기",
@@ -483,10 +483,6 @@ export const STRINGS = {
     copyright: {
       ko: "All Rights Reserved.",
       en: "All Rights Reserved.",
-    } satisfies Localized,
-    designedWith: {
-      ko: "Designed with the Apple design system.",
-      en: "Designed with the Apple design system.",
     } satisfies Localized,
     kakaoLabel: {
       ko: "카카오톡 오픈프로필 열기",
