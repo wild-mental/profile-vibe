@@ -1,6 +1,6 @@
 import { useT } from "@/i18n";
 import { STRINGS } from "@/i18n/strings";
-import { CONTACT_EMAIL, LINKEDIN_URL } from "@/data/nav";
+import { KAKAO_URL, LINKEDIN_URL } from "@/data/nav";
 
 export function ContactCtaSection() {
   const t = useT();
@@ -12,10 +12,6 @@ export function ContactCtaSection() {
         <h2>{t(s.title)}</h2>
         <p>{t(s.subtitle)}</p>
         <div className="contact-cta-actions">
-          <a className="btn-pill-primary" href={`mailto:${CONTACT_EMAIL}`}>
-            {t(s.emailButton)}
-            <i className="bi bi-arrow-right" />
-          </a>
           <a
             className="btn-pill-secondary"
             href={LINKEDIN_URL}
@@ -23,6 +19,16 @@ export function ContactCtaSection() {
             rel="noopener noreferrer"
           >
             {t(s.linkedInButton)}
+          </a>
+          <a
+            className="btn-pill-primary"
+            href={KAKAO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t(STRINGS.hero.kakaoLabel)}
+          >
+            <i className="bi bi-chat-fill" />
+            {t(s.kakaoButton)}
           </a>
         </div>
       </div>

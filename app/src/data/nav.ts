@@ -13,7 +13,7 @@ export const NAV_LINKS: ReadonlyArray<{
 }> = [
   { href: "#about", label: STRINGS.nav.about },
   { href: "#strengths", label: STRINGS.nav.strengths },
-  { href: "#kdt-graduation", label: STRINGS.nav.kdt },
+  { href: "#achievements", label: STRINGS.nav.kdt },
   { href: "#teaching", label: STRINGS.nav.teaching },
   { href: "#career", label: STRINGS.nav.career },
   { href: "#fintech-ax", label: STRINGS.nav.fintech },

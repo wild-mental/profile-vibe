@@ -11,9 +11,9 @@ export const KDT_STATS: Localized<
       sub: "2024년 · 2025년 삼육대학교 KDT",
     },
     {
-      number: "48 / 48",
-      label: "총 수료생 (29명 + 19명)",
-      sub: "전원 1,000시간 장기과정 수료",
+      number: "1,000시간",
+      label: "풀스택 엔지니어 양성 장기과정",
+      sub: "2년간 누적 수료생 48명 전원 이수",
     },
     {
       number: "100%",
@@ -28,9 +28,9 @@ export const KDT_STATS: Localized<
       sub: "2024 · 2025 Sahmyook University KDT",
     },
     {
-      number: "48 / 48",
-      label: "Total graduates (29 + 19)",
-      sub: "Every learner completed the full 1,000-hour program",
+      number: "1,000 hrs",
+      label: "Full-stack engineer long-track program",
+      sub: "48 graduates in total over two years — all completed",
     },
     {
       number: "100%",

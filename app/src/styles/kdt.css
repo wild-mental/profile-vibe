@@ -2,8 +2,101 @@
    KDT — stat-card + cohort-card + evidence patterns
    ================================================================ */
 @layer components {
-  .kdt-section {
-    background: transparent;
+  /* --- KDT results subsection (below satisfaction / LinkedIn cards) ---- */
+  .kdt-results {
+    margin-top: 56px;
+    scroll-margin-top: 72px;
+  }
+  .kdt-results-head {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 28px;
+  }
+  .kdt-results-head h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+    color: var(--color-ink);
+    margin: 0 0 10px;
+  }
+  .kdt-results-head h3 i {
+    color: var(--color-primary);
+    font-size: 24px;
+  }
+  .kdt-results-head p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-ink-muted-80);
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  /* --- Collapsible per-cohort evidence disclosure --------------------- */
+  .cohorts-disclosure {
+    display: flex;
+    justify-content: center;
+  }
+  .cohorts-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    padding: 11px 18px;
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill);
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+    cursor: pointer;
+    transition:
+      border-color 0.18s ease,
+      color 0.18s ease;
+  }
+  .cohorts-toggle:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .cohorts-toggle > .bi-collection-fill {
+    color: var(--color-primary);
+    font-size: 16px;
+  }
+  .cohorts-toggle-hint {
+    margin-left: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-ink-muted-80);
+  }
+  .cohorts-toggle:hover .cohorts-toggle-hint {
+    color: var(--color-primary);
+  }
+  .cohorts-chevron {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+  }
+  .cohorts-chevron.is-open {
+    transform: rotate(180deg);
+  }
+
+  .cohorts-panel {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+    animation: cohorts-reveal 0.24s ease;
+  }
+  .cohorts-panel[hidden] {
+    display: none;
+  }
+  .cohorts-panel .cohort-card {
+    margin-bottom: 0;
   }
 
   .stat-card {
@@ -92,58 +185,23 @@
 
   .cohort-body {
     padding: 24px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-
-  details.evidence-details {
-    border: 1px solid var(--color-hairline);
-    border-radius: var(--radius-md);
-    background: var(--color-canvas);
-    overflow: hidden;
-    transition: border-color 0.2s ease;
-    height: 100%;
-  }
-  details.evidence-details[open] {
-    border-color: var(--color-hairline);
-    background: var(--color-canvas);
-  }
-  details.evidence-details > summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 14px 18px;
+  .cohort-evidence-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 600;
     color: var(--color-ink);
     letter-spacing: -0.016em;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    user-select: none;
-    border-bottom: 1px solid transparent;
-    background: var(--color-canvas);
-    transition: background 0.15s ease;
   }
-  details.evidence-details > summary::-webkit-details-marker {
-    display: none;
-  }
-  details.evidence-details > summary::before {
-    content: "\F285";
-    font-family: var(--font-bs-icons);
+  .cohort-evidence-label i {
     color: var(--color-primary);
     font-size: 14px;
-    transition: transform 0.2s ease;
-  }
-  details.evidence-details[open] > summary::before {
-    transform: rotate(90deg);
-  }
-  details.evidence-details[open] > summary {
-    border-bottom-color: var(--color-hairline);
-    background: var(--color-parchment);
-  }
-  details.evidence-details > summary:hover {
-    background: var(--color-parchment);
-  }
-  details.evidence-details .evidence-body {
-    padding: 16px;
   }
 
   .evidence-image-btn {
@@ -240,22 +298,41 @@
     margin: 16px 0 0;
     padding: 12px 16px;
     background: var(--color-parchment);
-    border-left: 3px solid var(--color-ink);
+    border-left: 3px solid var(--color-primary);
     border-radius: 0 6px 6px 0;
     font-size: 14px;
     line-height: 1.55;
     color: var(--color-ink-muted-80);
   }
-  .evidence-summary-clients {
-    display: block;
-    font-weight: 600;
-    color: var(--color-ink);
-    letter-spacing: -0.01em;
-  }
   .evidence-summary-tag {
     display: block;
-    margin-top: 4px;
     font-weight: 400;
+    color: var(--color-ink-muted-80);
+  }
+  .evidence-summary-clients {
+    display: block;
+    margin-top: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+  }
+}
+
+@keyframes cohorts-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cohorts-panel {
+    grid-template-columns: 1fr !important;
   }
 }
 

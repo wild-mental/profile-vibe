@@ -7,7 +7,7 @@ type LanguageToggleProps = {
 
 /**
  * Compact KO / EN segmented control rendered in the global nav (rightmost).
- * Persists the chosen language via `LanguageProvider`.
+ * Syncs the chosen language to `?lang=ko` / `?lang=en` via `LanguageProvider`.
  */
 export function LanguageToggle({ className }: LanguageToggleProps) {
   const { lang, setLang } = useLang();

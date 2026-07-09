@@ -30,7 +30,7 @@ export function Footer() {
           <a className="footer-link" href="#strengths">
             {t(s.profileStrengths)}
           </a>
-          <a className="footer-link" href="#kdt-graduation">
+          <a className="footer-link" href="#achievements">
             {t(s.profileKdt)}
           </a>
         </div>

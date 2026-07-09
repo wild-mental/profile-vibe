@@ -33,7 +33,7 @@ export function FintechAxSection() {
   const curriculum = t(s.curriculum);
 
   return (
-    <section id="fintech-ax" className="tile tile-light">
+    <section id="fintech-ax" className="tile tile-parchment">
       <div className="tile-header">
         <span className="eyebrow">{t(s.eyebrow)}</span>
         <h2>{t(s.title)}</h2>
@@ -147,13 +147,6 @@ export function FintechAxSection() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-4">
-              {t(s.curriculumNote)}
-              <a href="#satisfaction-evidence" className="sub-line-link">
-                {t(s.curriculumNoteLink)}
-                <i className="bi bi-arrow-up-circle" />
-              </a>
-            </p>
           </div>
         </div>
       </div>

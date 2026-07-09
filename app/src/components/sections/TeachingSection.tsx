@@ -8,7 +8,7 @@ export function TeachingSection() {
   const rows = t(TEACHING_ROWS);
 
   return (
-    <section id="teaching" className="tile tile-light">
+    <section id="teaching" className="tile tile-parchment">
       <div className="tile-header">
         <span className="eyebrow">{t(s.eyebrow)}</span>
         <h2>{t(s.title)}</h2>

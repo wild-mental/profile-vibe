@@ -15,13 +15,8 @@ export const EDUCATION: Localized<readonly TimelineItem[]> = {
     },
     {
       period: "2016.02",
-      title: "정치외교학 · 신문방송학 BA",
+      title: "정치외교학 · 커뮤니케이션학 BA",
       desc: "서강대학교",
-    },
-    {
-      period: "2008.02",
-      title: "중국어 전공",
-      desc: "서울외국어고등학교",
     },
   ] as const,
   en: [
@@ -37,13 +32,8 @@ export const EDUCATION: Localized<readonly TimelineItem[]> = {
     },
     {
       period: "Feb. 2016",
-      title: "BA in Political Science & Journalism",
+      title: "BA in Political Science & Communication",
       desc: "Sogang University",
-    },
-    {
-      period: "Feb. 2008",
-      title: "Chinese Language Major",
-      desc: "Seoul Foreign Language High School",
     },
   ] as const,
 };
@@ -53,11 +43,6 @@ export const CERTIFICATIONS: Localized<readonly TimelineItem[]> = {
     {
       period: "2024.06",
       title: "AWS Certified Solutions Architect Associate",
-      badge: "Amazon Web Services",
-    },
-    {
-      period: "2023.06",
-      title: "AWS Certified Cloud Practitioner",
       badge: "Amazon Web Services",
     },
     {
@@ -75,11 +60,6 @@ export const CERTIFICATIONS: Localized<readonly TimelineItem[]> = {
     {
       period: "Jun. 2024",
       title: "AWS Certified Solutions Architect — Associate",
-      badge: "Amazon Web Services",
-    },
-    {
-      period: "Jun. 2023",
-      title: "AWS Certified Cloud Practitioner",
       badge: "Amazon Web Services",
     },
     {

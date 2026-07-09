@@ -1,3 +1,4 @@
+import { useEffect, useId, useState } from "react";
 import { useLang, useT } from "@/i18n";
 import { STRINGS } from "@/i18n/strings";
 import {
@@ -6,10 +7,25 @@ import {
   KAKAO_URL,
   LINKEDIN_URL,
 } from "@/data/nav";
+import {
+  HeroCredentialsPanel,
+  HeroCredentialsToggle,
+} from "./HeroCredentials";
 
 export function HeroSection() {
   const t = useT();
   const { lang } = useLang();
+  const [credentialsOpen, setCredentialsOpen] = useState(false);
+  const credentialsPanelId = useId();
+
+  useEffect(() => {
+    const syncFromHash = () => {
+      if (window.location.hash === "#about") setCredentialsOpen(true);
+    };
+    syncFromHash();
+    window.addEventListener("hashchange", syncFromHash);
+    return () => window.removeEventListener("hashchange", syncFromHash);
+  }, []);
 
   return (
     <header id="top" className="hero tile-light">
@@ -82,7 +98,15 @@ export function HeroSection() {
               </a>
             </li>
           </ul>
+
+          <HeroCredentialsToggle
+            open={credentialsOpen}
+            panelId={credentialsPanelId}
+            onToggle={() => setCredentialsOpen((v) => !v)}
+          />
         </div>
+
+        <HeroCredentialsPanel id={credentialsPanelId} open={credentialsOpen} />
       </div>
     </header>
   );

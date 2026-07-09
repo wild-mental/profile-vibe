@@ -1,5 +1,4 @@
-import { EvidenceImageButton } from "@/components/ui/EvidenceImageButton";
-import { useLang, useT } from "@/i18n";
+import { useT } from "@/i18n";
 import { STRINGS } from "@/i18n/strings";
 
 const NEWS_STACK = [
@@ -16,23 +15,25 @@ const NEWS_STACK = [
 
 export function StrengthsSection() {
   const t = useT();
-  const { lang } = useLang();
   const s = STRINGS.strengths;
 
   return (
-    <section id="strengths" className="tile tile-light">
+    <section id="strengths" className="tile tile-parchment">
       <div className="tile-header">
         <span className="eyebrow">{t(s.eyebrow)}</span>
         <h2>{t(s.title)}</h2>
-        <p>{t(s.subtitle)}</p>
+        <div className="strengths-pills">
+          {t(s.subtitleItems).map((item) => (
+            <span key={item} className="strengths-pill">
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="tile-container-1100">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="highlight-card">
-            <div className="icon-circle">
-              <i className="bi bi-newspaper" />
-            </div>
             <h3>{t(s.card1Title)}</h3>
             <ul>
               <li>
@@ -58,9 +59,6 @@ export function StrengthsSection() {
           </div>
 
           <div className="highlight-card">
-            <div className="icon-circle">
-              <i className="bi bi-people-fill" />
-            </div>
             <h3>{t(s.card2Title)}</h3>
             <ul>
               <li>
@@ -93,9 +91,6 @@ export function StrengthsSection() {
           </div>
 
           <div className="highlight-card">
-            <div className="icon-circle">
-              <i className="bi bi-shield-check" />
-            </div>
             <h3>{t(s.card3Title)}</h3>
             <ul>
               <li>
@@ -117,55 +112,6 @@ export function StrengthsSection() {
                 <span className="sub-line">{t(s.card3Item3Sub)}</span>
               </li>
             </ul>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 items-stretch">
-          <div id="satisfaction-evidence" className="info-card h-full">
-            <h3>
-              <i className="bi bi-bar-chart-line-fill" />
-              {t(s.satisfactionCardTitle)}
-            </h3>
-            <EvidenceImageButton
-              natural
-              className="mt-2"
-              image={{
-                src:
-                  lang === "en"
-                    ? "/assets/enterprise-it-training-satisfaction_en.png"
-                    : "/assets/enterprise-it-training-satisfaction.png",
-                caption: t(s.satisfactionImageCaption),
-              }}
-            />
-            <p className="evidence-summary">
-              <span className="evidence-summary-clients">
-                {t(s.satisfactionClients)}
-              </span>
-              <span className="evidence-summary-tag">
-                {t(s.satisfactionTag)}
-              </span>
-            </p>
-          </div>
-
-          <div className="info-card h-full">
-            <h3>
-              <i className="bi bi-chat-square-quote-fill" />
-              {t(s.linkedInCardTitle)}
-            </h3>
-            <EvidenceImageButton
-              natural
-              className="mt-2"
-              image={{
-                src: "/assets/linkedin-recommendation-kakao-kidsnote.png",
-                caption: t(s.linkedInImageCaption),
-              }}
-            />
-            <blockquote className="linkedin-quote">
-              <p className="linkedin-quote-text">{t(s.linkedInQuote)}</p>
-              <cite className="linkedin-quote-cite">
-                {t(s.linkedInQuoteCite)}
-              </cite>
-            </blockquote>
           </div>
         </div>
       </div>

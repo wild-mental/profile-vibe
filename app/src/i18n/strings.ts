@@ -31,9 +31,9 @@ export const STRINGS = {
   nav: {
     about: { ko: "소개", en: "About" } satisfies Localized,
     strengths: { ko: "핵심 역량", en: "Strengths" } satisfies Localized,
-    kdt: { ko: "KDT 수료", en: "KDT Outcomes" } satisfies Localized,
-    teaching: { ko: "강의", en: "Teaching" } satisfies Localized,
-    career: { ko: "경력", en: "Career" } satisfies Localized,
+    kdt: { ko: "성과 증명", en: "Proven Results" } satisfies Localized,
+    teaching: { ko: "강의 경력", en: "Teaching" } satisfies Localized,
+    career: { ko: "현업 경력", en: "Career" } satisfies Localized,
     fintech: { ko: "Fintech AX", en: "Fintech AX" } satisfies Localized,
     projects: { ko: "프로젝트", en: "Projects" } satisfies Localized,
     contact: { ko: "Contact", en: "Contact" } satisfies Localized,
@@ -85,7 +85,7 @@ export const STRINGS = {
   about: {
     eyebrow: { ko: "About", en: "About" } satisfies Localized,
     title: {
-      ko: "교육 사항 & 자격",
+      ko: "교육 & 자격 사항",
       en: "Education & Certifications",
     } satisfies Localized,
     subtitle: {
@@ -97,6 +97,8 @@ export const STRINGS = {
       ko: "자격 사항",
       en: "Certifications",
     } satisfies Localized,
+    expandHint: { ko: "펼쳐보기", en: "Show" } satisfies Localized,
+    collapseHint: { ko: "접기", en: "Hide" } satisfies Localized,
   },
 
   strengths: {
@@ -105,10 +107,18 @@ export const STRINGS = {
       ko: "차별화된 3가지 핵심 역량",
       en: "Three Defining Strengths",
     } satisfies Localized,
-    subtitle: {
-      ko: "뉴스 속도의 최신 교육, 100% 수료의 학습자 맞춤 교육, 장애율 0%의 엔지니어링.",
-      en: "Education at the speed of news. Learner-centered teaching with a 100% graduation track record. Engineering with a zero-incident operating history.",
-    } satisfies Localized,
+    subtitleItems: {
+      ko: [
+        "최신 트렌드 인사이트 전달",
+        "학습자 맞춤 교육 & 진로 컨설팅",
+        "AI & IT Engineering Excellence",
+      ],
+      en: [
+        "Latest-Trend Insight Delivery",
+        "Learner-Centered Teaching & Career Consulting",
+        "AI & IT Engineering Excellence",
+      ],
+    } satisfies Localized<readonly string[]>,
 
     // Card 1
     card1Title: {
@@ -219,12 +229,12 @@ export const STRINGS = {
       en: "Satisfaction-score chart · enterprise IT training",
     } satisfies Localized,
     satisfactionClients: {
-      ko: "하나금융그룹 · KT · LG헬로비전 · KOICA · 모두의연구소",
-      en: "Hana Financial Group · KT · LG HelloVision · KOICA · Modulabs",
+      ko: "— 하나금융그룹 · KT · LG헬로비전 · KOICA · 모두의연구소",
+      en: "— Hana Financial Group · KT · LG HelloVision · KOICA · Modulabs",
     } satisfies Localized,
     satisfactionTag: {
-      ko: "— 기업 실무자 대상 강의에서 최고 수준의 만족도를 달성합니다.",
-      en: "— consistently top-tier satisfaction scores from enterprise practitioner audiences.",
+      ko: "기업 실무자 대상 강의에서 최고 수준의 만족도를 달성합니다.",
+      en: "Consistently top-tier satisfaction scores from enterprise practitioner audiences.",
     } satisfies Localized,
 
     linkedInCardTitle: {
@@ -247,21 +257,25 @@ export const STRINGS = {
 
   kdt: {
     eyebrow: { ko: "Track Record", en: "Track Record" } satisfies Localized,
-    titleLine1: {
-      ko: "2024 & 2025년 KDT 장기과정",
-      en: "2024 & 2025 KDT long-track program",
+    title: {
+      ko: "성과 증명",
+      en: "Proven Results",
     } satisfies Localized,
-    titleLine2: {
-      ko: "2기수 연속 100% 수료",
-      en: "100% graduation — two cohorts in a row",
+    subtitle: {
+      ko: "기업 IT 실무자 교육 만족도 · 동료 추천 · KDT 장기과정 실적으로 증명하는 결과.",
+      en: "Results proven through enterprise-training satisfaction, peer recommendations, and the KDT long-track program record.",
     } satisfies Localized,
-    subtitleLine1: {
-      ko: "풀스택 엔지니어 양성 1,000시간 장기과정, 2년간 총 48명",
-      en: "1,000-hour full-stack engineer program — 48 graduates over two years",
+    kdtResultsTitle: {
+      ko: "KDT 장기과정 교육실적",
+      en: "KDT long-track program results",
     } satisfies Localized,
-    subtitleLine2: {
-      ko: "— 두 기수 모두 100% 수료, 만족도 제출 인원 전원 추천.",
-      en: "— both cohorts at 100% completion — every survey respondent recommended the course.",
+    kdtResultsSubtitle: {
+      ko: "2024 & 2025년 삼육대학교 KDT 1,000시간 장기과정 — 2기수 연속 100% 수료, 총 48명.",
+      en: "2024 & 2025 Sahmyook University KDT 1,000-hour program — 100% graduation across two consecutive cohorts, 48 graduates total.",
+    } satisfies Localized,
+    cohortsToggle: {
+      ko: "기수별 만족도 조사 · 수강 후기 보기",
+      en: "View per-cohort satisfaction & reviews",
     } satisfies Localized,
 
     stats: {
@@ -423,14 +437,6 @@ export const STRINGS = {
         { module: "AI-driven MVP creation", topic: "Fleshing out PRDs with AI agents, then validating plans through vibe-coding prototypes and MVPs" },
       ],
     } satisfies Localized<readonly { module: string; topic: string }[]>,
-    curriculumNote: {
-      ko: "하나금융그룹 · KT 등 현직 금융 · 기술 실무자 대상 강의에서 검증된 전달력 — ",
-      en: "Proven delivery with working finance and tech practitioners at Hana Financial Group, KT, and more — ",
-    } satisfies Localized,
-    curriculumNoteLink: {
-      ko: "교육 만족도 근거 보기",
-      en: "see the satisfaction evidence",
-    } satisfies Localized,
   },
 
   projectsIntro: {
@@ -460,13 +466,13 @@ export const STRINGS = {
       ko: "기업 IT 실무자 교육, 장기과정 강의, 클라우드 아키텍처 설계 컨설팅까지 — 현장의 변화 속도에 맞춰 함께 일합니다.",
       en: "Enterprise IT training, long-track teaching, cloud-architecture consulting — I work at the pace your team and field demand.",
     } satisfies Localized,
-    emailButton: {
-      ko: "이메일로 의뢰하기",
-      en: "Reach out by email",
-    } satisfies Localized,
     linkedInButton: {
       ko: "LinkedIn 프로필",
       en: "LinkedIn profile",
+    } satisfies Localized,
+    kakaoButton: {
+      ko: "Kakao 채팅문의",
+      en: "Kakao chat",
     } satisfies Localized,
   },
 
@@ -474,7 +480,7 @@ export const STRINGS = {
     profileTitle: { ko: "Profile", en: "Profile" } satisfies Localized,
     profileAbout: { ko: "소개", en: "About" } satisfies Localized,
     profileStrengths: { ko: "핵심 역량", en: "Core Strengths" } satisfies Localized,
-    profileKdt: { ko: "KDT 수료", en: "KDT Outcomes" } satisfies Localized,
+    profileKdt: { ko: "성과 증명", en: "Proven Results" } satisfies Localized,
     trackRecordTitle: { ko: "Track Record", en: "Track Record" } satisfies Localized,
     trackTeaching: { ko: "강의 경력", en: "Teaching" } satisfies Localized,
     trackCareer: { ko: "현업 경력", en: "Work Experience" } satisfies Localized,
