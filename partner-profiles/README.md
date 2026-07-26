@@ -44,6 +44,17 @@ partner-profiles/
 cp -R partner-profiles/_template partner-profiles/<partner-slug>
 ```
 
+### 선택 문서 (파트너가 양식을 지정한 경우)
+
+파트너가 **자체 제출 양식**(pptx·docx 등)을 주거나 배경 맥락이 복잡할 때는 아래를 추가한다. `EMERITUS/`가 이 확장 구성의 참조 사례다.
+
+| 파일 | 언제 필요한가 |
+|------|---------------|
+| `README.md` | 폴더 인덱스·상태판·차단 이슈 — 문서가 3개를 넘어가면 |
+| `template-spec.md` | 파트너 지정 양식이 있을 때. 필드 인벤토리·분량 예산·작성 규칙을 **원본 파일에서 역공학**해 고정 |
+| `content-map.md` | 양식 필드 ↔ 보유 이력 자산 매핑 + 초안 후보. 각 항목에 원천 근거를 붙여 Fidelity를 강제 |
+| `outbound-email.md` | 프로필이 이메일에 동봉될 때. 이메일의 주장과 프로필의 증거가 어긋나지 않게 정합 표를 둔다 |
+
 ## 작업 흐름 (요약)
 
 1. `_template`를 복사해 `<partner-slug>/`를 만든다.
