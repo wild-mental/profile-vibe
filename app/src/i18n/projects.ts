@@ -326,11 +326,13 @@ export const AXIA: AxiaCopy = {
     ko: [
       "유저별 관심 자산 가격 모니터링 알림 시스템 — **분당 300만 건 발송** 가능한 초고속 처리 시스템 구축",
       "AWS 클라우드 서비스를 활용한 백엔드 API 개발 및 데이터 관리 프로세스 개발",
+      "Django 기반 주문 API 서버 · Go 기반 주문 매칭 엔진 서버 개발",
       "가상자산 거래소 대상의 강화된 정보보호 및 개인정보보호 관리체계(ISMS-P) 백엔드 인증 개발 참여",
     ] as const,
     en: [
       "Built a per-user watchlist price-alert system — a high-throughput pipeline able to **dispatch 3M notifications per minute**",
       "Developed backend APIs and data-management workflows on AWS",
+      "Built the Django-based order-API server and a Go-based order-matching engine server",
       "Contributed to ISMS-P backend certification work — Korea's hardened information- and personal-data-protection management standard for crypto exchanges",
     ] as const,
   },

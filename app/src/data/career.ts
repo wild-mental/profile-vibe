@@ -4,8 +4,14 @@ import type { CareerRow } from "@/types";
 export const CAREER_ROWS: Localized<readonly CareerRow[]> = {
   ko: [
     {
+      company: "UD IMPACT",
+      period: "2026.07 ~ 2026.10",
+      role: "리드 강사 및 커리큘럼 아키텍트",
+      job: "핀테크 AI PM 과정 369시간 설계 · 운영 (SBA SeSAC 영등포캠퍼스)",
+    },
+    {
       company: "한국정보교육원",
-      period: "2024.01 ~ 현재",
+      period: "2024.01 ~ 2026.07",
       role: "기술 교육 컨설턴트 및 강사",
       job: "교육과정 설계 컨설팅 및 기술교육",
     },
@@ -49,13 +55,19 @@ export const CAREER_ROWS: Localized<readonly CareerRow[]> = {
       company: "한국소프트웨어산업협회",
       period: "2016.11 ~ 2018.06",
       role: "선임연구원",
-      job: "SW 전문가 자격평가시험 개발",
+      job: "SW 전문가 자격평가시험(TOPCIT) 개발",
     },
   ] as const,
   en: [
     {
+      company: "UD IMPACT",
+      period: "Jul. 2026 — Oct. 2026",
+      role: "Lead Instructor & Curriculum Architect",
+      job: "Designed and led the 369-hour Fintech AI PM program (SBA SeSAC Academy, Yeongdeungpo Campus)",
+    },
+    {
       company: "Korea Information Education Institute",
-      period: "Jan. 2024 — Present",
+      period: "Jan. 2024 — Jul. 2026",
       role: "Tech Education Consultant & Instructor",
       job: "Curriculum-design consulting and technical instruction",
     },
@@ -99,7 +111,7 @@ export const CAREER_ROWS: Localized<readonly CareerRow[]> = {
       company: "Korea Software Industry Association",
       period: "Nov. 2016 — Jun. 2018",
       role: "Senior Researcher",
-      job: "Development of national SW professional certification exams",
+      job: "Development of national SW professional certification exams (TOPCIT)",
     },
   ] as const,
 };

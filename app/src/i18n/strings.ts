@@ -11,20 +11,20 @@ import type { Localized } from "./types";
 export const STRINGS = {
   brand: {
     name: {
-      ko: "박병준 · AI & IT 컨설턴트",
-      en: "Byungjun Park · AI & IT Consultant",
+      ko: "박병준 · AI 기술 강사",
+      en: "Byungjun Park · AI Instructor",
     } satisfies Localized,
     nameFooter: {
-      ko: "박병준 · AI & IT Consultant",
-      en: "Byungjun Park · AI & IT Consultant",
+      ko: "박병준 · AI Technical Instructor & IT Strategy Consultant",
+      en: "Byungjun Park · AI Technical Instructor & IT Strategy Consultant",
     } satisfies Localized,
     tagline: {
       ko: "AI · 빅데이터 · 클라우드 생태계의 최신 기술을 뉴스 속도로 교육과 엔지니어링에 적용합니다.",
       en: "Bringing the latest from the AI, big-data, and cloud ecosystem into classrooms and production at the speed of news.",
     } satisfies Localized,
     documentTitle: {
-      ko: "박병준 | AI & IT 컨설턴트 프로필",
-      en: "Byungjun Park | AI & IT Consultant Profile",
+      ko: "박병준 | AI 기술 강사 · IT 전략 컨설턴트",
+      en: "Byungjun Park | AI Technical Instructor & IT Strategy Consultant",
     } satisfies Localized,
   },
 
@@ -34,6 +34,7 @@ export const STRINGS = {
     kdt: { ko: "성과 증명", en: "Proven Results" } satisfies Localized,
     teaching: { ko: "강의 경력", en: "Teaching" } satisfies Localized,
     career: { ko: "현업 경력", en: "Career" } satisfies Localized,
+    publishing: { ko: "발행", en: "Publishing" } satisfies Localized,
     fintech: { ko: "Fintech AX", en: "Fintech AX" } satisfies Localized,
     projects: { ko: "프로젝트", en: "Projects" } satisfies Localized,
     contact: { ko: "Contact", en: "Contact" } satisfies Localized,
@@ -47,8 +48,8 @@ export const STRINGS = {
 
   hero: {
     eyebrow: {
-      ko: "AI & IT Consultant",
-      en: "AI & IT Consultant",
+      ko: "AI Technical Instructor & IT Strategy Consultant",
+      en: "AI Technical Instructor & IT Strategy Consultant",
     } satisfies Localized,
     nameKr: { ko: "박병준", en: "Byungjun Park" } satisfies Localized,
     nameEn: { ko: "Byungjun Park", en: "박병준" } satisfies Localized,
@@ -414,8 +415,8 @@ export const STRINGS = {
 
     // Curriculum preview
     curriculumTitle: {
-      ko: "Fintech AX PM 양성 과정 — 핵심 노하우 영역과 교육 키워드",
-      en: "Fintech AX PM Program — teaching-module preview",
+      ko: "핀테크 AI PM 과정 (UD IMPACT · SBA SeSAC 영등포캠퍼스 · 369시간) — 핵심 노하우 영역과 교육 키워드",
+      en: "Fintech AI PM Program (UD IMPACT · SBA SeSAC Yeongdeungpo · 369 hrs) — teaching-module preview",
     } satisfies Localized,
     curriculumHeaderModule: { ko: "모듈", en: "Module" } satisfies Localized,
     curriculumHeaderTopic: { ko: "주제", en: "Topic" } satisfies Localized,
@@ -454,6 +455,42 @@ export const STRINGS = {
     expandAriaSuffix: {
       ko: " 이미지 확대 보기",
       en: " — open image at full size",
+    } satisfies Localized,
+  },
+
+  publishing: {
+    eyebrow: { ko: "Publishing", en: "Publishing" } satisfies Localized,
+    title: {
+      ko: "AI 역량 콘텐츠 · 스킬셋 발행",
+      en: "Newsletter & Open-Source Skills",
+    } satisfies Localized,
+    subtitle: {
+      ko: "교육 현장에서 다듬은 AI 활용 노하우를 뉴스레터와 오픈소스 에이전트 스킬로 공개합니다.",
+      en: "Classroom-tested AI know-how, published as a newsletter and as open-source agent skills.",
+    } satisfies Localized,
+    newsletterTitle: {
+      ko: "LinkedIn 뉴스레터 · AI Skills for Everyone",
+      en: "LinkedIn Newsletter · AI Skills for Everyone",
+    } satisfies Localized,
+    newsletterLead: {
+      ko: "모든 사람이 탁월한 AI 사용 역량에 도달할 수 있도록 안내하는 연재 — 2026.07 창간.",
+      en: "A series that guides everyone toward excellent AI proficiency — launched Jul. 2026.",
+    } satisfies Localized,
+    bannerAlt: {
+      ko: "AI Skills for Everyone 뉴스레터 배너 — AI Excellence & Ownership for Everyone",
+      en: "AI Skills for Everyone newsletter banner — AI Excellence & Ownership for Everyone",
+    } satisfies Localized,
+    subscribeButton: {
+      ko: "LinkedIn에서 구독하기",
+      en: "Subscribe on LinkedIn",
+    } satisfies Localized,
+    skillsTitle: {
+      ko: "에이전틱 엔지니어링 / 문제해결 종합 스킬셋 정립 및 발행",
+      en: "Agentic Engineering & Problem-Solving Skill Set — Defined and Published",
+    } satisfies Localized,
+    skillsSub: {
+      ko: "Cursor · Claude Code · Codex 지원 · 10+ 핵심 스킬 공개 (GitHub)",
+      en: "Works with Cursor, Claude Code, and Codex · 10+ core skills open-sourced on GitHub",
     } satisfies Localized,
   },
 

@@ -1,0 +1,53 @@
+/* ================================================================
+   Publishing — newsletter + open-source skill set
+   ================================================================ */
+@layer components {
+  .publishing-banner {
+    display: block;
+    margin: -8px -8px 28px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-hairline);
+  }
+  .publishing-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .publishing-lead {
+    font-size: 15px;
+    color: var(--color-ink-muted-80);
+    letter-spacing: -0.016em;
+    line-height: 1.47;
+    margin: -12px 0 24px;
+  }
+  .publishing-actions {
+    margin-top: 24px;
+  }
+  .publishing-skills-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.009em;
+    color: var(--color-ink);
+    text-align: center;
+    margin: 0 0 8px;
+  }
+  .publishing-skills-sub {
+    font-size: 15px;
+    color: var(--color-ink-muted-80);
+    text-align: center;
+    margin: 0 0 28px;
+  }
+  .highlight-card a.lead-line {
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  .highlight-card a.lead-line i {
+    font-size: 13px;
+    color: var(--color-primary);
+  }
+  .highlight-card a.lead-line:hover {
+    color: var(--color-primary);
+  }
+}

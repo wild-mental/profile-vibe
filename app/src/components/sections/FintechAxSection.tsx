@@ -33,7 +33,7 @@ export function FintechAxSection() {
   const curriculum = t(s.curriculum);
 
   return (
-    <section id="fintech-ax" className="tile tile-parchment">
+    <section id="fintech-ax" className="tile tile-light">
       <div className="tile-header">
         <span className="eyebrow">{t(s.eyebrow)}</span>
         <h2>{t(s.title)}</h2>

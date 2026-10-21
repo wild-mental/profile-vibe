@@ -9,6 +9,7 @@ import { ContactCtaSection } from "@/components/sections/ContactCtaSection";
 import { FintechAxSection } from "@/components/sections/FintechAxSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsIntroSection } from "@/components/sections/ProjectsIntroSection";
+import { PublishingSection } from "@/components/sections/PublishingSection";
 import { StrengthsSection } from "@/components/sections/StrengthsSection";
 import { TeachingSection } from "@/components/sections/TeachingSection";
 import { EvidenceModalProvider } from "@/components/ui/EvidenceModal";
@@ -29,6 +30,7 @@ function App() {
         <TeachingSection />
         <CareerSection />
 
+        <PublishingSection />
         <FintechAxSection />
 
         <ProjectsIntroSection />

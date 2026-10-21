@@ -170,7 +170,9 @@
   }
 }
 
-@media (max-width: 833px) {
+/* Collapse to the drawer below 1100px: brand + 8 links + actions need
+   ~1080px in EN, so the inline row would overflow on tablets. */
+@media (max-width: 1099px) {
   .global-nav .nav-links {
     display: none !important;
   }

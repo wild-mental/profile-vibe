@@ -5,6 +5,12 @@ export const TEACHING_ROWS: Localized<readonly TeachingRow[]> = {
   ko: [
     {
       title:
+        "SBA(서울산업진흥원) SeSAC 아카데미 영등포캠퍼스 핀테크 AI PM 과정 — 369시간 전 과정 리드 (특강 2종 · 프로젝트 4개 포함)",
+      period: "2026.07 ~ 2026.10",
+      org: "UD IMPACT",
+    },
+    {
+      title:
         "모두의연구소 AI 활용 서비스 기획/개발 전문가 과정 (직장인 바이브코딩 실전 프로젝트 과정) — 5기",
       period: "2026.03 ~ 2026.06",
       org: "모두의연구소",
@@ -99,6 +105,12 @@ export const TEACHING_ROWS: Localized<readonly TeachingRow[]> = {
     },
   ] as const,
   en: [
+    {
+      title:
+        "SBA (Seoul Business Agency) SeSAC Academy, Yeongdeungpo Campus · Fintech AI PM Program — Led the full 369-hour course (incl. 2 special lectures and 4 projects)",
+      period: "Jul. 2026 — Oct. 2026",
+      org: "UD IMPACT",
+    },
     {
       title:
         "Modulabs · AI-enabled Service Planning & Development Pro Program (Vibe-Coding Project Track for Working Professionals) — Cohort 5",

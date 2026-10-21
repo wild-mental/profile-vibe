@@ -5,8 +5,8 @@ export const EDUCATION: Localized<readonly TimelineItem[]> = {
   ko: [
     {
       period: "2025.08",
-      title: "AI 빅데이터 MS & MBA",
-      desc: "aSSIST · SDG MS (Switzerland, Geneva)",
+      title: "AI 빅데이터 MS & Executive MBA",
+      desc: "aSSIST · SDG Management School (스위스 제네바)",
     },
     {
       period: "2023.08",
@@ -22,8 +22,8 @@ export const EDUCATION: Localized<readonly TimelineItem[]> = {
   en: [
     {
       period: "Aug. 2025",
-      title: "MS in AI & Big Data · MBA",
-      desc: "aSSIST · SDG MS (Geneva, Switzerland)",
+      title: "MS in AI & Big Data · Executive MBA",
+      desc: "aSSIST · SDG Management School (Geneva, Switzerland)",
     },
     {
       period: "Aug. 2023",
