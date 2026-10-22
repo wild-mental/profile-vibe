@@ -87,7 +87,7 @@
 | T5 모두의연구소 | 경력 표에 넣지 않음. 강의 표(2기 · 5기)만 유지 | 사용자 결정 | 웹 변경 없음, `CLAUDE.md` 신규 이력 반영 규칙을 "경력 표는 건별 결정"으로 수정 |
 | T4 발행 섹션 | 새 섹션 신설, 위치는 Fintech AX 위. 뉴스레터는 LinkedIn 구독 링크, 스킬셋은 "에이전틱 엔지니어링 / 문제해결 종합 스킬셋 정립 및 발행"으로 10종을 4개 그룹으로 분류(aztks-review · grill-it · notion 계열 제외) | 사용자 지정. 상위 저장소 AI-Skills-for-Everyone가 PRIVATE이라 각 스킬은 공개 개별 저장소로 링크 | `data/publishing.ts`, `PublishingSection.tsx`, `styles/publishing.css`, `strings.ts` publishing·nav, `data/nav.ts`, `App.tsx`, Fintech 배경 parchment→light, `styles/nav.css` 드로어 전환 833→1099px, `CLAUDE.md` 발행 섹션 규칙 |
 | T3 UD IMPACT | 경력 표 · 강의 표 최상단 추가(특강 2종 · 프로젝트 4개는 과정 행에 포함) + Fintech AX 커리큘럼 제목에 출처 명시. 장소 SBA(서울산업진흥원) SeSAC 아카데미 영등포캠퍼스 추가(사용자 제공 — LinkedIn엔 없음) | 섹션 커리큘럼에 출처가 없어 근거로서 힘이 약했음 | `data/career.ts`, `data/teaching.ts`, `strings.ts` fintech.curriculumTitle, `CLAUDE.md` 신규 이력 반영 규칙 |
-| T2 헤드라인 | LinkedIn 문구로 웹 통일 — "AI Technical Instructor & IT Strategy Consultant" / "AI 기술 강사 · IT 전략 컨설턴트". 내비는 축약형 | 웹 강점·섹션 대부분이 교육 중심, 의뢰처(R3)에게 강사 정체성이 정확. 내비 전체 문구는 EN 448px로 모바일·태블릿 넘침 확인 | `strings.ts` brand·hero, `index.html` title, `CLAUDE.md` 헤드라인 규칙 |
+| T2 헤드라인 | LinkedIn 문구로 웹 통일 — "AI Technical Instructor & IT Strategy Consultant" / "AI 기술 강사 · IT 전략 컨설턴트". 내비는 축약형(기존 "AI & IT 컨설턴트" 유지, 2026-10-22 재결정) | 웹 강점·섹션 대부분이 교육 중심, 의뢰처(R3)에게 강사 정체성이 정확. 내비 전체 문구는 EN 448px로 모바일·태블릿 넘침 확인 | `strings.ts` brand·hero, `index.html` title, `CLAUDE.md` 헤드라인 규칙 |
 
 ## 4. 웹 내부 불일치 (덤으로 발견)
 

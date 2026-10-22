@@ -11,8 +11,8 @@ import type { Localized } from "./types";
 export const STRINGS = {
   brand: {
     name: {
-      ko: "박병준 · AI 기술 강사",
-      en: "Byungjun Park · AI Instructor",
+      ko: "박병준 · AI & IT 컨설턴트",
+      en: "Byungjun Park · AI & IT Consultant",
     } satisfies Localized,
     nameFooter: {
       ko: "박병준 · AI Technical Instructor & IT Strategy Consultant",

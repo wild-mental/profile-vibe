@@ -22,7 +22,7 @@
 
 - 공식 헤드라인: **AI Technical Instructor & IT Strategy Consultant** / 한글 **AI 기술 강사 · IT 전략 컨설턴트**. LinkedIn 헤드라인과 같은 문구를 유지한다.
 - 히어로 eyebrow · 탭 제목(`brand.documentTitle`, `index.html`) · 푸터(`brand.nameFooter`)는 전체 문구를 쓴다.
-- 상단 내비게이션(`brand.name`)은 `nowrap`이라 축약형만 쓴다: `박병준 · AI 기술 강사` / `Byungjun Park · AI Instructor`.
+- 상단 내비게이션(`brand.name`)은 `nowrap`이라 축약형만 쓴다: `박병준 · AI & IT 컨설턴트` / `Byungjun Park · AI & IT Consultant` (기존 문구 유지 — 2026-10-22 사용자 재결정).
 
 ## 신규 이력 반영 규칙
 

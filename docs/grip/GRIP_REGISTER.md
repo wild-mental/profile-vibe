@@ -16,7 +16,7 @@
 RESOLVED: 14 / DROPPED: 0 / TOTAL: 14
 STATUS: ALL_RESOLVED (2026-10-21)
 - [x] T1  | CORE  | 사실 정본 원칙 (값 충돌 시 기준 · 동기화 방향) | status:RESOLVED | decision:A) 원본문서·웹 정본 + 이후 변동만 LinkedIn | applied:CLAUDE.md(신설), docs/linkedin-web-profile-diff.md §3
-- [x] T2  | CORE  | 웹 헤드라인 · 포지셔닝 문구 통일 | status:RESOLVED | decision:A) LinkedIn 문구로 웹 통일 + 내비만 축약형 | applied:app/src/i18n/strings.ts, app/index.html, CLAUDE.md, docs/linkedin-web-profile-diff.md §3
+- [x] T2  | CORE  | 웹 헤드라인 · 포지셔닝 문구 통일 | status:RESOLVED | decision:A) LinkedIn 문구로 웹 통일 + 내비만 축약형(기존 "AI & IT 컨설턴트" 유지, 2026-10-22 재결정) | applied:app/src/i18n/strings.ts, app/index.html, CLAUDE.md, docs/linkedin-web-profile-diff.md §3
 - [x] T3  | CORE  | UD IMPACT 핀테크 AI PM 과정 반영 방식 | status:RESOLVED | decision:A안으로 하고, 상세내용에 SBA(서울산업진흥원) SeSAC 아카데미 영등포캠퍼스 라는 정보까지 추가 | applied:app/src/data/career.ts, app/src/data/teaching.ts, app/src/i18n/strings.ts, CLAUDE.md, docs/linkedin-web-profile-diff.md §3
 - [x] T4  | CORE  | 뉴스레터 · AZTKS 공개 활동 섹션 신설 여부 · 위치 | status:RESOLVED | decision:새 섹션 신설하고 위치는 금융특화 AX PM 역량 섹션 위에. 링크는 LinkedIn 구독 링크 사용. 스킬은 "에이전틱 엔지니어링 / 문제해결 종합 스킬셋 정립 및 발행"으로 02_wild-mental-skills의 스킬 포함, aztks-review·grill-it·notion 관련 제외, 종류별 분류 | applied:app/src/data/publishing.ts, app/src/components/sections/PublishingSection.tsx, app/src/styles/{publishing,nav}.css, app/src/i18n/strings.ts, app/src/data/nav.ts, app/src/App.tsx, app/src/components/sections/FintechAxSection.tsx, CLAUDE.md, docs/linkedin-web-profile-diff.md §3
 - [x] T5  | MINOR | 모두의연구소 경력 표 추가 · 5기 이후 기수 | status:RESOLVED | decision:B) 경력 표에 넣지 않음 | applied:CLAUDE.md 신규 이력 반영 규칙 수정, docs/linkedin-web-profile-diff.md §3
