@@ -21,33 +21,35 @@ export function PublishingSection() {
 
       <div className="tile-container-1100">
         <div className="info-card">
-          <a
-            className="publishing-banner"
-            href={NEWSLETTER_SUBSCRIBE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/assets/ai-skills-for-everyone-banner.jpg"
-              alt={t(s.bannerAlt)}
-              width={1840}
-              height={855}
-              loading="lazy"
-            />
-          </a>
           <h3>
             <i className="bi bi-envelope-paper" />
             {t(s.newsletterTitle)}
           </h3>
           <p className="publishing-lead">{t(s.newsletterLead)}</p>
-          <ul className="timeline">
-            {t(NEWSLETTER_ISSUES).map((issue) => (
-              <li key={issue.date}>
-                <span className="period">{issue.date}</span>
-                <span className="title">{issue.title}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="publishing-newsletter">
+            <a
+              className="publishing-banner"
+              href={NEWSLETTER_SUBSCRIBE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/ai-skills-for-everyone-banner.jpg"
+                alt={t(s.bannerAlt)}
+                width={1840}
+                height={855}
+                loading="lazy"
+              />
+            </a>
+            <ul className="timeline">
+              {t(NEWSLETTER_ISSUES).map((issue) => (
+                <li key={issue.date}>
+                  <span className="period">{issue.date}</span>
+                  <span className="title">{issue.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="publishing-actions">
             <a
               className="btn-pill-primary"

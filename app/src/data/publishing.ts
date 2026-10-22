@@ -7,14 +7,16 @@ export const NEWSLETTER_ISSUES: Localized<
   readonly { date: string; title: string }[]
 > = {
   ko: [
-    { date: "2026.08.15", title: "AI에게 내 사고의 운전대를 넘기지 않는 법" },
-    { date: "2026.07.26", title: "AI 에이전트에 자신있게 명령하기 위한 기본기" },
     { date: "2026.07.10", title: "AI에게 당신과 함께하기 위한 '사회화'를 시켜보세요" },
+    { date: "2026.07.26", title: "AI 에이전트에 자신있게 명령하기 위한 기본기" },
+    { date: "2026.08.15", title: "AI에게 내 사고의 운전대를 넘기지 않는 법" },
+    { date: "2026.10.22", title: "AI 시대, 인간의 작업 오너십은 무엇이고 어떻게 지킬 수 있을까?" },
   ] as const,
   en: [
-    { date: "Aug. 15, 2026", title: "How to keep your hands on the wheel of your own thinking" },
-    { date: "Jul. 26, 2026", title: "The fundamentals of commanding AI agents with confidence" },
     { date: "Jul. 10, 2026", title: "Give your AI the “socialization” it needs to work with you" },
+    { date: "Jul. 26, 2026", title: "The fundamentals of commanding AI agents with confidence" },
+    { date: "Aug. 15, 2026", title: "How to keep your hands on the wheel of your own thinking" },
+    { date: "Oct. 22, 2026", title: "Work ownership in the AI era — what it is and how to keep it" },
   ] as const,
 };
 

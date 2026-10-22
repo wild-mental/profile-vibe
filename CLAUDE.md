@@ -38,8 +38,8 @@
 (결정 근거: `docs/grip/GRIP_REGISTER.md` T4)
 
 - 위치: 현업 경력 다음, Fintech AX 섹션 바로 위 (`#publishing`). 내비 라벨 `발행` / `Publishing`.
-- 데이터: `app/src/data/publishing.ts` — 뉴스레터 회차는 최신순으로 추가, 구독 링크는 `NEWSLETTER_SUBSCRIBE_URL`.
-- 뉴스레터 카드 상단 배너: `assets/ai-skills-for-everyone-banner.jpg` (1840×855, 원본 PNG를 JPEG 82%로 압축). 배너는 구독 링크로 연결된다.
+- 데이터: `app/src/data/publishing.ts` — 뉴스레터 회차는 오래된 순(위→아래 오름차순)으로 두고 새 회차는 배열 끝에 추가, 구독 링크는 `NEWSLETTER_SUBSCRIBE_URL`.
+- 뉴스레터 카드 배너(회차 타임라인 왼쪽, 834px 미만에서는 위로 쌓임): `assets/ai-skills-for-everyone-banner.jpg` (1840×855, 원본 PNG를 JPEG 82%로 압축). 배너는 구독 링크로 연결된다.
 - 스킬셋 제목: "에이전틱 엔지니어링 / 문제해결 종합 스킬셋 정립 및 발행". 원천 목록은 `wild-mental/AI-Skills-for-Everyone/02_wild-mental-skills`.
 - **제외 스킬**: `aztks-review`, `grill-it`, `notion-*` 계열, `profile-sum`(T13 — 문서·커리어 카드 제거). 나머지는 종류별 3그룹(작업 기준·문제해결 / 프로덕트 기획·지표 / 개발 협업·운영 하네스)에 넣고, 부제는 "10+ 핵심 스킬 공개"로 표기하며, 각 스킬은 공개 개별 저장소(`github.com/wild-mental/<repo>`)로 링크한다.
 - 섹션 배경 톤은 위아래 섹션과 번갈아(light ↔ parchment) 유지한다.

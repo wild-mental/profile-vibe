@@ -2,9 +2,20 @@
    Publishing — newsletter + open-source skill set
    ================================================================ */
 @layer components {
+  .publishing-newsletter {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  @media (min-width: 834px) {
+    .publishing-newsletter {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+      gap: 36px;
+    }
+  }
   .publishing-banner {
     display: block;
-    margin: -8px -8px 28px;
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid var(--color-hairline);
